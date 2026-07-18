@@ -21,7 +21,7 @@ This project seeks to develop a learning-oriented workspace and discourse framew
 The project is **not** intended to:
 
 - Adjudicate which methodology another person must use
-- Replace consultation with an appointed Representative or Trustee of Huqúqu'lláh
+- Replace study of authoritative texts or conversation with others who have studied the law
 - Demand, solicit, transmit, or monitor payment
 - Turn conscience into compliance
 - Require disclosure of personal wealth
@@ -34,7 +34,7 @@ The project is **not** intended to:
 
 ### This is conceptual work, not a implementation specification.
 
-**Before any application is built**, the following must be resolved through consultation and written specification:
+**Before any application is built**, the following must be resolved through study, consultation, and written specification:
 
 1. **How should previously assessed principal be carried forward?** When fiat-currency principal was assessed years ago, should it be carried as its historical currency amount, converted to gold, or handled differently? The sources do not explicitly resolve this.
 
@@ -48,7 +48,7 @@ The project is **not** intended to:
 
 ### This is a research project, not institutional guidance.
 
-No page, statement, or export from any future tool should imply institutional endorsement or official status. Consultation with appointed representatives and sustained study of sources remain essential.
+No page, statement, or export from any future tool should imply institutional endorsement or official status. This is an experiment and invitation to study, not a settlement of contested questions.
 
 ### Two prospective products have been conflated.
 
@@ -87,6 +87,13 @@ This project begins with humility about what is and is not yet understood. The c
 
 > This is how I am currently understanding the law and organizing my records. Here are the sources, judgments, assumptions, and calculations involved. Here is what results emerge under alternative approaches. I offer it as an experiment and an invitation to learn together.
 
+Readers are encouraged to:
+
+- Study the authoritative texts linked in this documentation
+- Share feedback and alternative approaches in this repository's discussions
+- Consult with others who have studied the law
+- If questions arise that require guidance from appointed representatives, reach out to them with specific questions
+
 No page should demand payment, shame uncertainty, rank approaches, or present one person's experiment as settled truth.
 
 ---
@@ -112,10 +119,10 @@ Primary sources supporting this project's foundation:
 - Worked examples reconcile alternative approaches
 - The assessment-payment separation is formally specified
 - Fictional test cases demonstrate correctness invariants
-- An appointed representative or specialist has reviewed the source-rule matrix
+- The source-rule matrix has been reviewed
 
-The recommended next deliverable is a **calculation specification workbook** containing schemas, formulas, test cases, and source justifications. See `docs/design-and-discourse-plan.md`, section 19.
+The recommended next deliverable is a **calculation specification workbook** containing schemas, formulas, test cases, and source justifications. See `docs/design-and-discourse-plan.md` for details.
 
 ---
 
-*This documentation is a research project and invitation to study, not an official calculator or endorsed guidance. Consultation with appointed representatives of Huqúqu'lláh remains essential.*
+*This documentation is a research project and invitation to study, not an official calculator or endorsed guidance.*

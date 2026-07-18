@@ -30,21 +30,35 @@ The project is **not** intended to:
 
 ---
 
-## Critical Status and Scope Notes
+## Critical Distinction: Historical Assessment Units vs. Indexed Credit
 
-### This is conceptual work, not a implementation specification.
+This project records how many **completed nineteen-mithqál assessment units** have historically become assessable and been discharged. This is a **historical accounting fact**.
+
+Separately and distinctly, the project explores (but does not assume) that those historical units should be **translated at current gold prices** when determining a deductible or "purified" base against current wealth. This is an **experimental methodological hypothesis**.
+
+**Key principle:**
+
+> Gold is used to identify and record completed nineteen-mithqál assessment units at the time an assessment arises. The workbench separately explores—but does not assume—that those historical units should be translated at current gold prices when determining previously assessed principal.
+
+The **number of completed historical units is dimensionless and immutable** once the assessment is fixed. A later change in gold price, currency, country, display currency, or payment date does not alter that historical count. Converting that count into a current monetary amount is a separate transformation labeled the **current-gold indexed-credit hypothesis**, not an authoritative rule.
+
+---
+
+## Status and Scope Notes
+
+### This is conceptual work, not an implementation specification.
 
 **Before any application is built**, the following must be resolved through study, consultation, and written specification:
 
-1. **How should previously assessed principal be carried forward?** When fiat-currency principal was assessed years ago, should it be carried as its historical currency amount, converted to gold, or handled differently? The sources do not explicitly resolve this.
+1. **What historical fact is preserved after assessment?** Native-currency principal, completed nineteen-mithqál units, identified property, or some combination? And does translating that history at current gold prices provide only a presentational view or a substantive indexed credit?
 
-2. **How do assessment and payment relate?** Assessment and payment are logically separate events with different dates and may use different gold prices. The present v0.1 document's formula conflates them. This must be untangled.
+2. **How do assessment and payment relate?** Assessment and payment are logically separate events with different dates and may use different gold prices. These must be untangled in the data model.
 
-3. **What is the epistemic status of gold-indexing?** Revaluing previously assessed fiat principal according to today's gold price can produce counterintuitive results. This is described below and requires source-based validation, not software convenience.
+3. **How should bookkeeping methods be compared?** Different ledgering approaches (annual surplus vs. lifetime wealth reconciliation) should ideally reconcile when applied to complete and consistent facts. The system must identify why they diverge if they do.
 
-4. **How should bookkeeping methods be compared?** Different ledgering approaches (annual surplus vs. lifetime wealth reconciliation) should ideally reconcile when applied to complete and consistent facts. The system must identify why they diverge if they do.
+4. **How should ownership, spouses, and property changes be modeled?** This is more complex than a display toggle and requires effective-dated, event-based accounting.
 
-5. **How should ownership, spouses, and property changes be modeled?** This is more complex than a display toggle and requires effective-dated, event-based accounting.
+5. **How do the piastre example and the whole-unit rule coexist?** The 1919 worked example in the Compilation requires reconciliation with explicit whole-unit treatment in other authoritative texts.
 
 ### This is a research project, not institutional guidance.
 
@@ -64,15 +78,15 @@ The public-first approach is recommended; see `docs/design-and-discourse-plan.md
 ## Documentation
 
 - **[docs/design-and-discourse-plan.md](docs/design-and-discourse-plan.md)** — Full design and discourse vision, methodology taxonomy, data model, user experience outline, and implementation phases.
-- **[docs/source-rule-matrix.md](docs/source-rule-matrix.md)** — Authoritative sources, explicit principles, epistemic status, implementation consequences, and unresolved questions.
-- **[docs/open-questions-and-counterexamples.md](docs/open-questions-and-counterexamples.md)** — Blocking conceptual questions and worked counterexamples.
+- **[docs/source-rule-matrix.md](docs/source-rule-matrix.md)** — Authoritative sources, explicit principles, epistemic status, implementation consequences, and unresolved questions. Includes reconciliation of the 1919 piastre example with whole-unit rules.
+- **[docs/open-questions-and-counterexamples.md](docs/open-questions-and-counterexamples.md)** — Blocking conceptual questions, worked counterexamples (gold rise/fall/delayed payment), and the piastre case study.
 - **[docs/calculation-invariants.md](docs/calculation-invariants.md)** — Correctness and success criteria that any future calculation engine must satisfy.
 
 ---
 
 ## Central Blocking Questions
 
-1. **Previously assessed principal in fiat currency:** Carried as historical amount, quantity of gold, or something else?
+1. **Historical units vs. indexed credit:** What historical fact is preserved—native-currency principal, completed threshold units, or identified property—and does translating that at current gold prices provide only a presentational view or a substantive indexed credit?
 2. **Assessment valuation date:** What date governs the gold value used for assessment?
 3. **Payment-date gold:** If payment occurs later, does payment-date gold affect an already calculated assessment?
 4. **Unrealized FX movements:** How should currency appreciation/depreciation be treated?
@@ -116,10 +130,10 @@ Primary sources supporting this project's foundation:
 
 - The blocking questions above are addressed or explicitly deferred
 - A written, normalized calculation specification exists
-- Worked examples reconcile alternative approaches
+- Worked examples reconcile alternative approaches and source examples
 - The assessment-payment separation is formally specified
 - Fictional test cases demonstrate correctness invariants
-- The source-rule matrix has been reviewed
+- The source-rule matrix has been reviewed with attention to historical sources and scope boundaries
 
 The recommended next deliverable is a **calculation specification workbook** containing schemas, formulas, test cases, and source justifications. See `docs/design-and-discourse-plan.md` for details.
 

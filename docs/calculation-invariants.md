@@ -14,7 +14,7 @@ The invariants have three scopes:
 
 An experimental methodology may intentionally produce a different *view*, but it may not alter historical facts, hide its status, or label its result authoritative.
 
-Unless otherwise stated, examples use fictional data, exact decimal arithmetic, and a fictional assessment-date threshold unit `U = $10,000`.
+Unless otherwise stated, examples use fictional data, exact decimal arithmetic, and a fictional assessment-date threshold unit `U = $10,000`. Each row or scenario is an independent data state, not a sequence through time, unless multiple dates are explicitly introduced. In practice, the local-currency value of `U` may vary by currency, assessment date, gold-valuation source, and valuation convention; later invariants test those changes explicitly.
 
 ## 2. Threshold and whole-unit invariants
 
@@ -32,6 +32,8 @@ Unless otherwise stated, examples use fictional data, exact decimal arithmetic, 
 ### Invariant 2 — Only completed units enter obligatory principal
 
 **Scope:** Source constraint
+
+The following rows are independent cases evaluated under the same fixed value of `U`; they are not successive periods.
 
 | Assessable amount | Completed units | Obligatory principal | Carried remainder | Obligation at 19% |
 | ---: | ---: | ---: | ---: | ---: |

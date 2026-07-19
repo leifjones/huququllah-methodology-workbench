@@ -1,152 +1,366 @@
 # Calculation Invariants
 
-**[PLACEHOLDER: This document specifies correctness requirements that any future calculation engine must satisfy, organized as invariants and counterexamples]**
+**Status:** Acceptance criteria for a future specification; not executable code
 
-## Core invariants
+**Purpose:** Define failures that must be detected before any calculation engine is trusted
 
-Any calculation system, regardless of which methodology is selected, must satisfy these invariants. If it does not, there is a bug.
+## 1. How to read these invariants
 
-### 1. Transfers between accounts do not create assessable wealth
+The invariants have three scopes:
 
-**Invariant:** Moving $1,000 from account A to account B, when both are in the same owner's assessment base and assessed as part of a completed calculation, does not create a new $1,000 assessable increase.
+- **Source constraint:** behavior directly grounded in authoritative guidance
+- **Accounting integrity:** behavior needed to preserve facts and prevent duplicated or manufactured economic events
+- **Research and safety:** behavior needed to distinguish hypotheses, uncertainty, privacy, and institutional status
 
-**Counterexample (buggy behavior):** [TO BE POPULATED]
+An experimental methodology may intentionally produce a different *view*, but it may not alter historical facts, hide its status, or label its result authoritative.
 
-**Test case:** [TO BE POPULATED]
+Unless otherwise stated, examples use fictional data, exact decimal arithmetic, and a fictional assessment-date threshold unit `U = $10,000`.
 
-### 2. Splitting or merging holdings does not alter economic result
+## 2. Threshold and whole-unit invariants
 
-**Invariant:** Combining two holdings into one, or splitting one holding into two, does not change the total assessed amount or payment obligation.
+### Invariant 1 — An obligatory amount does not arise below the threshold
 
-**Counterexample (buggy behavior):** [TO BE POPULATED]
+**Scope:** Source constraint
+**Basis:** [Q&A 8](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-aqdas/9), [Q&A 90](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-aqdas/10), and the [codification](https://www.bahai.org/library/authoritative-texts/compilations/codification-law-huququllah/4)
 
-**Test case:** [TO BE POPULATED]
+**Given** assessable property of $9,999 and `U = $10,000`
+**When** the obligatory assessment is calculated
+**Then** completed units are zero, obligatory principal is zero, and required payment is zero.
 
-### 3. Splitting one payment into installments does not alter historical assessed base
+**Failure:** Applying 19% to $9,999 and presenting $1,899.81 as due.
 
-**Invariant:** A single assessment payment of $1,900 made on date X, or split into $950 on date X and $950 on date Y, should result in the same historical assessed base being recorded.
+### Invariant 2 — Only completed units enter obligatory principal
 
-**Why this matters:** The assessed base is a record of historical principal, not a function of how payment was made or sequenced.
+**Scope:** Source constraint
 
-**Counterexample (buggy behavior):** [TO BE POPULATED]
+| Assessable amount | Completed units | Obligatory principal | Carried remainder | Obligation at 19% |
+| ---: | ---: | ---: | ---: | ---: |
+| $9,999 | 0 | $0 | $9,999 | $0 |
+| $10,000 | 1 | $10,000 | $0 | $1,900 |
+| $19,999 | 1 | $10,000 | $9,999 | $1,900 |
+| $20,000 | 2 | $20,000 | $0 | $3,800 |
 
-**Test case:** [TO BE POPULATED]
+Ordinary currency rounding occurs after the whole-unit rule. It must not be used to round a partial unit upward into an obligation.
 
-### 4. Delayed payment does not rewrite an assessment
+### Invariant 3 — Voluntary contribution remains distinct from obligation
 
-**Invariant:** If an assessment is calculated on date X with gold at price A, and payment occurs on date Y with gold at price B, the assessment is not retroactively altered by the later gold price.
+**Scope:** Source constraint and accounting integrity
+**Basis:** Paragraph 63 of the [application compilation](https://www.bahai.org/library/authoritative-texts/compilations/huququllah-right-god/3)
 
-**Counterexample (buggy behavior):** [TO BE POPULATED]
+**Given** $6,000 below-threshold assessable property and a voluntary $100 contribution
+**Then** required payment remains zero and the $100 is labeled voluntary.
 
-**Test case:** [TO BE POPULATED WITH GOLD MOVEMENT SCENARIO]
+The voluntary amount must not silently reduce a future obligatory base or be described as payment of an amount due unless a reviewed source-grounded treatment explicitly establishes that consequence.
 
-### 5. Previously assessed property is not assessed twice without explicit source-grounded reason
+## 3. Financial identity invariants
 
-**Invariant:** Once property has been assessed and Huqúqu'lláh paid, that same property should not become assessable again in a subsequent period without a source-grounded reason (such as recovery from loss, or a deliberate change in classification).
+### Invariant 4 — Transfers within the same assessment scope do not create wealth
 
-**Counterexample (buggy behavior):** [TO BE POPULATED]
+**Scope:** Accounting integrity
 
-**Test case:** [TO BE POPULATED]
+**Given** $1,000 in account A
+**When** it is transferred to account B owned by the same person within the same assessment scope
+**Then** total property and new acquisition remain unchanged.
 
-### 6. Recovery of prior loss is distinguished from new augmentation
+**Failure:** Recording the deposit to B as $1,000 of new income while retaining A's withdrawal only as an expense or ignoring it.
 
-**Invariant:** If property drops from $100,000 to $80,000 (a $20,000 loss) and later recovers to $100,000, the recovery should be recorded and distinguished from a new $20,000 acquisition.
+### Invariant 5 — Splitting or merging holdings does not alter the result
 
-**Why this matters:** Different judgments and possibly different payment obligations may apply.
+**Scope:** Accounting integrity
 
-**Counterexample (buggy behavior):** [TO BE POPULATED]
+**Given** one $20,000 holding
+**When** it is represented as two $10,000 holdings without a change in ownership or classification
+**Then** completed units, obligatory principal, and obligation are identical.
 
-**Test case:** [TO BE POPULATED WITH LOSS AND RECOVERY SEQUENCE]
+### Invariant 6 — Reclassification is explicit and effective-dated
 
-### 7. Display-currency changes affect presentation, not economic result
+**Scope:** Accounting integrity and individual judgment
 
-**Invariant:** Converting a calculation from USD reporting to EUR reporting should change displayed amounts but not the underlying obligation amount in the original currency, within defined precision tolerance.
+Changing an item from subject to exempt, or the reverse, requires a dated classification decision, rationale, and identity of the person making it. The system may recalculate a view but may not rewrite the earlier classification silently.
 
-**Counterexample (buggy behavior):** [TO BE POPULATED]
+## 4. Assessment and settlement invariants
 
-**Test case:** [TO BE POPULATED WITH MULTI-CURRENCY SCENARIO]
+### Invariant 7 — Historical completed-unit count is immutable
 
-### 8. Unrealized price or FX movements do not silently become realized gains
+**Scope:** Accounting integrity
 
-**Invariant:** A property whose USD value increases due to FX appreciation should not automatically be treated as a realized gain if the property itself has not been sold or exchanged.
+**Given** an assessment of one completed unit on date A
+**When** gold, FX, residence, or display currency later changes
+**Then** the date-A assessment still records one completed unit.
 
-**Counterexample (buggy behavior):** [TO BE POPULATED]
+A correction creates a superseding event linked to the earlier assessment; it does not mutate audit history.
 
-**Test case:** [TO BE POPULATED]
+### Invariant 8 — Delayed payment does not rewrite an assessment
 
-### 9. Every historical assessment is reproducible from immutable inputs
+**Scope:** Accounting integrity
 
-**Invariant:** Given:
-- The original property or principal
-- The date of assessment
-- The gold price used
-- The methodology/formula version
-- The personal judgments recorded
+**Given:**
 
-...a future user should be able to reproduce the same assessment result, even if gold prices, FX rates, or current property values have changed.
+- Date-A unit value: $10,000
+- Date-A completed units: 1
+- Date-A obligation: $1,900
+- Date-B unit value at payment: $20,000
+- Date-B payment: $1,900
 
-**Counterexample (buggy behavior):** [TO BE POPULATED]
+**Then:**
 
-**Test case:** [TO BE POPULATED WITH RECONSTRUCTED ASSESSMENT SCENARIO]
+- Historical units remain 1
+- Obligation settled is $1,900
+- Outstanding balance becomes zero
+- Payment-date gold may be retained as payment metadata but produces no replacement unit count
 
-### 10. Different bookkeeping lenses reconcile or explicitly identify divergence
+**Failure:** Reconstructing `0.5 unit` from the date-B price.
 
-**Invariant:** When the same complete set of financial facts is processed through two different bookkeeping methods (e.g., annual surplus vs. lifetime wealth reconciliation), they should either:
+### Invariant 9 — Installments do not alter assessed principal
 
-1. Produce identical results, or
-2. Explicitly identify which judgment, missing event, classification, or valuation assumption accounts for the difference.
+**Scope:** Accounting integrity
 
-**Counterexample (buggy behavior):** [TO BE POPULATED WITH DIVERGING METHODS]
+Paying one $1,900 obligation as one payment or as two $950 installments produces the same assessment, obligation total, and final settlement state.
 
-**Test case:** [TO BE POPULATED]
+### Invariant 10 — Allocations conserve value
 
-### 11. Every displayed rule, method, or assumption shows its epistemic status
+**Scope:** Accounting integrity
 
-**Invariant:** Every statement in the UI or export should be labelable as:
-- Authoritative source requirement
-- Derived from authoritative source via explicit reasoning
-- Personal judgment point
+For each payment:
+
+`sum(payment allocations) + unallocated payment balance = payment amount`
+
+For each obligation:
+
+`sum(valid allocations) + outstanding balance = obligation amount`, adjusted only by explicit correction or reversal events.
+
+An allocation cannot exceed either the available payment balance or the obligation balance.
+
+### Invariant 11 — Payment source and obligation owner are separate
+
+**Scope:** Accounting integrity and ownership
+
+A spouse or shared account may supply funds for a payment without silently changing who owns the obligation or the property assessed. Any different treatment requires an explicit ownership or gift event.
+
+## 5. Once-only principal and loss invariants
+
+### Invariant 12 — Previously assessed principal is not assessed twice
+
+**Scope:** Source constraint
+
+**Given** $10,000 principal assessed and settled
+**When** the unchanged property remains in the ledger next period
+**Then** it is not new assessable principal merely because another snapshot was taken.
+
+A new assessment requires a source-grounded event such as qualifying augmentation, realized profit, recovery beyond prior loss, or transfer to another owner.
+
+### Invariant 13 — Recovery of prior loss is distinguished from augmentation
+
+**Scope:** Source constraint and accounting integrity
+**Basis:** [Q&A 44–45](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-aqdas/9)
+
+**Given:**
+
+1. Previously assessed property: $100,000
+2. Recorded loss: property falls to $80,000
+3. Later recovery: property returns to $100,000
+
+**Then** the $20,000 recovery restores the prior position and is not silently labeled new augmentation. A later increase beyond the restored position is separately identifiable.
+
+### Invariant 14 — A change of ownership is not a transfer between the same owner's accounts
+
+**Scope:** Source constraint and ownership
+
+The system must distinguish an internal transfer from a gift, inheritance, sale, or other passage to a new owner. It records the ownership event and applies the recipient's history rather than carrying the former owner's settlement status forward by default.
+
+## 6. Currency and rate invariants
+
+### Invariant 15 — Display currency changes presentation, not historical facts
+
+**Scope:** Accounting integrity
+
+**Given** an assessment stored in USD with documented date-A rates
+**When** a user selects EUR as the display currency
+**Then** the original USD amount, completed units, assessment date, and obligation remain unchanged. The EUR amount is a labeled conversion with its own rate provenance.
+
+Switching back to USD must reproduce the original stored values, subject only to an explicitly stated display-rounding tolerance.
+
+### Invariant 16 — Rate purpose is explicit
+
+**Scope:** Accounting integrity
+
+Every gold or FX observation identifies its purpose:
+
+- Assessment valuation
+- Payment conversion
+- Period-end reconciliation
+- Current display
+- Experimental current-gold translation
+
+A rate captured for one purpose cannot silently replace the rate used for another.
+
+### Invariant 17 — Unrealized FX movement does not silently become acquisition
+
+**Scope:** Source synthesis and accounting integrity
+
+**Given** an unchanged EUR holding whose current USD display value rises solely because EUR appreciates
+**Then** the system records a reporting-currency movement, not new income or acquisition, unless a separately documented realization rule and event apply.
+
+The precise treatment of realized currency gain remains a specification question; the invariant prevents accidental resolution by current-rate display logic.
+
+## 7. Indexed-credit research invariants
+
+### Invariant 18 — Current-gold translation cannot overwrite historical state
+
+**Scope:** Research integrity
+
+If one historical unit is shown at today's gold price, the output is labeled a current translation. The stored historical assessment remains unchanged.
+
+### Invariant 19 — Substantive indexed credit is opt-in and labeled experimental
+
+**Scope:** Research integrity
+
+The default source-grounded view may not silently deduct `historical units × current unit value` from present wealth. If a research profile enables that operation, the interface and export must:
+
+- Label it the current-gold indexed-credit hypothesis
+- Cite no authority that does not actually establish it
+- Show the non-indexed comparison
+- Display the gold-rise and gold-fall consequences
+- Preserve the same historical unit count in both views
+
+### Invariant 20 — Gold-rise and gold-fall consequences are reproducible
+
+**Scope:** Research integrity
+
+Using the fictional cases in [Open Questions and Counterexamples](open-questions-and-counterexamples.md#2-current-gold-indexed-credit):
+
+- A rise from a $10,000 historical unit to a $20,000 current unit produces a $20,000 experimental credit, not a changed historical count.
+- A fall to a $5,000 current unit produces a $5,000 experimental credit, not a new acquisition event.
+
+If the hypothesis changes an obligation result, the divergence must be displayed rather than normalized away.
+
+## 8. Reproducibility and methodology invariants
+
+### Invariant 21 — Every historical assessment is reproducible
+
+**Scope:** Accounting integrity
+
+Reproduction requires immutable access to:
+
+- Assessment scope and owner
+- Financial events or opening state
+- Exemptions and deductions
+- Classification and judgment records
+- Gold and FX rate snapshots
+- Carried remainder and prior assessed principal
+- Methodology and formula version
+- Precision rules
+
+Current rates must not affect replay of a historical assessment.
+
+### Invariant 22 — Bookkeeping lenses reconcile or explain divergence
+
+**Scope:** Research integrity
+
+When two lenses process the same complete event history, they must either:
+
+1. Produce the same completed units and obligation, or
+2. Identify the exact differing classification, timing rule, missing event, valuation assumption, or hypothesis.
+
+“Different method” is not a sufficient explanation by itself.
+
+### Invariant 23 — Source examples are applied within declared scope
+
+**Scope:** Source synthesis
+
+The 1919 piastre example may test:
+
+- 19% arithmetic
+- Expense deduction
+- Annual reconciliation
+- Deduction of previously assessed principal
+
+It must not make a below-threshold amount obligatory in the specification while Q&A 90 and the codification's whole-unit rule remain applicable. The apparent numerical mismatch is retained as a source-scope note for review.
+
+### Invariant 24 — Every displayed proposition has an epistemic status
+
+**Scope:** Research integrity
+
+Every rule or output is traceable as one of:
+
+- Explicit authoritative constraint
+- Authoritative synthesis or guidance
+- Derived design rule
+- Individual judgment
+- Historical inference
 - Software operating assumption
 - Experimental hypothesis
+- Voluntary practice
 
-**Counterexample (buggy behavior):** [TO BE POPULATED]
+An output assembled from several layers exposes all of them.
 
-**Test case:** [TO BE POPULATED]
+## 9. Ownership and continuity invariants
 
-### 12. Public prototype uses only fictional data until privacy model is reviewed
+### Invariant 25 — Ownership changes are effective-dated
 
-**Invariant:** No version released publicly should accept, store, display, or export real household financial data until:
-- A threat model has been documented
-- Encryption architecture has been specified
-- Key recovery procedures have been addressed
-- Data export and deletion capabilities have been tested
-- Couple permission and access control have been designed
-- A security review has been conducted
+**Scope:** Accounting integrity
 
-**Counterexample (buggy behavior):** Releasing a "demo" version that accepts real data for "testing."
+Marriage, gift, inheritance, separation, divorce, remarriage, and death do not retroactively rewrite ownership. They create effective-dated intervals and transition events.
 
-**Test case:** [TO BE POPULATED]
+### Invariant 26 — Switching joint and individual handling does not erase history
 
-### 13. No page implies institutional endorsement
+**Scope:** Accounting integrity and individual judgment
 
-**Invariant:** Every page, statement, export, video, or discourse material should clearly communicate:
-- This is a research project and learning tool, not official guidance
-- This represents one person's experiment, not a settled consensus
-- Consultation with appointed representatives remains essential
-- This is not a substitute for study of authoritative sources
+A prospective change from joint to individual handling, or the reverse, preserves:
 
-**Counterexample (buggy behavior):** [TO BE POPULATED]
+- Prior assessments
+- Obligation owners
+- Payment allocations
+- Ownership shares
+- Methodology effective dates
 
-**Test case:** [TO BE POPULATED]
+The system may generate a transition view but may not redistribute historical units automatically.
 
----
+### Invariant 27 — Migration is not an acquisition event
 
-## Test scenarios required before implementation is trusted
+**Scope:** Accounting integrity
 
-[PLACEHOLDER: COMPREHENSIVE TEST SUITE TO BE POPULATED]
+Changing residence or functional currency changes reporting context. It does not itself create wealth, dispose of assets, or reset prior assessments.
 
-The test scenarios from the original v0.1 (holding at unit value, multi-currency consolidation, historical payment with gold movement, joint/individual transitions, loss and recovery, etc.) should be formalized here with expected outputs under each methodology profile.
+## 10. Uncertainty and safety invariants
 
----
+### Invariant 28 — Estimated history remains visibly estimated
 
-**STATUS:** This document is not complete until specific test cases with expected results are written for each invariant. This is suitable work for a collaborative specification phase before coding begins.
+**Scope:** Research integrity
+
+If an assessment is reconstructed from a payment or opening balance, the record retains method, date range, evidence, author, and confidence. Estimated and observed values cannot share an indistinguishable status.
+
+### Invariant 29 — A public prototype uses fictional data
+
+**Scope:** Privacy safety
+
+No public prototype may accept or retain real household financial data until a threat model, encryption architecture, recovery process, permissions model, export/deletion behavior, and security review have been completed.
+
+### Invariant 30 — No output implies institutional endorsement or compliance status
+
+**Scope:** Spiritual and discourse safety
+
+Every page and export states that this is an independent learning project. The system does not rank people, expose payment histories, issue delinquency warnings, solicit payment, or describe uncertainty as noncompliance.
+
+## 11. Minimum fictional acceptance suite
+
+| Scenario | Primary invariants |
+| --- | --- |
+| $9,999, $10,000, $19,999, and $20,000 with `U = $10,000` | 1–3 |
+| Transfer between two accounts of one owner | 4 |
+| Split one holding into two rows | 5 |
+| One assessment paid immediately versus in installments | 7–10 |
+| Payment delayed while gold doubles | 7–10, 16 |
+| Unchanged assessed property across two periods | 12 |
+| Loss to $80,000 and recovery to $100,000 | 13 |
+| Gift from one owner to another | 14, 25 |
+| USD/EUR display switch with no economic event | 15–17 |
+| Gold-indexed credit when gold doubles and halves | 18–20 |
+| Annual-surplus and wealth-reconciliation lenses over identical events | 21–22 |
+| 1919 piastre arithmetic combined with whole-unit gate | 23 |
+| Marriage, divorce, and prospective method change | 25–26 |
+| Move between countries with retained foreign assets | 15–17, 27 |
+| Payment-only historical migration with uncertain assessment date | 28 |
+| Public fictional demo and methodology export | 29–30 |
+
+The calculation specification must supply exact inputs and expected outputs for every row before implementation is considered trustworthy.

@@ -37,7 +37,7 @@ The project is **not** intended to:
 
 The threshold is not an open question in this project. The authoritative guidance states that obligatory payment begins when assessable possessions reach the value of **19 mithqáls of gold**, approximately **69.2 grams**, and that subsequent liability arises on further complete units after applicable expenses and losses. Amounts below the first or a further complete unit do not create an obligation, although a person may contribute voluntarily.
 
-See [Q&A 8](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-aqdas/9), [Q&A 89–90](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-aqdas/10), the [codification](https://www.bahai.org/library/authoritative-texts/compilations/codification-law-huququllah/4), and the [1987 clarification on voluntary contribution below the threshold](https://www.bahai.org/library/authoritative-texts/compilations/huququllah-right-god/3).
+See [Q&A 8](https://www.bahai.org/r/491430606), [Q&A 89–90](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-aqdas/10), the [codification](https://www.bahai.org/library/authoritative-texts/compilations/codification-law-huququllah/4), and the [1987 clarification on voluntary contribution below the threshold](https://www.bahai.org/library/authoritative-texts/compilations/huququllah-right-god/3).
 
 ## Why gold appears: historical assessment units and indexed credit
 

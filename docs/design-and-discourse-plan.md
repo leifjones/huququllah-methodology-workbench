@@ -2,7 +2,7 @@
 
 **Status:** Pre-specification RFC
 
-**Audience:** People studying practical methodologies, reviewers familiar with the authoritative guidance, and future designers or implementers
+**Audience:** A general Bahá'í audience learning about the law in practice, reviewers familiar with the authoritative guidance, and future designers or implementers
 
 **Product posture:** Independent learning project; not official guidance or a payment service
 
@@ -261,7 +261,30 @@ Defer until the project specifies and reviews:
 - Logging that does not expose financial content
 - A clear boundary excluding payment transmission and compliance monitoring
 
-## 12. Experience principles
+## 12. General-audience accessibility
+
+The repository may preserve technical depth, but the videos, tools, examples, and explainers ultimately shared with others must be understandable to a general Bahá'í audience. They must not assume prior familiarity with accounting, software design, historical currencies, gold pricing, or the conversations that produced this RFC.
+
+Public-facing materials should use progressive disclosure:
+
+1. Begin with what Huqúqu'lláh is, its spiritual and social context, who may have an obligation, and the threshold.
+2. Introduce gold as the law-defined threshold measure before discussing historical units or indexed-credit experiments.
+3. Demonstrate one simple fictional example in a familiar local currency.
+4. Add expenses, prior payments, or carried remainders only after the basic example is clear.
+5. Place multi-currency histories, ownership transitions, provenance, and experimental hypotheses in optional deeper layers.
+
+Every public artifact should also:
+
+- Define specialized terms at first use and pair them with ordinary-language explanations
+- Distinguish “the guidance says,” “this person judged,” and “this experiment tests” without relying only on technical labels
+- Prefer concrete examples and visible calculation traces over unexplained formulas
+- Provide captions or transcripts for video, text alternatives for essential visuals, and layouts usable at common zoom and text sizes
+- Avoid making fluency with financial terminology a condition of participating in the discourse
+- Be tested with Bahá'ís who have not followed the project's development; confusion discovered in those sessions becomes design feedback
+
+A public artifact is not ready merely because its calculation is correct. A person unfamiliar with this project should be able to explain, in their own words, why the threshold matters, why gold appears, which parts are authoritative, and which parts are experimental.
+
+## 13. Experience principles
 
 The interface should:
 
@@ -275,11 +298,12 @@ The interface should:
 - Make voluntary amounts visibly separate from obligations
 - Avoid rankings, streaks, reminders framed as delinquency, or social comparison
 
-## 13. Phases
+## 14. Phases
 
 ### Phase 0 — Source synthesis and specification
 
 - Review the source-rule matrix
+- Track deliberate human review in the [human review checklist](human-review-checklist.md)
 - Resolve or explicitly defer open questions
 - Normalize schemas and formulas
 - Write fictional cases with expected outputs
@@ -291,6 +315,7 @@ The interface should:
 - Fictional scenarios only
 - Source overlays and comparison views
 - No personal financial storage
+- Plain-language testing with members of the intended general Bahá'í audience
 
 ### Phase 2 — Calculation-specification prototype
 
@@ -307,7 +332,7 @@ The interface should:
 
 - Proceed only after Phase 3 acceptance criteria are met
 
-## 14. Definition of specification readiness
+## 15. Definition of specification readiness
 
 Implementation is ready to begin only when:
 
@@ -320,5 +345,6 @@ Implementation is ready to begin only when:
 - Alternative lenses reconcile or explain divergence
 - The public prototype cannot accept real household data
 - Reviewers can reproduce every fictional output from immutable inputs
+- General-audience reviewers can identify the threshold, the reason gold appears, and the difference between guidance and experiment without relying on prior project context
 
 Until then, this repository remains an RFC and study aid rather than a calculator specification.

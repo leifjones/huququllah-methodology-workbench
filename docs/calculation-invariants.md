@@ -163,6 +163,19 @@ Within one currency, or after applying documented conversions for a shared repor
 
 If total remitted differs from credit toward obligations, the interface and any diagnostic API must expose the records and categories producing the difference. “The totals are different” is not a sufficient explanation.
 
+For example, for a $1,900 obligation:
+
+| Record | Remitted | Treatment | Obligation credit |
+| --- | ---: | --- | ---: |
+| Payment A | $1,000 | Allocated to obligation | $1,000 |
+| Payment B | $500 | Allocated to obligation | $500 |
+| Voluntary contribution | $100 | Explicitly excluded | $0 |
+| Voluntary contribution | $50 | Treatment unresolved | $0 |
+| Payment C | $400 | Intended as settlement, not yet allocated | $0 |
+| **Total** | **$2,050** |  | **$1,500** |
+
+The system should explain that the $550 difference consists of $100 explicitly excluded voluntary, $50 unresolved voluntary, and $400 unallocated settlement intent. The obligation has $400 remaining until that unallocated payment is allocated or otherwise corrected.
+
 ### Invariant 11 — Payment source and obligation owner are separate
 
 **Scope:** Accounting integrity and ownership
@@ -204,15 +217,17 @@ The system must distinguish an internal transfer from a gift, inheritance, sale,
 
 ## 6. Currency and rate invariants
 
-### Invariant 15 — Display currency changes presentation, not historical facts
+### Invariant 15 — Converted reporting views do not replace recorded currencies
 
 **Scope:** Accounting integrity
 
-**Given** an assessment stored in USD with documented date-A rates
-**When** a user selects EUR as the display currency
-**Then** the original USD amount, completed units, assessment date, and obligation remain unchanged. The EUR amount is a labeled conversion with its own rate provenance.
+Every individual amount is displayed in its recorded currency by default. A converted reporting value may be shown only as a labeled derivative with its conversion rate, source, date, and purpose; it must not replace or relabel the original fact.
 
-Switching back to USD must reproduce the original stored values, subject only to an explicitly stated display-rounding tolerance.
+**Given** an assessment stored in USD with documented date-A rates
+**When** a user requests a EUR converted reporting view
+**Then** the original USD amount, completed units, assessment date, and obligation remain unchanged. The EUR amount is labeled as a conversion with its own rate provenance.
+
+Returning to the recorded USD view must reproduce the original stored values, subject only to an explicitly stated conversion or display-rounding tolerance.
 
 ### Invariant 16 — Rate purpose is explicit
 
@@ -223,7 +238,7 @@ Every gold or FX observation identifies its purpose:
 - Assessment valuation
 - Payment conversion
 - Period-end reconciliation
-- Current display
+- Converted reporting view
 - Experimental current-gold translation
 
 A rate captured for one purpose cannot silently replace the rate used for another.
@@ -389,7 +404,7 @@ Every page and export states that this is an independent learning project. The s
 | Unchanged assessed property across two periods | 12 |
 | Loss to $80,000 and recovery to $100,000 | 13 |
 | Gift from one owner to another | 14, 25 |
-| USD/EUR display switch with no economic event | 15–17 |
+| USD/EUR converted reporting view with no economic event | 15–17 |
 | Gold-indexed credit when gold doubles and halves | 18–20 |
 | Annual-surplus and wealth-reconciliation lenses over identical events | 21–22 |
 | 1919 piastre arithmetic combined with whole-unit gate | 23 |

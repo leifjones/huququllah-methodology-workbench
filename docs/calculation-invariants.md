@@ -72,11 +72,31 @@ The voluntary amount must not silently reduce a future obligatory base or be des
 **When** it is represented as two $10,000 holdings without a change in ownership or classification
 **Then** completed units, obligatory principal, and obligation are identical.
 
+### Invariant 5a — Exchanging cash for an owned asset does not make property disappear
+
+**Scope:** Accounting integrity
+
+**Given** $10,000 cash within one assessment scope
+**When** it is exchanged for a vehicle with a reported current value of $10,000
+**Then** the decrease in cash and increase in the owned vehicle offset in the current property reconciliation. The vehicle's `subject`, `exempt`, or `unresolved` classification is recorded separately; the system must not assume that the purchase is an annual expense merely because cash left an account.
+
+**Failure:** Recording the $10,000 cash outflow as an expense while omitting the acquired vehicle from both holdings and any identified aggregate, without an explicit classification or selected-method treatment.
+
+### Invariant 5b — Aggregating small possessions is transparent
+
+**Scope:** Accounting integrity and individual judgment
+
+**Given** $120 of ordinary small possessions
+**When** they are represented as individual rows or as one `ordinary personal goods` aggregate with the same classification
+**Then** the selected calculation reaches the same result. The aggregate records its estimate, date, and classification rationale.
+
+**Failure:** Using aggregation to hide a relevant value, double-count a group and its component rows, or treat an aggregation decision as an authoritative exemption.
+
 ### Invariant 6 — Reclassification is explicit and effective-dated
 
 **Scope:** Accounting integrity and individual judgment
 
-Changing an item from subject to exempt, or the reverse, requires a dated classification decision, rationale, and identity of the person making it. The system may recalculate a view but may not rewrite the earlier classification silently.
+Changing an item from subject to exempt, or the reverse, requires a dated classification decision, rationale, and identity of the person making it. Treating a separately valued component of a mixed or upgraded holding differently is also an explicit individual bookkeeping choice, not a default formula. The system may recalculate a view but may not rewrite the earlier classification silently.
 
 ## 4. Assessment and settlement invariants
 
@@ -148,6 +168,8 @@ A spouse or shared account may supply funds for a payment without silently chang
 **Then** it is not new assessable principal merely because another snapshot was taken.
 
 A new assessment requires a source-grounded event such as qualifying augmentation, realized profit, recovery beyond prior loss, or transfer to another owner.
+
+The necessary assessment, obligation, settlement, and carried-principal history may be held at an aggregate or event level. A current asset row does not need its own prior-payment or “purified” flag unless an optional link is useful to explain a material transfer or replacement.
 
 ### Invariant 13 — Recovery of prior loss is distinguished from augmentation
 
@@ -348,7 +370,7 @@ Every page and export states that this is an independent learning project. The s
 | --- | --- |
 | $9,999, $10,000, $19,999, and $20,000 with `U = $10,000` | 1–3 |
 | Transfer between two accounts of one owner | 4 |
-| Split one holding into two rows | 5 |
+| Split one holding into two rows; exchange cash for an asset; aggregate ordinary small possessions | 5, 5a–5b |
 | One assessment paid immediately versus in installments | 7–10 |
 | Payment delayed while gold doubles | 7–10, 16 |
 | Unchanged assessed property across two periods | 12 |

@@ -41,7 +41,7 @@ See [Q&A 8](https://www.bahai.org/r/491430606), [Q&A 89–90](https://www.bahai.
 
 ## Why gold appears: historical assessment units and indexed credit
 
-The law defines its threshold using the value of **19 mithqáls of gold**. Gold therefore enters this project first as the measuring standard named in the law—not because a person must own gold, pay in gold, or continually revalue all wealth in gold. A calculation expressed in a local currency must document the gold price and valuation date it used.
+The law defines its threshold using the value of **19 mithqáls of gold**. Gold therefore enters this project first as the measuring standard named in the law—not because a person must own gold, pay in gold, or continually revalue all wealth in gold. Expressing the threshold in a local currency involves a gold-valuation source and a valuation-date choice. This workbench currently proposes recording those choices so that a displayed calculation can be reproduced and discussed; the authoritative texts cited here do not settle the convention.
 
 The creator's gold-denominated experiment uses that law-defined threshold as a meter stick: it records how many **completed nineteen-mithqál assessment units** became assessable at a historical assessment. The purpose of that record is to stay close to the law's base unit, not primarily to preserve purchasing power.
 

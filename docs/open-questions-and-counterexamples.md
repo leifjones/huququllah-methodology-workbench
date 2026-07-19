@@ -118,7 +118,7 @@ Many existing ledgers will know the payment date and amount but not the original
 
 - Record the payment without a reconstructed unit count
 - Store a range based on plausible assessment dates
-- Permit a user-supplied estimated assessment with rationale
+- Permit a user-supplied estimated assessment with optional rationale
 - Mark a migrated gold-equivalent value as payment-date metadata only
 
 Every reconstruction needs provenance and confidence.
@@ -165,7 +165,7 @@ A person may own assets and receive income in several currencies. Converting the
 - Original amount and currency
 - Date and economic purpose
 - Owner
-- Classification and rationale
+- Classification and any optional rationale
 - Any rate used, with its purpose and source
 
 Native-currency subledgers can feed a consolidated personal view without becoming separate spiritual obligations. Whether a particular consolidation method is appropriate remains a methodology question.
@@ -239,7 +239,7 @@ Many users will lack a complete event history. Possible initialization modes are
 | **Estimated range** | Preserve minimum and maximum plausible prior assessed principal or units | Cannot be displayed as exact |
 | **Prospective-only experiment** | Begin recording now without asserting that earlier obligation is settled | Not a historical clearance statement |
 
-The user should be able to revise an estimate through a correction event while preserving the earlier version and rationale.
+The user should be able to revise an uncommitted estimate freely or amend a committed estimate with a preview of dependent effects. An amendment may preserve the earlier committed version while making the revision operative; a rationale is optional. Full deletion remains a separate user-controlled action whose dependent effects must be resolved consistently.
 
 ## 8. Questions for focused consultation
 
@@ -250,6 +250,7 @@ The most useful consultation questions are narrow and testable:
 3. What valuation date is appropriate when the economic event, assessment, and payment occur on different dates?
 4. How should carried sub-unit remainder be represented across currency changes?
 5. What principles should guide allocation of prior joint history after divorce or a move to individual handling?
-6. Is the proposed scope treatment of the 1919 piastre example sound?
+6. Can a voluntary contribution ever be credited toward a later obligation, and if so, under what conditions and documentation?
+7. Is the proposed scope treatment of the 1919 piastre example sound?
 
 Answers should be added to the source-rule matrix with their provenance and date, not absorbed invisibly into a formula.

@@ -44,7 +44,7 @@
 - [ ] Methodology taxonomy and source-grounded constraints
 - [ ] Historical units and indexed-credit hypothesis
 - [ ] Assessment, obligation, payment, and allocation model
-- [ ] Event, provenance, and partial-unit model
+- [ ] Event, provenance, asset classification, materiality, and partial-unit model
 - [ ] Multi-currency strategy
 - [ ] Ownership and household transitions
 - [ ] Public explorer, private ledger, and privacy boundary
@@ -75,6 +75,7 @@
 - [ ] Scope vocabulary and fictional-unit convention
 - [ ] Threshold, whole-unit, and voluntary-payment invariants
 - [ ] Financial identity and classification invariants
+- [ ] Once-only principal and loss invariants
 - [ ] Assessment, settlement, and allocation invariants
 - [ ] Multi-currency and rate-provenance invariants
 - [ ] Ownership and household-transition invariants
@@ -88,3 +89,4 @@ The log may record both completed human reviews and review-state maintenance. On
 | Date | Event | Person or agent | Scope | Outcome or follow-up | Link or notes |
 | --- | --- | --- | --- | --- | --- |
 | 2026-07-18 | Ledger structure changed | Codex (agent) | `AGENTS.md`; checklist policy and coverage | Added cross-agent maintenance rules and user-alert requirements; all new review scopes remain unchecked | [PR #2](https://github.com/leifjones/huququllah-methodology-workbench/pull/2) |
+| 2026-07-18 | Ledger coverage updated | Codex (agent) | Design-plan event/provenance and calculation-invariant scopes | Expanded the existing unchecked design-plan scope to name asset classification and materiality; added missing coverage for once-only principal and loss invariants. No human review is asserted. | Follow-up PR pending |

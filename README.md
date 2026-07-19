@@ -10,7 +10,7 @@
 
 Huqúqu'lláh (the “Right of God”) is a spiritual law revealed by Bahá'u'lláh that connects material life, individual conscience, and service to humanity. The authoritative codification describes it as a means of purifying wealth and says that its implications include the elimination of extremes of wealth and poverty and a more equitable distribution of resources. Its calculation and payment remain a matter of conscience between the individual and God; this workbench is concerned with learning and recordkeeping, not enforcement.
 
-The law applies to individual Bahá'ís worldwide, but an **obligatory amount arises only when a person's assessable possessions—after applicable exemptions, expenses, and losses—reach the prescribed threshold**; debts and ability to pay are also relevant to settlement. It is therefore not a charge on every paycheck or on every person regardless of circumstances. See the [preamble and determining provisions of the authoritative codification](https://www.bahai.org/library/authoritative-texts/the-universal-house-of-justice/messages/20001126_001/1).
+The law applies to individual Bahá'ís worldwide, but an **obligatory amount arises only when a person's assessable possessions—after applicable exemptions, expenses, and losses—reach the prescribed threshold**; debts and ability to pay are also relevant to settlement. It is therefore not a charge on every paycheck or on every person regardless of circumstances. See the [preamble and determining provisions of the authoritative codification](https://www.bahai.org/r/769134373).
 
 ## Purpose
 

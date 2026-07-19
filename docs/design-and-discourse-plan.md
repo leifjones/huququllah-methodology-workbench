@@ -179,6 +179,33 @@ Holdings snapshots are useful reconciliations but cannot explain how state chang
 
 Snapshots should reconcile to event history. They should not replace provenance.
 
+### 7.1 Current holdings are not a purification inventory
+
+A `Holding` is a current record of an owned position: its owner or ownership share, category, reported value, valuation evidence, and current classification decision. It does **not** need a row-level `paid`, `purified`, or “already assessed” flag.
+
+The once-only principle is primarily represented by the history of `AssessmentEvent`, `Obligation`, `PaymentEvent`, and `PaymentAllocation` records, together with the carried assessed-principal baseline required by the selected calculation specification. This allows cash that was part of a settled prior assessment to be exchanged for an object without treating the object itself as the carrier of a permanent payment status. A holding's present classification is a separate question from whether an earlier obligation was settled.
+
+Where a particular transfer, replacement, jointly owned item, gift, inheritance, or ownership change makes tracing helpful, the workbench may retain links between a holding and the events or assessments that explain it. Those links are optional explanatory provenance, not required data on every ordinary asset row.
+
+### 7.2 Asset classification, current value, and materiality
+
+The texts name the residence and needed household furnishings as exempt, while stating that the **value** of other forms of property reaches the threshold when it reaches the prescribed amount. See [Q&A 8](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-aqdas/9) and [Q&A 42](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-aqdas/9). They do not supply an exhaustive asset catalog, a de-minimis dollar amount, or a formula for dividing a mixed or upgraded item into necessary and unnecessary components.
+
+The workbench should therefore let a person record, for any material holding or group of holdings:
+
+- A current classification: `subject`, `exempt`, or `unresolved`
+- The person's rationale, effective date, and any source or consultation note they elect to keep
+- An optional reported current or reconciliation value with its evidence and date
+- Whether the line is a single item or an aggregate category
+
+This is a recordkeeping model, not a ruling engine. The current value of a holding is different from its original purchase price, and a decision to aggregate small possessions is a choice of data granularity, not an undocumented declaration that they are exempt.
+
+Examples of the intended handling, not answers for another person:
+
+- A material leisure boat is not a named exemption. The workbench can record it as a current owned asset and expose a person's `subject` or `unresolved` classification and rationale; it must not imply that its classification is an institutional determination.
+- Ordinary small possessions, such as pens, need not appear as individual rows. A person may use an `ordinary personal goods` aggregate with a plainly labeled estimate if they wish to include that value. The aggregation must not silently double-count or conceal a value that the selected method treats as relevant.
+- A vehicle should ordinarily be recorded as one current asset at its current value. If two cars are needed but one includes $5,000 of desired features, the source does not provide a component-splitting formula. The workbench should retain the whole-vehicle value and rationale; a separate component treatment, if a person uses one, is an explicit individual bookkeeping choice rather than a derived rule.
+
 ## 8. Partial units and ordinary rounding
 
 The whole-unit gate is a source constraint, not a cosmetic rounding preference. The specification must distinguish:

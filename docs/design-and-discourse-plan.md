@@ -49,7 +49,7 @@ The workbench must not place unlike concepts in a single menu of competing “me
 | **Individual judgment** | A decision expressly or practically left to conscience | Which expenses are necessary; timing within permitted leeway; joint or individual handling by spouses | Recorded with effective date; rationale is optional |
 | **Experimental hypothesis** | A proposed transformation not established as a rule | Translating historical units at today's gold price as a deductible indexed credit | Opt-in research view with warnings and counterexamples |
 | **Voluntary practice** | Giving beyond what is presently obligatory | Contributing below the threshold; paying 19% of selected income regardless of threshold | Reported separately from obligation |
-| **Software operating assumption** | A technical choice needed to calculate or display | Rate provider; time zone; decimal precision; display currency | Versioned and reproducible; never described as source law |
+| **Software operating assumption** | A technical choice needed to calculate or display | Rate provider; time zone; decimal precision; converted reporting view | Versioned and reproducible; never described as source law |
 
 An “income orientation” and a “wealth orientation” may be bookkeeping lenses over the same history rather than competing substantive laws. Complete, consistently classified data should either reconcile or reveal precisely why they do not.
 
@@ -242,13 +242,15 @@ These must not be collapsed into a user setting called “rounding.”
 
 ### Preserve native facts
 
-Every event retains its original amount and currency. A reporting currency is a view, not a rewrite. Rate snapshots retain their provenance and purpose, such as:
+Every event retains its original amount and currency, and is displayed in that recorded currency by default. A converted reporting view is a labeled derivative, not a rewrite or relabeling of the original fact. Any converted amount must show its rate provenance and purpose, such as:
 
 - Assessment valuation
 - Payment conversion
 - Period-end reconciliation
-- Presentational display
+- Converted reporting view
 - Experimental current-gold translation
+
+For example, a recorded `€1,000` may be accompanied by `≈ $1,085 reporting value` using an explicitly identified `1 EUR = 1.085 USD` rate, source, date, and purpose. The converted value must not appear alone as though the event had been recorded in USD. Aggregates spanning currencies may use a reporting currency only when the conversion convention is visible and the underlying native amounts remain available.
 
 ### Avoid silent phantom gains
 
@@ -345,7 +347,7 @@ The interface should:
 - Show why each asset or event was classified
 - Distinguish fact, source rule, derivation, judgment, and hypothesis visually and in exports
 - Permit “unresolved” rather than forcing a false binary decision
-- Preserve original values beside converted views
+- Display each recorded amount in its recorded currency by default; preserve original values beside any converted reporting view
 - Explain divergences between methods
 - Explain differences among total remitted, obligation credit, voluntary excluded or unresolved amounts, unallocated amounts, reversals, and currency effects
 - Make draft, preview, commit, amendment, undo, and full-deletion states understandable without accounting or software vocabulary

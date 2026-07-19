@@ -46,7 +46,7 @@ The workbench must not place unlike concepts in a single menu of competing “me
 | --- | --- | --- | --- |
 | **Authoritative constraint** | A principle stated directly in the authoritative guidance | Initial 19-mithqál threshold; 19% rate; whole-unit treatment; once-only treatment of principal | Always visible; not silently configurable |
 | **Bookkeeping lens** | A way to organize the same financial history | Accumulation-of-savings reconciliation; wealth-balance reconciliation; transaction/provenance ledger | May be compared; should reconcile or explain divergence |
-| **Individual judgment** | A decision expressly or practically left to conscience | Which expenses are necessary; timing within permitted leeway; joint or individual handling by spouses | Recorded with rationale and effective date |
+| **Individual judgment** | A decision expressly or practically left to conscience | Which expenses are necessary; timing within permitted leeway; joint or individual handling by spouses | Recorded with effective date; rationale is optional |
 | **Experimental hypothesis** | A proposed transformation not established as a rule | Translating historical units at today's gold price as a deductible indexed credit | Opt-in research view with warnings and counterexamples |
 | **Voluntary practice** | Giving beyond what is presently obligatory | Contributing below the threshold; paying 19% of selected income regardless of threshold | Reported separately from obligation |
 | **Software operating assumption** | A technical choice needed to calculate or display | Rate provider; time zone; decimal precision; display currency | Versioned and reproducible; never described as source law |
@@ -130,9 +130,13 @@ A payment records:
 
 - Payment date
 - Amount and currency remitted
+- Purpose: settlement of an identified obligation, voluntary contribution, or unresolved
+- For a voluntary contribution, whether it is explicitly excluded from any future obligation credit
 - Payment channel or receipt reference, if the user elects to keep it
 - Conversion evidence when paid in a currency different from the obligation
 - Notes and provenance
+
+A user-facing option such as “Do not count this toward any future amount due” may record an explicit exclusion. Leaving that option unset must not silently assert that the voluntary contribution is eligible for future credit; it remains unresolved unless a reviewed source-grounded treatment establishes and records a different consequence.
 
 ### Assessment-payment allocation
 
@@ -146,6 +150,8 @@ An allocation links settlement value to an obligation. It permits:
 
 A payment made after gold has moved does not change the assessment. Deriving units from `payment ÷ 19% ÷ payment-date threshold value` is invalid when the payment date differs from the assessment date.
 
+Payment reporting should reconcile **total remitted** separately from **credit allocated toward obligations**. The explanation should identify obligatory allocations, voluntary amounts explicitly excluded from future credit, voluntary amounts whose treatment is unresolved, unallocated settlement-intent amounts, corrections or reversals, and any documented currency conversion. No difference should appear as an unexplained residual.
+
 ### Incomplete historical records
 
 If only a payment is known, the tool may store an **estimated assessment reconstruction**, but it must retain:
@@ -157,6 +163,18 @@ If only a payment is known, the tool may store an **estimated assessment reconst
 - Who entered the estimate and when
 - A visible warning that the unit count was inferred, not observed
 
+### Draft, preview, commit, amendment, and deletion
+
+“Just show me what this would look like” is a drafting need, not necessarily a change to historical records. The workbench should distinguish:
+
+- **Draft:** freely editable, undoable, and deletable working data with no required revision history
+- **Preview:** calculated consequences of a draft without changing committed records
+- **Committed assessment:** a reproducible dated snapshot of inputs, judgments, rates, and results
+- **Amendment:** a correction or reconsideration that previews affected later records and, when confirmed, supersedes a committed version without erasing what it previously showed
+- **Full deletion:** a separate user-controlled privacy action that removes the selected record and consistently deletes, invalidates, or recalculates dependent results
+
+Ordinary undo may stop at the most recent commit boundary. An attempted in-place edit to an older committed assessment should normally redirect to an amendment flow that distinguishes correcting a fact, reconsidering a judgment, and applying newly available information. A rationale may be supplied, omitted, or marked unknown. Full deletion remains available as a deliberate operation rather than being disguised as an amendment.
+
 ## 7. Event and provenance model
 
 Holdings snapshots are useful reconciliations but cannot explain how state changed. The conceptual model should include:
@@ -167,15 +185,17 @@ Holdings snapshots are useful reconciliations but cannot explain how state chang
 | `Participant` | Person whose individual obligation or joint arrangement is being described |
 | `FinancialEvent` | Acquisition, income, expense, transfer, gift, inheritance, disposal, gain, loss, recovery, or correction |
 | `Holding` | Current derived position linked to the events that produced it |
-| `ClassificationDecision` | Subject/exempt/unresolved status, rationale, source, confidence, and effective date |
+| `ClassificationDecision` | Subject/exempt/unresolved status, optional rationale, source, confidence, and effective date |
 | `OwnershipInterval` | Owner and share over an effective date range |
 | `AssessmentEvent` | Reproducible historical assessment and completed units |
 | `Obligation` | Amount arising from an assessment and its settlement status |
-| `PaymentEvent` | Actual remittance fact |
+| `PaymentEvent` | Actual remittance fact, purpose, and voluntary-credit treatment |
 | `PaymentAllocation` | Amount of a payment applied to an obligation |
+| `ScenarioDraft` | Freely mutable working state used for previews before commitment |
+| `Amendment` | A superseding correction or reconsideration linked to an earlier committed record |
 | `RateSnapshot` | Gold or FX observation with provider, instrument, timestamp, unit, and retrieval evidence |
 | `MethodologyProfile` | Versioned set of bookkeeping and operating choices |
-| `DecisionRecord` | Personal judgment, reason, alternatives considered, and effective date |
+| `DecisionRecord` | Personal judgment, optional reason and alternatives, and effective date |
 
 Snapshots should reconcile to event history. They should not replace provenance.
 
@@ -194,7 +214,7 @@ The texts name the residence and needed household furnishings as exempt, while s
 The workbench should therefore let a person record, for any material holding or group of holdings:
 
 - A current classification: `subject`, `exempt`, or `unresolved`
-- The person's rationale, effective date, and any source or consultation note they elect to keep
+- An optional rationale, effective date, and any source or consultation note the person elects to keep
 - An optional reported current or reconciliation value with its evidence and date
 - Whether the line is a single item or an aggregate category
 
@@ -202,9 +222,9 @@ This is a recordkeeping model, not a ruling engine. The current value of a holdi
 
 Examples of the intended handling, not answers for another person:
 
-- A material leisure boat is not a named exemption. The workbench can record it as a current owned asset and expose a person's `subject` or `unresolved` classification and rationale; it must not imply that its classification is an institutional determination.
+- A material leisure boat is not a named exemption. The workbench can record it as a current owned asset and expose a person's `subject` or `unresolved` classification and any rationale they choose to record; it must not imply that its classification is an institutional determination.
 - Ordinary small possessions, such as pens, need not appear as individual rows. A person may use an `ordinary personal goods` aggregate with a plainly labeled estimate if they wish to include that value. The aggregation must not silently double-count or conceal a value that the selected method treats as relevant.
-- A vehicle should ordinarily be recorded as one current asset at its current value. If two cars are needed but one includes $5,000 of desired features, the source does not provide a component-splitting formula. The workbench should retain the whole-vehicle value and rationale; a separate component treatment, if a person uses one, is an explicit individual bookkeeping choice rather than a derived rule.
+- A vehicle should ordinarily be recorded as one current asset at its current value. If two cars are needed but one includes $5,000 of desired features, the source does not provide a component-splitting formula. The workbench should retain the whole-vehicle value and any optional rationale; a separate component treatment, if a person uses one, is an explicit individual bookkeeping choice rather than a derived rule.
 
 ## 8. Partial units and ordinary rounding
 
@@ -288,6 +308,12 @@ Defer until the project specifies and reviews:
 - Logging that does not expose financial content
 - A clear boundary excluding payment transmission and compliance monitoring
 
+### Agent-readable diagnostics
+
+A future private ledger may expose a permission-scoped, read-only diagnostic interface—potentially through MCP or an equivalent protocol—so a user can ask questions such as, “Why does my total remitted not equal the credit applied toward obligations?” The interface should return a structured reconciliation and point to the exact records and user-controlled treatments that explain the difference.
+
+This possibility does not authorize agent access by default. It belongs after the privacy and security work for the private ledger and should require explicit user authorization, data minimization, clear workspace scope, revocable access, and no write capability unless separately designed and approved. The same explanation must remain available directly in the product so that an agent is helpful rather than required.
+
 ## 12. General-audience accessibility
 
 The repository may preserve technical depth, but the videos, tools, examples, and explainers ultimately shared with others must be understandable to a general Bahá'í audience. They must not assume prior familiarity with accounting, software design, historical currencies, gold pricing, or the conversations that produced this RFC.
@@ -321,6 +347,8 @@ The interface should:
 - Permit “unresolved” rather than forcing a false binary decision
 - Preserve original values beside converted views
 - Explain divergences between methods
+- Explain differences among total remitted, obligation credit, voluntary excluded or unresolved amounts, unallocated amounts, reversals, and currency effects
+- Make draft, preview, commit, amendment, undo, and full-deletion states understandable without accounting or software vocabulary
 - Use calm, non-pressuring language
 - Make voluntary amounts visibly separate from obligations
 - Avoid rankings, streaks, reminders framed as delinquency, or social comparison

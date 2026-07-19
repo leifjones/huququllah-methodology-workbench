@@ -4,17 +4,20 @@
 
 **Purpose:** Make visible what people have deliberately read and considered. An unchecked box means that no complete human review has yet been recorded; it does not mean the material is wrong. A checked box records review, not official approval or institutional endorsement.
 
-## How to record a review
+## How to record and maintain review state
 
-- Check a box only after reviewing the entire named scope.
+- A human should check a box only after reviewing the entire named scope.
 - Add the reviewer, date, outcome, and a link or short note in the review log.
 - Record focused comments without checking a whole-file box unless the whole file was reviewed.
 - Reopen a checkbox when a later change materially affects the reviewed scope.
 - Use the Git history and linked pull request for the exact version reviewed.
+- Agents must follow the maintenance and user-alert protocol in [`AGENTS.md`](../AGENTS.md). Agents may reopen stale review state and maintain checklist coverage, but may never award human review to themselves.
+- Routine changes to checkboxes and the log do not invalidate review of this checklist. Changes to its policy, scope groupings, or meaning do.
 
 ## Whole-file review
 
 - [ ] `README.md`
+- [ ] `AGENTS.md`
 - [ ] `docs/design-and-discourse-plan.md`
 - [ ] `docs/source-rule-matrix.md`
 - [ ] `docs/open-questions-and-counterexamples.md`
@@ -22,6 +25,10 @@
 - [ ] `docs/human-review-checklist.md`
 
 ## Section review
+
+### `AGENTS.md`
+
+- [ ] Human review ledger maintenance and user-alert rules
 
 ### `README.md`
 
@@ -76,6 +83,8 @@
 
 ## Review log
 
-| Date | Reviewer | Scope | Outcome or follow-up | Link or notes |
-| --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+The log may record both completed human reviews and review-state maintenance. Only an event explicitly identified as a completed human review can support a checked box.
+
+| Date | Event | Person or agent | Scope | Outcome or follow-up | Link or notes |
+| --- | --- | --- | --- | --- | --- |
+| 2026-07-18 | Ledger structure changed | Codex (agent) | `AGENTS.md`; checklist policy and coverage | Added cross-agent maintenance rules and user-alert requirements; all new review scopes remain unchecked | [PR #2](https://github.com/leifjones/huququllah-methodology-workbench/pull/2) |

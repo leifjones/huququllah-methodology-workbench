@@ -17,7 +17,7 @@
 ## Whole-file review
 
 - [ ] `README.md`
-- [ ] `AGENTS.md`
+- [x] `AGENTS.md`
 - [ ] `docs/design-and-discourse-plan.md`
 - [ ] `docs/source-rule-matrix.md`
 - [ ] `docs/open-questions-and-counterexamples.md`

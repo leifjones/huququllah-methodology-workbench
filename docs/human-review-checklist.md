@@ -28,11 +28,11 @@
 
 ### `AGENTS.md`
 
-- [ ] Human review ledger maintenance and user-alert rules
+- [x] Human review ledger maintenance and user-alert rules
 
 ### `README.md`
 
-- [ ] Huqúqu'lláh in brief, purpose, and project boundaries
+- [x] Huqúqu'lláh in brief, purpose, and project boundaries
 - [ ] Explicit threshold constraint
 - [ ] Why gold appears, historical units, and indexed-credit distinction
 - [ ] Status, products, and research questions

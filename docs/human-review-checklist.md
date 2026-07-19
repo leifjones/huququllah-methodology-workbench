@@ -43,11 +43,11 @@
 - [ ] Desired contribution and non-negotiable posture
 - [ ] Methodology taxonomy and source-grounded constraints
 - [ ] Historical units and indexed-credit hypothesis
-- [ ] Assessment, obligation, payment, and allocation model
+- [ ] Assessment, obligation, payment, allocation, voluntary-treatment, and record-lifecycle model
 - [ ] Event, provenance, asset classification, materiality, and partial-unit model
 - [ ] Multi-currency strategy
 - [ ] Ownership and household transitions
-- [ ] Public explorer, private ledger, and privacy boundary
+- [ ] Public explorer, private ledger, privacy, and agent-access boundary
 - [ ] General-audience accessibility and experience principles
 - [ ] Phases and specification-readiness criteria
 
@@ -69,14 +69,15 @@
 - [ ] Multi-currency, migration, and ownership questions
 - [ ] Baseline reconstruction and alternative-lens reconciliation
 - [ ] Piastre source-scope case
+- [ ] Focused consultation questions
 
 ### `docs/calculation-invariants.md`
 
 - [ ] Scope vocabulary and fictional-unit convention
 - [ ] Threshold, whole-unit, and voluntary-payment invariants
-- [ ] Financial identity and classification invariants
+- [ ] Financial identity, classification, and record-lifecycle invariants
 - [ ] Once-only principal and loss invariants
-- [ ] Assessment, settlement, and allocation invariants
+- [ ] Assessment, settlement, allocation, and payment-reconciliation invariants
 - [ ] Multi-currency and rate-provenance invariants
 - [ ] Ownership and household-transition invariants
 - [ ] Hypothesis, source-status, and privacy invariants
@@ -89,5 +90,6 @@ The log may record both completed human reviews and review-state maintenance. On
 | Date | Event | Person or agent | Scope | Outcome or follow-up | Link or notes |
 | --- | --- | --- | --- | --- | --- |
 | 2026-07-18 | Ledger structure changed | Codex (agent) | `AGENTS.md`; checklist policy and coverage | Added cross-agent maintenance rules and user-alert requirements; all new review scopes remain unchecked | [PR #2](https://github.com/leifjones/huququllah-methodology-workbench/pull/2) |
-| 2026-07-18 | Ledger coverage updated | Codex (agent) | Design-plan event/provenance and calculation-invariant scopes | Expanded the existing unchecked design-plan scope to name asset classification and materiality; added missing coverage for once-only principal and loss invariants. No human review is asserted. | Follow-up PR pending |
-| 2026-07-19 | Invariant convention clarified | Codex (agent) | Calculation-invariant scope vocabulary and fictional-unit convention | Clarified that simple rows are independent fixed-`U` cases, while later invariants address changing threshold values, currencies, dates, and valuation conventions. No human review is asserted. | Follow-up PR pending |
+| 2026-07-18 | Ledger coverage updated | Codex (agent) | Design-plan event/provenance and calculation-invariant scopes | Expanded the existing unchecked design-plan scope to name asset classification and materiality; added missing coverage for once-only principal and loss invariants. No human review is asserted. | [PR #3](https://github.com/leifjones/huququllah-methodology-workbench/pull/3) |
+| 2026-07-19 | Invariant convention clarified | Codex (agent) | Calculation-invariant scope vocabulary and fictional-unit convention | Clarified that simple rows are independent fixed-`U` cases, while later invariants address changing threshold values, currencies, dates, and valuation conventions. No human review is asserted. | [PR #4](https://github.com/leifjones/huququllah-methodology-workbench/pull/4) |
+| 2026-07-19 | Ledger coverage expanded | Codex (agent) | Payment treatment, record lifecycle, reconciliation, agent-access, and focused-consultation scopes | Expanded existing unchecked scopes for voluntary-credit treatment, drafts and amendments, explainable payment reconciliation, permission-scoped agent diagnostics, and the fictional acceptance suite; added missing coverage for focused consultation questions. Corrected stale pending-PR references. No human review is asserted. | [PR #4](https://github.com/leifjones/huququllah-methodology-workbench/pull/4) |

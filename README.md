@@ -6,6 +6,12 @@
 
 **Status:** Conceptual investigation; source synthesis and calculation specification required before implementation
 
+## Huqúqu'lláh in brief
+
+Huqúqu'lláh (the “Right of God”) is a spiritual law revealed by Bahá'u'lláh that connects material life, individual conscience, and service to humanity. The authoritative codification describes it as a means of purifying wealth and says that its implications include the elimination of extremes of wealth and poverty and a more equitable distribution of resources. Its calculation and payment remain a matter of conscience between the individual and God; this workbench is concerned with learning and recordkeeping, not enforcement.
+
+The law applies to individual Bahá'ís worldwide, but an **obligatory amount arises only when a person's assessable possessions—after applicable exemptions, expenses, and losses—reach the prescribed threshold**; debts and ability to pay are also relevant to settlement. It is therefore not a charge on every paycheck or on every person regardless of circumstances. See the [preamble and determining provisions of the authoritative codification](https://www.bahai.org/library/authoritative-texts/the-universal-house-of-justice/messages/20001126_001/1).
+
 ## Purpose
 
 This project is a learning-oriented workspace for exploring how people may understand, describe, and keep records related to the law of Huqúqu'lláh. It aims to help individuals and couples:
@@ -33,9 +39,11 @@ The threshold is not an open question in this project. The authoritative guidanc
 
 See [Q&A 8](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-aqdas/9), [Q&A 89–90](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-aqdas/10), the [codification](https://www.bahai.org/library/authoritative-texts/compilations/codification-law-huququllah/4), and the [1987 clarification on voluntary contribution below the threshold](https://www.bahai.org/library/authoritative-texts/compilations/huququllah-right-god/3).
 
-## Historical assessment units and indexed credit
+## Why gold appears: historical assessment units and indexed credit
 
-The creator's gold-denominated orientation was intended to use the law's own threshold as a meter stick: to record how many **completed nineteen-mithqál assessment units** became assessable at a historical assessment—not primarily to preserve purchasing power.
+The law defines its threshold using the value of **19 mithqáls of gold**. Gold therefore enters this project first as the measuring standard named in the law—not because a person must own gold, pay in gold, or continually revalue all wealth in gold. A calculation expressed in a local currency must document the gold price and valuation date it used.
+
+The creator's gold-denominated experiment uses that law-defined threshold as a meter stick: it records how many **completed nineteen-mithqál assessment units** became assessable at a historical assessment. The purpose of that record is to stay close to the law's base unit, not primarily to preserve purchasing power.
 
 Three facts must remain separate:
 
@@ -69,6 +77,7 @@ Two possible products are intentionally separated:
 - [Source-rule matrix](docs/source-rule-matrix.md) — what the sources explicitly establish, what each example illustrates, and what remains unresolved
 - [Open questions and counterexamples](docs/open-questions-and-counterexamples.md) — indexed-credit counterexamples, delayed-payment failure, the 1919 piastre example, and continuity across currencies and ownership changes
 - [Calculation invariants](docs/calculation-invariants.md) — correctness constraints and fictional acceptance tests for a future specification
+- [Human review checklist](docs/human-review-checklist.md) — an explicit record of which files and sections people have deliberately reviewed
 
 ## Central research questions
 

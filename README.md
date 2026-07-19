@@ -1,142 +1,108 @@
 # Huqúqu'lláh Methodology Workbench
 
-**Pre-specification RFC — Independent, non-institutional research project**  
-**Date:** July 18, 2026  
-**Status:** Conceptual investigation; requires validation before implementation
+**Pre-specification RFC — independent, non-institutional research project**
 
----
+**Date:** July 18, 2026
 
-## Project Purpose
+**Status:** Conceptual investigation; source synthesis and calculation specification required before implementation
 
-This project seeks to develop a learning-oriented workspace and discourse framework that helps individuals and couples:
+## Purpose
 
-1. **Learn how the law of Huqúqu'lláh may be carried out in practice** — starting with study of authoritative guidance.
-2. **Describe their own methodology clearly** — so another person can understand their choices.
-3. **Distinguish authoritative guidance, personal judgment, bookkeeping method, and market assumptions** — making each layer visible.
-4. **Maintain understandable historical records** — without reconstructing years of values, rates, and payments from memory.
-5. **Compare different approaches** — and identify precisely where methods diverge, without implying that all approaches are equally grounded in source texts.
-6. **Develop shared language** — for discussing how the law applies in practice.
-7. **Share learning while preserving privacy** — avoiding pressure, solicitation, or financial surveillance.
+This project is a learning-oriented workspace for exploring how people may understand, describe, and keep records related to the law of Huqúqu'lláh. It aims to help individuals and couples:
+
+1. Study the authoritative guidance before selecting a bookkeeping method.
+2. Describe their methodology so another person can understand its sources, judgments, and assumptions.
+3. Distinguish authoritative constraints, bookkeeping lenses, personal judgments, market-rate assumptions, and experimental hypotheses.
+4. Preserve reproducible historical records without reconstructing years of values and payments from memory.
+5. Compare approaches and identify why their results differ.
+6. Develop shared language for exchanging learning without creating pressure or financial surveillance.
 
 The project is **not** intended to:
 
-- Adjudicate which methodology another person must use
-- Replace study of authoritative texts or conversation with others who have studied the law
+- Adjudicate what methodology another person must use
+- Replace study of the authoritative texts or consultation with those familiar with the law
 - Demand, solicit, transmit, or monitor payment
 - Turn conscience into compliance
 - Require disclosure of personal wealth
 - Provide tax or legal advice
-- Present the creator's current approach as the only legitimate calculation
+- Present the creator's current experiment as official or institutionally endorsed guidance
 
----
+## Explicit threshold constraint
 
-## Critical Distinction: Historical Assessment Units vs. Indexed Credit
+The threshold is not an open question in this project. The authoritative guidance states that obligatory payment begins when assessable possessions reach the value of **19 mithqáls of gold**, approximately **69.2 grams**, and that subsequent liability arises on further complete units after applicable expenses and losses. Amounts below the first or a further complete unit do not create an obligation, although a person may contribute voluntarily.
 
-This project records how many **completed nineteen-mithqál assessment units** have historically become assessable and been discharged. This is a **historical accounting fact**.
+See [Q&A 8](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-aqdas/9), [Q&A 89–90](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-aqdas/10), the [codification](https://www.bahai.org/library/authoritative-texts/compilations/codification-law-huququllah/4), and the [1987 clarification on voluntary contribution below the threshold](https://www.bahai.org/library/authoritative-texts/compilations/huququllah-right-god/3).
 
-Separately and distinctly, the project explores (but does not assume) that those historical units should be **translated at current gold prices** when determining a deductible or "purified" base against current wealth. This is an **experimental methodological hypothesis**.
+## Historical assessment units and indexed credit
 
-**Key principle:**
+The creator's gold-denominated orientation was intended to use the law's own threshold as a meter stick: to record how many **completed nineteen-mithqál assessment units** became assessable at a historical assessment—not primarily to preserve purchasing power.
 
-> Gold is used to identify and record completed nineteen-mithqál assessment units at the time an assessment arises. The workbench separately explores—but does not assume—that those historical units should be translated at current gold prices when determining previously assessed principal.
+Three facts must remain separate:
 
-The **number of completed historical units is dimensionless and immutable** once the assessment is fixed. A later change in gold price, currency, country, display currency, or payment date does not alter that historical count. Converting that count into a current monetary amount is a separate transformation labeled the **current-gold indexed-credit hypothesis**, not an authoritative rule.
+1. **Assessment:** the completed units and assessable principal identified on a particular date.
+2. **Obligation:** the monetary amount arising from that assessment.
+3. **Settlement:** one or more payments allocated to that obligation.
 
----
+The completed historical unit count does not change merely because gold, foreign-exchange rates, residence, display currency, or the payment date later changes. Nor should the count be reconstructed from the price of gold on a delayed payment date.
 
-## Status and Scope Notes
+A different operation is to translate historical units at today's gold price and treat the resulting amount as a deductible or “purified” base against current wealth. This repository labels that operation the **current-gold indexed-credit hypothesis**. It may be displayed and tested, but it is not assumed to follow automatically from recording historical units and must not be presented as an authoritative rule.
 
-### This is conceptual work, not an implementation specification.
+## Status and scope
 
-**Before any application is built**, the following must be resolved through study, consultation, and written specification:
+This is conceptual work, not yet an implementation specification. Before a calculation engine is built, the project needs:
 
-1. **What historical fact is preserved after assessment?** Native-currency principal, completed nineteen-mithqál units, identified property, or some combination? And does translating that history at current gold prices provide only a presentational view or a substantive indexed credit?
+- A reviewed source-rule matrix
+- A normalized event and calculation specification
+- A defined relationship among assessment, obligation, payment, and allocation
+- Worked examples that combine all applicable constraints rather than treating one source example as a complete algorithm
+- Explicit treatment of multiple currencies, ownership changes, losses, and incomplete historical records
+- Reproducible fictional test cases
 
-2. **How do assessment and payment relate?** Assessment and payment are logically separate events with different dates and may use different gold prices. These must be untangled in the data model.
+Two possible products are intentionally separated:
 
-3. **How should bookkeeping methods be compared?** Different ledgering approaches (annual surplus vs. lifetime wealth reconciliation) should ideally reconcile when applied to complete and consistent facts. The system must identify why they diverge if they do.
-
-4. **How should ownership, spouses, and property changes be modeled?** This is more complex than a display toggle and requires effective-dated, event-based accounting.
-
-5. **How do the piastre example and the whole-unit rule coexist?** The 1919 worked example in the Compilation requires reconciliation with explicit whole-unit treatment in other authoritative texts.
-
-### This is a research project, not institutional guidance.
-
-No page, statement, or export from any future tool should imply institutional endorsement or official status. This is an experiment and invitation to study, not a settlement of contested questions.
-
-### Two prospective products have been conflated.
-
-This document envisions both:
-
-- A **private financial ledger** for sensitive household data (deferred pending threat model and privacy review)
-- A **public methodology explorer** with fictional examples and terminology development (suitable as a starting point)
-
-The public-first approach is recommended; see `docs/design-and-discourse-plan.md`.
-
----
+- A **public methodology explorer** using fictional examples and exposing source, judgment, and assumption layers
+- A **private financial ledger**, deferred until a threat model, encryption approach, recovery model, export/deletion controls, and couple permissions have been reviewed
 
 ## Documentation
 
-- **[docs/design-and-discourse-plan.md](docs/design-and-discourse-plan.md)** — Full design and discourse vision, methodology taxonomy, data model, user experience outline, and implementation phases.
-- **[docs/source-rule-matrix.md](docs/source-rule-matrix.md)** — Authoritative sources, explicit principles, epistemic status, implementation consequences, and unresolved questions. Includes reconciliation of the 1919 piastre example with whole-unit rules.
-- **[docs/open-questions-and-counterexamples.md](docs/open-questions-and-counterexamples.md)** — Blocking conceptual questions, worked counterexamples (gold rise/fall/delayed payment), and the piastre case study.
-- **[docs/calculation-invariants.md](docs/calculation-invariants.md)** — Correctness and success criteria that any future calculation engine must satisfy.
+- [Design and discourse plan](docs/design-and-discourse-plan.md) — posture, methodology taxonomy, conceptual model, event model, multi-currency strategy, ownership transitions, and phases
+- [Source-rule matrix](docs/source-rule-matrix.md) — what the sources explicitly establish, what each example illustrates, and what remains unresolved
+- [Open questions and counterexamples](docs/open-questions-and-counterexamples.md) — indexed-credit counterexamples, delayed-payment failure, the 1919 piastre example, and continuity across currencies and ownership changes
+- [Calculation invariants](docs/calculation-invariants.md) — correctness constraints and fictional acceptance tests for a future specification
 
----
+## Central research questions
 
-## Central Blocking Questions
+1. What historical state should be preserved after assessment: native-currency principal, completed threshold units, identified property, or a linked combination?
+2. Is a current-gold translation of historical units merely a reporting view, or can it defensibly function as a substantive indexed credit?
+3. What date and evidence govern the local-currency value of a threshold unit at assessment?
+4. How should incomplete historical payment records be reconstructed without presenting estimates as facts?
+5. How should native-currency histories be consolidated without allowing current FX movements to create silent gains or losses?
+6. How should ownership histories survive marriage, divorce, remarriage, gifts, inheritance, migration, and changes between joint and individual accounting?
+7. Under what conditions should different bookkeeping lenses reconcile, and how should any divergence be explained?
 
-1. **Historical units vs. indexed credit:** What historical fact is preserved—native-currency principal, completed threshold units, or identified property—and does translating that at current gold prices provide only a presentational view or a substantive indexed credit?
-2. **Assessment valuation date:** What date governs the gold value used for assessment?
-3. **Payment-date gold:** If payment occurs later, does payment-date gold affect an already calculated assessment?
-4. **Unrealized FX movements:** How should currency appreciation/depreciation be treated?
-5. **Joint-to-individual transitions:** How should historical ownership and payment attribution be preserved?
-6. **Trustworthy baseline initialization:** How should users with incomplete historical records establish a starting point?
+The 1919 piastre example is treated as a **source-scope case**, not as evidence that the explicit threshold can be bypassed. It illustrates the 19% rate, deduction of expenses, annual reconciliation, and once-only treatment, while its simplified numbers do not visibly apply the whole-unit gate established elsewhere. See the [source-rule matrix](docs/source-rule-matrix.md#the-1919-piastre-example) for the evidence and synthesis.
 
----
+## Posture and invitation
 
-## Posture and Invitation
+The project begins with humility about what is established, inferred, judged, or still unknown:
 
-This project begins with humility about what is and is not yet understood. The creator invites:
+> This is how I am currently understanding the law and organizing my records. Here are the sources, judgments, assumptions, and calculations involved. Here are the results under alternative approaches. I offer it as an experiment and an invitation to learn together.
 
-> This is how I am currently understanding the law and organizing my records. Here are the sources, judgments, assumptions, and calculations involved. Here is what results emerge under alternative approaches. I offer it as an experiment and an invitation to learn together.
+Readers are encouraged to study the linked texts, test the examples, share alternative approaches, and consult appointed representatives when a question calls for guidance. No page should demand payment, shame uncertainty, rank people, or imply institutional endorsement.
 
-Readers are encouraged to:
-
-- Study the authoritative texts linked in this documentation
-- Share feedback and alternative approaches in this repository's discussions
-- Consult with others who have studied the law
-- If questions arise that require guidance from appointed representatives, reach out to them with specific questions
-
-No page should demand payment, shame uncertainty, rank approaches, or present one person's experiment as settled truth.
-
----
-
-## Authoritative References
-
-Primary sources supporting this project's foundation:
+## Primary references
 
 1. [A Codification of the Law of Huqúqu'lláh — determining the amount](https://www.bahai.org/library/authoritative-texts/compilations/codification-law-huququllah/4)
-2. [The Kitáb-i-Aqdas, Questions and Answers nos. 8, 90](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-aqdas/9)
-3. [Huqúqu'lláh—The Right of God (paragraphs 41, 49, 59–60, 63, 66)](https://www.bahai.org/library/authoritative-texts/compilations/huququllah-right-god/3)
-4. [The Kitáb-i-Aqdas, note on Huqúqu'lláh](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-aqdas/15)
-5. [Universal House of Justice, 26 November 2000](https://www.bahai.org/library/authoritative-texts/the-universal-house-of-justice/messages/20001126_001/1)
+2. [The Kitáb-i-Aqdas, Questions and Answers no. 8](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-aqdas/9)
+3. [The Kitáb-i-Aqdas, Questions and Answers nos. 89–90](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-aqdas/10)
+4. [The Kitáb-i-Aqdas, note 125](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-aqdas/15)
+5. [Huqúqu'lláh—The Right of God, application of the law](https://www.bahai.org/library/authoritative-texts/compilations/huququllah-right-god/3)
+6. [Universal House of Justice, 26 November 2000](https://www.bahai.org/library/authoritative-texts/the-universal-house-of-justice/messages/20001126_001/1)
+
+## Next deliverable
+
+The recommended next artifact is a calculation-specification workbook containing normalized schemas, formulas, rate provenance, source justifications, and expected results for the fictional cases in this repository. Implementation remains downstream of that specification and its review.
 
 ---
 
-## Next Steps
-
-**No implementation work should proceed** until:
-
-- The blocking questions above are addressed or explicitly deferred
-- A written, normalized calculation specification exists
-- Worked examples reconcile alternative approaches and source examples
-- The assessment-payment separation is formally specified
-- Fictional test cases demonstrate correctness invariants
-- The source-rule matrix has been reviewed with attention to historical sources and scope boundaries
-
-The recommended next deliverable is a **calculation specification workbook** containing schemas, formulas, test cases, and source justifications. See `docs/design-and-discourse-plan.md` for details.
-
----
-
-*This documentation is a research project and invitation to study, not an official calculator or endorsed guidance.*
+*This repository is a research project and invitation to study, not an official calculator or endorsed guidance.*

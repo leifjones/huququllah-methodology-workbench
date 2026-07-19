@@ -14,7 +14,7 @@ The invariants have three scopes:
 
 An experimental methodology may intentionally produce a different *view*, but it may not alter historical facts, hide its status, or label its result authoritative.
 
-Unless otherwise stated, examples use fictional data, exact decimal arithmetic, and a fictional assessment-date threshold unit `U = $10,000`.
+Unless otherwise stated, examples use fictional data, exact decimal arithmetic, and a fictional assessment-date threshold unit `U = $10,000`. Each row or scenario is an independent data state, not a sequence through time, unless multiple dates are explicitly introduced. In practice, the local-currency value of `U` may vary by currency, assessment date, gold-valuation source, and valuation convention; later invariants test those changes explicitly.
 
 ## 2. Threshold and whole-unit invariants
 
@@ -33,6 +33,8 @@ Unless otherwise stated, examples use fictional data, exact decimal arithmetic, 
 
 **Scope:** Source constraint
 
+The following rows are independent cases evaluated under the same fixed value of `U`; they are not successive periods.
+
 | Assessable amount | Completed units | Obligatory principal | Carried remainder | Obligation at 19% |
 | ---: | ---: | ---: | ---: | ---: |
 | $9,999 | 0 | $0 | $9,999 | $0 |
@@ -47,10 +49,10 @@ Ordinary currency rounding occurs after the whole-unit rule. It must not be used
 **Scope:** Source constraint and accounting integrity
 **Basis:** Paragraph 63 of the [application compilation](https://www.bahai.org/library/authoritative-texts/compilations/huququllah-right-god/3)
 
-**Given** $6,000 below-threshold assessable property and a voluntary $100 contribution
-**Then** required payment remains zero and the $100 is labeled voluntary.
+**Given** $6,000 below-threshold assessable property and a voluntary $100 contribution marked as explicitly excluded from future obligation credit
+**Then** required payment remains zero, total voluntary remitted is $100, and credit allocated toward an obligation is zero.
 
-The voluntary amount must not silently reduce a future obligatory base or be described as payment of an amount due unless a reviewed source-grounded treatment explicitly establishes that consequence.
+The voluntary amount must not silently reduce a future obligatory base or be described as payment of an amount due unless a reviewed source-grounded treatment explicitly establishes that consequence. If the explicit-exclusion option is unset, the system records the future-credit treatment as unresolved rather than silently treating the amount as eligible.
 
 ## 3. Financial identity invariants
 
@@ -88,27 +90,31 @@ The voluntary amount must not silently reduce a future obligatory base or be des
 
 **Given** $120 of ordinary small possessions
 **When** they are represented as individual rows or as one `ordinary personal goods` aggregate with the same classification
-**Then** the selected calculation reaches the same result. The aggregate records its estimate, date, and classification rationale.
+**Then** the selected calculation reaches the same result. The aggregate records its estimate, date, classification, and any optional rationale.
 
 **Failure:** Using aggregation to hide a relevant value, double-count a group and its component rows, or treat an aggregation decision as an authoritative exemption.
 
-### Invariant 6 — Reclassification is explicit and effective-dated
+### Invariant 6 — Drafts, committed assessments, amendments, and deletion remain distinguishable
 
 **Scope:** Accounting integrity and individual judgment
 
-Changing an item from subject to exempt, or the reverse, requires a dated classification decision, rationale, and identity of the person making it. Treating a separately valued component of a mixed or upgraded holding differently is also an explicit individual bookkeeping choice, not a default formula. The system may recalculate a view but may not rewrite the earlier classification silently.
+Draft classifications and scenarios may be edited, undone, or fully deleted without preserving revision history. A preview may calculate consequences without changing a committed record.
+
+Once an assessment is committed, an ordinary edit does not mutate it in place. A correction or reconsideration proceeds through an amendment that shows affected dependent results before confirmation and retains the earlier committed version. The amendment records when it was entered and the date from which it applies; its rationale may be supplied, omitted, or marked unknown.
+
+Full deletion remains a separate user-controlled operation. If a deleted record contributed to an assessment, obligation, payment allocation, or later calculation, the system must delete, invalidate, or recalculate those dependent results consistently and must not leave them appearing valid without their former basis.
 
 ## 4. Assessment and settlement invariants
 
-### Invariant 7 — Historical completed-unit count is immutable
+### Invariant 7 — Later market changes do not rewrite a committed unit count
 
 **Scope:** Accounting integrity
 
-**Given** an assessment of one completed unit on date A
+**Given** a committed assessment of one completed unit on date A
 **When** gold, FX, residence, or display currency later changes
 **Then** the date-A assessment still records one completed unit.
 
-A correction creates a superseding event linked to the earlier assessment; it does not mutate audit history.
+A correction may create a superseding amendment linked to the earlier assessment; ordinary changes in rates do not mutate either version. A separate explicit full-deletion operation is governed by Invariant 6.
 
 ### Invariant 8 — Delayed payment does not rewrite an assessment
 
@@ -151,6 +157,25 @@ For each obligation:
 
 An allocation cannot exceed either the available payment balance or the obligation balance.
 
+Within one currency, or after applying documented conversions for a shared reporting view, the system must also reconcile:
+
+`total remitted = obligation settlement credit + voluntary explicitly excluded + voluntary unresolved + unallocated settlement-intent amount ± corrections or reversals`
+
+If total remitted differs from credit toward obligations, the interface and any diagnostic API must expose the records and categories producing the difference. “The totals are different” is not a sufficient explanation.
+
+For example, for a $1,900 obligation:
+
+| Record | Remitted | Treatment | Obligation credit |
+| --- | ---: | --- | ---: |
+| Payment A | $1,000 | Allocated to obligation | $1,000 |
+| Payment B | $500 | Allocated to obligation | $500 |
+| Voluntary contribution | $100 | Explicitly excluded | $0 |
+| Voluntary contribution | $50 | Treatment unresolved | $0 |
+| Payment C | $400 | Intended as settlement, not yet allocated | $0 |
+| **Total** | **$2,050** |  | **$1,500** |
+
+The system should explain that the $550 difference consists of $100 explicitly excluded voluntary, $50 unresolved voluntary, and $400 unallocated settlement intent. The obligation has $400 remaining until that unallocated payment is allocated or otherwise corrected.
+
 ### Invariant 11 — Payment source and obligation owner are separate
 
 **Scope:** Accounting integrity and ownership
@@ -192,15 +217,17 @@ The system must distinguish an internal transfer from a gift, inheritance, sale,
 
 ## 6. Currency and rate invariants
 
-### Invariant 15 — Display currency changes presentation, not historical facts
+### Invariant 15 — Converted reporting views do not replace recorded currencies
 
 **Scope:** Accounting integrity
 
-**Given** an assessment stored in USD with documented date-A rates
-**When** a user selects EUR as the display currency
-**Then** the original USD amount, completed units, assessment date, and obligation remain unchanged. The EUR amount is a labeled conversion with its own rate provenance.
+Every individual amount is displayed in its recorded currency by default. A converted reporting value may be shown only as a labeled derivative with its conversion rate, source, date, and purpose; it must not replace or relabel the original fact.
 
-Switching back to USD must reproduce the original stored values, subject only to an explicitly stated display-rounding tolerance.
+**Given** an assessment stored in USD with documented date-A rates
+**When** a user requests a EUR converted reporting view
+**Then** the original USD amount, completed units, assessment date, and obligation remain unchanged. The EUR amount is labeled as a conversion with its own rate provenance.
+
+Returning to the recorded USD view must reproduce the original stored values, subject only to an explicitly stated conversion or display-rounding tolerance.
 
 ### Invariant 16 — Rate purpose is explicit
 
@@ -211,7 +238,7 @@ Every gold or FX observation identifies its purpose:
 - Assessment valuation
 - Payment conversion
 - Period-end reconciliation
-- Current display
+- Converted reporting view
 - Experimental current-gold translation
 
 A rate captured for one purpose cannot silently replace the rate used for another.
@@ -369,6 +396,7 @@ Every page and export states that this is an independent learning project. The s
 | Scenario | Primary invariants |
 | --- | --- |
 | $9,999, $10,000, $19,999, and $20,000 with `U = $10,000` | 1–3 |
+| $6,000 with a $100 voluntary contribution under explicitly excluded and unresolved future-credit treatments | 3, 10 |
 | Transfer between two accounts of one owner | 4 |
 | Split one holding into two rows; exchange cash for an asset; aggregate ordinary small possessions | 5, 5a–5b |
 | One assessment paid immediately versus in installments | 7–10 |
@@ -376,7 +404,7 @@ Every page and export states that this is an independent learning project. The s
 | Unchanged assessed property across two periods | 12 |
 | Loss to $80,000 and recovery to $100,000 | 13 |
 | Gift from one owner to another | 14, 25 |
-| USD/EUR display switch with no economic event | 15–17 |
+| USD/EUR converted reporting view with no economic event | 15–17 |
 | Gold-indexed credit when gold doubles and halves | 18–20 |
 | Annual-surplus and wealth-reconciliation lenses over identical events | 21–22 |
 | 1919 piastre arithmetic combined with whole-unit gate | 23 |

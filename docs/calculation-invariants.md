@@ -49,10 +49,18 @@ Ordinary currency rounding occurs after the whole-unit rule. It must not be used
 **Scope:** Source constraint and accounting integrity
 **Basis:** Paragraph 63 of the [application compilation](https://www.bahai.org/library/authoritative-texts/compilations/huququllah-right-god/3)
 
-**Given** $6,000 below-threshold assessable property and a voluntary $100 contribution marked as explicitly excluded from future obligation credit
-**Then** required payment remains zero, total voluntary remitted is $100, and credit allocated toward an obligation is zero.
+**Given** $6,000 below-threshold assessable property and a voluntary $100 contribution
+**Then** required payment remains zero, total voluntary remitted is $100, and credit allocated toward a present obligation is zero.
 
-The voluntary amount must not silently reduce a future obligatory base or be described as payment of an amount due unless a reviewed source-grounded treatment explicitly establishes that consequence. If the explicit-exclusion option is unset, the system records the future-credit treatment as unresolved rather than silently treating the amount as eligible.
+The user may record one of three future-credit intentions:
+
+| Recorded intent | Candidate for possible later allocation | Present obligation credit | What has been established |
+| --- | ---: | ---: | --- |
+| Explicitly excluded | $0 | $0 | The user does not intend this contribution to reduce a future obligation |
+| Preserve for possible future allocation | $100 | $0 | The user's intent is known; eligibility remains unresolved |
+| Unresolved | Unresolved | $0 | Neither intent nor eligibility has been decided |
+
+The voluntary amount must not silently reduce a future obligatory base or be described as payment of an amount due unless a reviewed source-grounded or explicitly labeled methodological treatment establishes that consequence and a later allocation is deliberately recorded.
 
 ## 3. Financial identity invariants
 
@@ -159,7 +167,7 @@ An allocation cannot exceed either the available payment balance or the obligati
 
 Within one currency, or after applying documented conversions for a shared reporting view, the system must also reconcile:
 
-`total remitted = obligation settlement credit + voluntary explicitly excluded + voluntary unresolved + unallocated settlement-intent amount ± corrections or reversals`
+`total remitted = obligation settlement credit + voluntary explicitly excluded + voluntary preserved for possible allocation + voluntary unresolved + unallocated settlement-intent amount ± corrections or reversals`
 
 If total remitted differs from credit toward obligations, the interface and any diagnostic API must expose the records and categories producing the difference. “The totals are different” is not a sufficient explanation.
 
@@ -170,11 +178,12 @@ For example, for a $1,900 obligation:
 | Payment A | $1,000 | Allocated to obligation | $1,000 |
 | Payment B | $500 | Allocated to obligation | $500 |
 | Voluntary contribution | $100 | Explicitly excluded | $0 |
+| Voluntary contribution | $75 | Preserved for possible future allocation; eligibility unresolved | $0 |
 | Voluntary contribution | $50 | Treatment unresolved | $0 |
 | Payment C | $400 | Intended as settlement, not yet allocated | $0 |
-| **Total** | **$2,050** |  | **$1,500** |
+| **Total** | **$2,125** |  | **$1,500** |
 
-The system should explain that the $550 difference consists of $100 explicitly excluded voluntary, $50 unresolved voluntary, and $400 unallocated settlement intent. The obligation has $400 remaining until that unallocated payment is allocated or otherwise corrected.
+The system should explain that the $625 difference consists of $100 explicitly excluded voluntary, $75 preserved as a possible future-allocation candidate with eligibility unresolved, $50 with intent unresolved, and $400 unallocated settlement intent. The obligation has $400 remaining until that unallocated payment is allocated or otherwise corrected.
 
 ### Invariant 11 — Payment source and obligation owner are separate
 
@@ -282,6 +291,24 @@ Using the fictional cases in [Open Questions and Counterexamples](open-questions
 - A fall to a $5,000 current unit produces a $5,000 experimental credit, not a new acquisition event.
 
 If the hypothesis changes an obligation result, the divergence must be displayed rather than normalized away.
+
+### Candidate invariant 20a — Gold-price movement does not silently create augmentation in the single-primary-currency lens
+
+**Scope:** Source synthesis and research integrity
+**Status:** Candidate derived design rule for human review; no located source directly addresses the exact gold-price scenario
+**Basis:** [Q&A 8](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-aqdas/9), [Kitáb-i-Aqdas note 125](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-aqdas/15), [application compilation paragraphs 50 and 72](https://www.bahai.org/library/authoritative-texts/compilations/huququllah-right-god/3), and [Codification III.2.2, III.2.4–5](https://www.bahai.org/library/authoritative-texts/compilations/codification-law-huququllah/4)
+
+**Given:**
+
+1. Previously assessed property remains unchanged in the methodology profile's primary currency.
+2. There is no acquisition, income, realized profit, realized appreciation, recovery beyond a prior loss, or ownership event.
+3. The local-currency value of a nineteen-mithqál unit falls solely because the gold price changes.
+
+**Then** the provisional ordinary lens records the new threshold value but does not create a new augmentation event or obligation from the unchanged property alone.
+
+An enabled current-gold indexed-credit hypothesis may produce a divergent experimental result. It must label the divergence as a consequence of the hypothesis rather than recording invented income, acquisition, or realization.
+
+This candidate does not settle holdings in several currencies, realized FX gains, physical gold held as property, inflation or currency collapse, or a change of primary currency.
 
 ## 8. Reproducibility and methodology invariants
 
@@ -395,17 +422,17 @@ Every page and export states that this is an independent learning project. The s
 
 | Scenario | Primary invariants |
 | --- | --- |
-| $9,999, $10,000, $19,999, and $20,000 with `U = $10,000` | 1–3 |
-| $6,000 with a $100 voluntary contribution under explicitly excluded and unresolved future-credit treatments | 3, 10 |
+| $9,999, $10,000, $19,999, and $20,000 with `U = $10,000` | 1–2 |
+| $6,000 with a $100 voluntary contribution under explicitly excluded, preserved-for-possible-allocation, and unresolved future-credit intentions | 3, 10 |
+| Unchanged assessed property across two periods, followed by genuine additional accumulation | 12 |
 | Transfer between two accounts of one owner | 4 |
 | Split one holding into two rows; exchange cash for an asset; aggregate ordinary small possessions | 5, 5a–5b |
 | One assessment paid immediately versus in installments | 7–10 |
 | Payment delayed while gold doubles | 7–10, 16 |
-| Unchanged assessed property across two periods | 12 |
 | Loss to $80,000 and recovery to $100,000 | 13 |
 | Gift from one owner to another | 14, 25 |
 | USD/EUR converted reporting view with no economic event | 15–17 |
-| Gold-indexed credit when gold doubles and halves | 18–20 |
+| Unchanged primary-currency property when gold doubles and halves, with indexed comparison | 18–20, 20a |
 | Annual-surplus and wealth-reconciliation lenses over identical events | 21–22 |
 | 1919 piastre arithmetic combined with whole-unit gate | 23 |
 | Marriage, divorce, and prospective method change | 25–26 |

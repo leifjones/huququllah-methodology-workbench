@@ -21,7 +21,8 @@
 - [ ] `docs/design-and-discourse-plan.md`
 - [ ] `docs/source-rule-matrix.md`
 - [ ] `docs/open-questions-and-counterexamples.md`
-- [x] `docs/calculation-invariants.md`
+- [ ] `docs/considered-approaches.md`
+- [ ] `docs/calculation-invariants.md`
 - [ ] `docs/human-review-checklist.md`
 
 ## Section review
@@ -55,7 +56,7 @@
 
 - [ ] Status vocabulary and spiritual/social context
 - [ ] Threshold, rate, whole-unit, and once-only rows
-- [ ] Acquisition, expenses, loss, gift, and appreciation rows
+- [ ] Acquisition, expenses, loss, gift, appreciation, and gold-price synthesis rows
 - [ ] Debt, exemptions, ownership, and spouse rows
 - [ ] Freedom of method, voluntary contribution, and conscience rows
 - [ ] 1919 piastre example: documentary form and historical context
@@ -71,17 +72,25 @@
 - [ ] Piastre source-scope case
 - [ ] Focused consultation questions
 
+### `docs/considered-approaches.md`
+
+- [ ] Purpose, status vocabulary, and current-posture summary
+- [ ] Single-primary-currency synthesis, source rationale, and limits
+- [ ] Current-gold indexed-credit and payment-derived-unit approaches
+- [ ] Separate “purified wealth” spending-account approach
+- [ ] Posture-change protocol
+
 ### `docs/calculation-invariants.md`
 
 - [x] Scope vocabulary and fictional-unit convention
-- [x] Threshold, whole-unit, and voluntary-payment invariants
+- [ ] Threshold, whole-unit, and voluntary-payment invariants
 - [x] Financial identity, classification, and record-lifecycle invariants
 - [x] Once-only principal and loss invariants
-- [x] Assessment, settlement, allocation, and payment-reconciliation invariants
+- [ ] Assessment, settlement, allocation, and payment-reconciliation invariants
 - [x] Multi-currency and rate-provenance invariants
 - [x] Ownership and household-transition invariants
-- [x] Hypothesis, source-status, and privacy invariants
-- [x] Fictional acceptance suite
+- [ ] Hypothesis, source-status, and privacy invariants
+- [ ] Fictional acceptance suite
 
 ## Review log
 
@@ -94,3 +103,4 @@ The log may record both completed human reviews and review-state maintenance. On
 | 2026-07-19 | Invariant convention clarified | Codex (agent) | Calculation-invariant scope vocabulary and fictional-unit convention | Clarified that simple rows are independent fixed-`U` cases, while later invariants address changing threshold values, currencies, dates, and valuation conventions. No human review is asserted. | [PR #4](https://github.com/leifjones/huququllah-methodology-workbench/pull/4) |
 | 2026-07-19 | Ledger coverage expanded | Codex (agent) | Payment treatment, record lifecycle, reconciliation, agent-access, and focused-consultation scopes | Expanded existing unchecked scopes for voluntary-credit treatment, drafts and amendments, explainable payment reconciliation, permission-scoped agent diagnostics, and the fictional acceptance suite; added missing coverage for focused consultation questions. Corrected stale pending-PR references. No human review is asserted. | [PR #4](https://github.com/leifjones/huququllah-methodology-workbench/pull/4) |
 | 2026-07-19 | Currency-display convention clarified | Codex (agent) | Design-plan multi-currency strategy, experience principles, and calculation-invariant currency/rate scopes | Clarified that recorded currency is the default display and that converted reporting values require visible rate provenance; added a concrete reconciliation example for total remitted versus obligation credit. No human review is asserted. | [PR #4](https://github.com/leifjones/huququllah-methodology-workbench/pull/4) |
+| 2026-07-20 | Single-currency synthesis and approach history added | Codex (agent) | Source-matrix augmentation and voluntary-payment synthesis; design-plan primary-currency, voluntary-intent, and progressive-disclosure sections; new considered-approaches document; voluntary-payment reconciliation; indexed-credit candidate invariant; fictional acceptance suite | Added unchecked review coverage for the new approach-history document and gold-price synthesis row. Reopened the calculation-invariants whole-file review, threshold/whole-unit/voluntary-payment scope, assessment/settlement/allocation/payment-reconciliation scope, hypothesis/source-status scope, and fictional acceptance suite because the voluntary-intent examples, reconciliation, candidate invariant, and scenario changed reviewed content. No human review is asserted. | Branch `agent/document-single-currency-synthesis` |

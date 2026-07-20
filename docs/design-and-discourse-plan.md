@@ -53,6 +53,8 @@ The workbench must not place unlike concepts in a single menu of competing “me
 
 An “income orientation” and a “wealth orientation” may be bookkeeping lenses over the same history rather than competing substantive laws. Complete, consistently classified data should either reconcile or reveal precisely why they do not.
 
+Approaches that shaped the project but are no longer proposed as the ordinary path should not disappear from the discourse. Record their former purpose, current status, counterexamples, and conditions for reconsideration in [Considered Approaches and Current Posture](considered-approaches.md). “Set aside as a default” does not mean that a personal practice is forbidden or that a later understanding cannot restore it.
+
 ## 4. Source-grounded starting constraints
 
 The calculation specification begins with these constraints:
@@ -131,12 +133,12 @@ A payment records:
 - Payment date
 - Amount and currency remitted
 - Purpose: settlement of an identified obligation, voluntary contribution, or unresolved
-- For a voluntary contribution, whether it is explicitly excluded from any future obligation credit
+- For a voluntary contribution, future-credit intent: explicitly excluded, preserved for possible future allocation, or unresolved
 - Payment channel or receipt reference, if the user elects to keep it
 - Conversion evidence when paid in a currency different from the obligation
 - Notes and provenance
 
-A user-facing option such as “Do not count this toward any future amount due” may record an explicit exclusion. Leaving that option unset must not silently assert that the voluntary contribution is eligible for future credit; it remains unresolved unless a reviewed source-grounded treatment establishes and records a different consequence.
+A user-facing option such as “Do not count this toward any future amount due” may record an explicit exclusion. A separate option such as “Preserve this for possible allocation to a future obligation” records the person's intent and retains the candidate amount, but it does not by itself establish eligibility or reduce a later amount due. Leaving both options unset records unresolved intent. An actual future allocation requires a reviewed source-grounded or explicitly labeled methodological treatment and a deliberate allocation record.
 
 ### Assessment-payment allocation
 
@@ -150,7 +152,7 @@ An allocation links settlement value to an obligation. It permits:
 
 A payment made after gold has moved does not change the assessment. Deriving units from `payment ÷ 19% ÷ payment-date threshold value` is invalid when the payment date differs from the assessment date.
 
-Payment reporting should reconcile **total remitted** separately from **credit allocated toward obligations**. The explanation should identify obligatory allocations, voluntary amounts explicitly excluded from future credit, voluntary amounts whose treatment is unresolved, unallocated settlement-intent amounts, corrections or reversals, and any documented currency conversion. No difference should appear as an unexplained residual.
+Payment reporting should reconcile **total remitted** separately from **credit allocated toward obligations**. The explanation should identify obligatory allocations, voluntary amounts explicitly excluded from future credit, voluntary amounts preserved as candidates for possible later allocation, voluntary amounts whose intent is unresolved, unallocated settlement-intent amounts, corrections or reversals, and any documented currency conversion. No difference should appear as an unexplained residual.
 
 ### Incomplete historical records
 
@@ -240,6 +242,14 @@ These must not be collapsed into a user setting called “rounding.”
 
 ## 9. Multi-currency strategy
 
+### One explicit primary currency per methodology profile
+
+The simplest methodology profile should identify one primary or functional currency for consolidated assessments. For most people this will ordinarily be the currency in which they live and conduct most of their financial life, but that is a bookkeeping and software choice rather than a currency prescribed by the authoritative guidance.
+
+An assessment spanning other currencies may translate their dated native values into the primary currency using documented rates and purposes. Multiple native-currency subledgers may feed the same consolidated personal history; they must not silently become independent spiritual obligations or conceal that the person's combined assessable possessions complete a threshold unit.
+
+A change of primary currency is prospective and effective-dated. It changes the consolidation convention without relabeling native facts, rewriting earlier assessments, or creating an acquisition event. The appropriate treatment of carried principal and sub-unit remainders at such a transition remains an open specification question.
+
 ### Preserve native facts
 
 Every event retains its original amount and currency, and is displayed in that recorded currency by default. A converted reporting view is a labeled derivative, not a rewrite or relabeling of the original fact. Any converted amount must show its rate provenance and purpose, such as:
@@ -324,9 +334,11 @@ Public-facing materials should use progressive disclosure:
 
 1. Begin with what Huqúqu'lláh is, its spiritual and social context, who may have an obligation, and the threshold.
 2. Introduce gold as the law-defined threshold measure before discussing historical units or indexed-credit experiments.
-3. Demonstrate one simple fictional example in a familiar local currency.
-4. Add expenses, prior payments, or carried remainders only after the basic example is clear.
-5. Place multi-currency histories, ownership transitions, provenance, and experimental hypotheses in optional deeper layers.
+3. Demonstrate one initial obligatory assessment in a familiar local currency.
+4. Show a below-threshold voluntary contribution next, keeping required payment at zero and allowing its future-credit intent to be explicitly excluded, preserved for possible later allocation, or left unresolved without silently deciding eligibility.
+5. Demonstrate the once-only principle across a later period, including genuine additional accumulation toward a further complete unit.
+6. Add expenses, losses, delayed settlement, or carried remainders only after those basic examples are clear.
+7. Place gold-price counterexamples, alternative carry-forward approaches, multi-currency histories, ownership transitions, provenance, and other experimental hypotheses in optional deeper layers.
 
 Every public artifact should also:
 
@@ -349,7 +361,7 @@ The interface should:
 - Permit “unresolved” rather than forcing a false binary decision
 - Display each recorded amount in its recorded currency by default; preserve original values beside any converted reporting view
 - Explain divergences between methods
-- Explain differences among total remitted, obligation credit, voluntary excluded or unresolved amounts, unallocated amounts, reversals, and currency effects
+- Explain differences among total remitted, obligation credit, voluntary excluded amounts, voluntary amounts preserved for possible allocation, unresolved amounts, unallocated amounts, reversals, and currency effects
 - Make draft, preview, commit, amendment, undo, and full-deletion states understandable without accounting or software vocabulary
 - Use calm, non-pressuring language
 - Make voluntary amounts visibly separate from obligations

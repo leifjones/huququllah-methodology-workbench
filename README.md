@@ -76,6 +76,7 @@ Two possible products are intentionally separated:
 - [Design and discourse plan](docs/design-and-discourse-plan.md) — posture, methodology taxonomy, conceptual model, event model, multi-currency strategy, ownership transitions, and phases
 - [Source-rule matrix](docs/source-rule-matrix.md) — what the sources explicitly establish, what each example illustrates, and what remains unresolved
 - [Open questions and counterexamples](docs/open-questions-and-counterexamples.md) — indexed-credit counterexamples, delayed-payment failure, the 1919 piastre example, and continuity across currencies and ownership changes
+- [Considered approaches and current posture](docs/considered-approaches.md) — provisional, experimental, legacy, and set-aside approaches with their rationale and conditions for reconsideration
 - [Calculation invariants](docs/calculation-invariants.md) — correctness constraints and fictional acceptance tests for a future specification
 - [Human review checklist](docs/human-review-checklist.md) — an explicit record of which files and sections people have deliberately reviewed
 

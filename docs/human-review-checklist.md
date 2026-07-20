@@ -83,10 +83,10 @@
 ### `docs/calculation-invariants.md`
 
 - [x] Scope vocabulary and fictional-unit convention
-- [ ] Threshold, whole-unit, and voluntary-payment invariants
+- [x] Threshold, whole-unit, and voluntary-payment invariants
 - [x] Financial identity, classification, and record-lifecycle invariants
 - [x] Once-only principal and loss invariants
-- [ ] Assessment, settlement, allocation, and payment-reconciliation invariants
+- [x] Assessment, settlement, allocation, and payment-reconciliation invariants
 - [x] Multi-currency and rate-provenance invariants
 - [x] Ownership and household-transition invariants
 - [ ] Hypothesis, source-status, and privacy invariants

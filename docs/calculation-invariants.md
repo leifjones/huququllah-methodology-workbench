@@ -292,11 +292,13 @@ Using the fictional cases in [Open Questions and Counterexamples](open-questions
 
 If the hypothesis changes an obligation result, the divergence must be displayed rather than normalized away.
 
-### Candidate invariant 20a — Gold-price movement does not silently create augmentation in the single-primary-currency lens
+### Invariant 20a — Gold-price movement does not silently create augmentation in the single-primary-currency lens
 
 **Scope:** Source synthesis and research integrity
-**Status:** Candidate derived design rule for human review; no located source directly addresses the exact gold-price scenario
+**Status:** Derived design rule; no located source directly addresses the exact gold-price scenario
 **Basis:** [Q&A 8](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-aqdas/9), [Kitáb-i-Aqdas note 125](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-aqdas/15), [application compilation paragraphs 50 and 72](https://www.bahai.org/library/authoritative-texts/compilations/huququllah-right-god/3), and [Codification III.2.2, III.2.4–5](https://www.bahai.org/library/authoritative-texts/compilations/codification-law-huququllah/4)
+
+**Rationale:** The cited sources describe further liability through additions to possessions—such as income after expenses, realized profit, subsequently acquired property, realized appreciation, or augmentation beyond a restored loss. In the stated single-primary-currency case, a gold-price movement changes the local-currency value of the threshold unit but does not itself add property, income, profit, realization, recovery, or ownership change. Treating that measurement movement as a new obligation would therefore manufacture an economic event from a change in the measuring relationship. The rule preserves gold's role in calibrating the threshold while keeping current-gold indexed credit as a separately labeled experimental hypothesis.
 
 **Given:**
 

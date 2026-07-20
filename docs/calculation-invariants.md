@@ -292,7 +292,7 @@ Using the fictional cases in [Open Questions and Counterexamples](open-questions
 
 If the hypothesis changes an obligation result, the divergence must be displayed rather than normalized away.
 
-### Invariant 20a — Gold-price movement does not silently create augmentation in the single-primary-currency lens
+### Invariant 21 — Gold-price movement does not silently create augmentation in the single-primary-currency lens
 
 **Scope:** Source synthesis and research integrity
 **Status:** Derived design rule; no located source directly addresses the exact gold-price scenario
@@ -314,7 +314,7 @@ This candidate does not settle holdings in several currencies, realized FX gains
 
 ## 8. Reproducibility and methodology invariants
 
-### Invariant 21 — Every historical assessment is reproducible
+### Invariant 22 — Every historical assessment is reproducible
 
 **Scope:** Accounting integrity
 
@@ -331,7 +331,7 @@ Reproduction requires immutable access to:
 
 Current rates must not affect replay of a historical assessment.
 
-### Invariant 22 — Bookkeeping lenses reconcile or explain divergence
+### Invariant 23 — Bookkeeping lenses reconcile or explain divergence
 
 **Scope:** Research integrity
 
@@ -342,7 +342,7 @@ When two lenses process the same complete event history, they must either:
 
 “Different method” is not a sufficient explanation by itself.
 
-### Invariant 23 — Source examples are applied within declared scope
+### Invariant 24 — Source examples are applied within declared scope
 
 **Scope:** Source synthesis
 
@@ -355,7 +355,7 @@ The 1919 piastre example may test:
 
 It must not make a below-threshold amount obligatory in the specification while Q&A 90 and the codification's whole-unit rule remain applicable. The apparent numerical mismatch is retained as a source-scope note for review.
 
-### Invariant 24 — Every displayed proposition has an epistemic status
+### Invariant 25 — Every displayed proposition has an epistemic status
 
 **Scope:** Research integrity
 
@@ -374,13 +374,13 @@ An output assembled from several layers exposes all of them.
 
 ## 9. Ownership and continuity invariants
 
-### Invariant 25 — Ownership changes are effective-dated
+### Invariant 26 — Ownership changes are effective-dated
 
 **Scope:** Accounting integrity
 
 Marriage, gift, inheritance, separation, divorce, remarriage, and death do not retroactively rewrite ownership. They create effective-dated intervals and transition events.
 
-### Invariant 26 — Switching joint and individual handling does not erase history
+### Invariant 27 — Switching joint and individual handling does not erase history
 
 **Scope:** Accounting integrity and individual judgment
 
@@ -394,7 +394,7 @@ A prospective change from joint to individual handling, or the reverse, preserve
 
 The system may generate a transition view but may not redistribute historical units automatically.
 
-### Invariant 27 — Migration is not an acquisition event
+### Invariant 28 — Migration is not an acquisition event
 
 **Scope:** Accounting integrity
 
@@ -402,19 +402,19 @@ Changing residence or functional currency changes reporting context. It does not
 
 ## 10. Uncertainty and safety invariants
 
-### Invariant 28 — Estimated history remains visibly estimated
+### Invariant 29 — Estimated history remains visibly estimated
 
 **Scope:** Research integrity
 
 If an assessment is reconstructed from a payment or opening balance, the record retains method, date range, evidence, author, and confidence. Estimated and observed values cannot share an indistinguishable status.
 
-### Invariant 29 — A public prototype uses fictional data
+### Invariant 30 — A public prototype uses fictional data
 
 **Scope:** Privacy safety
 
 No public prototype may accept or retain real household financial data until a threat model, encryption architecture, recovery process, permissions model, export/deletion behavior, and security review have been completed.
 
-### Invariant 30 — No output implies institutional endorsement or compliance status
+### Invariant 31 — No output implies institutional endorsement or compliance status
 
 **Scope:** Spiritual and discourse safety
 
@@ -432,14 +432,14 @@ Every page and export states that this is an independent learning project. The s
 | One assessment paid immediately versus in installments | 7–10 |
 | Payment delayed while gold doubles | 7–10, 16 |
 | Loss to $80,000 and recovery to $100,000 | 13 |
-| Gift from one owner to another | 14, 25 |
+| Gift from one owner to another | 14, 26 |
 | USD/EUR converted reporting view with no economic event | 15–17 |
-| Unchanged primary-currency property when gold doubles and halves, with indexed comparison | 18–20, 20a |
-| Annual-surplus and wealth-reconciliation lenses over identical events | 21–22 |
-| 1919 piastre arithmetic combined with whole-unit gate | 23 |
-| Marriage, divorce, and prospective method change | 25–26 |
-| Move between countries with retained foreign assets | 15–17, 27 |
-| Payment-only historical migration with uncertain assessment date | 28 |
-| Public fictional demo and methodology export | 29–30 |
+| Unchanged primary-currency property when gold doubles and halves, with indexed comparison | 18–21 |
+| Annual-surplus and wealth-reconciliation lenses over identical events | 22–23 |
+| 1919 piastre arithmetic combined with whole-unit gate | 24 |
+| Marriage, divorce, and prospective method change | 26–27 |
+| Move between countries with retained foreign assets | 15–17, 28 |
+| Payment-only historical migration with uncertain assessment date | 29 |
+| Public fictional demo and methodology export | 30–31 |
 
 The calculation specification must supply exact inputs and expected outputs for every row before implementation is considered trustworthy.

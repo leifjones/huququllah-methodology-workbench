@@ -52,12 +52,12 @@ Ordinary currency rounding occurs after the whole-unit rule. It must not be used
 **Given** $6,000 below-threshold assessable property and a voluntary $100 contribution
 **Then** required payment remains zero, total voluntary remitted is $100, and credit allocated toward a present obligation is zero.
 
-The user may record one of three future-credit intentions:
+The system must represent future-credit intent as one of three states:
 
 | Recorded intent | Candidate for possible later allocation | Present obligation credit | What has been established |
 | --- | ---: | ---: | --- |
-| Explicitly excluded | $0 | $0 | The user does not intend this contribution to reduce a future obligation |
-| Preserve for possible future allocation | $100 | $0 | The user's intent is known; eligibility remains unresolved |
+| Explicitly excluded | $0 | $0 | The contribution is not intended to reduce a future obligation |
+| Preserve for possible future allocation | $100 | $0 | Intent is preserved; eligibility remains unresolved |
 | Unresolved | Unresolved | $0 | Neither intent nor eligibility has been decided |
 
 The voluntary amount must not silently reduce a future obligatory base or be described as payment of an amount due unless a reviewed source-grounded or explicitly labeled methodological treatment establishes that consequence and a later allocation is deliberately recorded.

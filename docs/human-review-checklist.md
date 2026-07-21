@@ -19,6 +19,8 @@
 - [ ] `README.md`
 - [x] `AGENTS.md`
 - [ ] `docs/design-and-discourse-plan.md`
+- [ ] `docs/draft-implementation-architecture.md`
+- [ ] `docs/draft-domain-model.md`
 - [ ] `docs/draft-ux-and-feature-proposals.md`
 - [ ] `docs/source-rule-matrix.md`
 - [ ] `docs/open-questions-and-counterexamples.md`
@@ -37,7 +39,7 @@
 - [x] Huqúqu'lláh in brief, purpose, and project boundaries
 - [ ] Explicit threshold constraint
 - [ ] Why gold appears, historical units, and indexed-credit distinction
-- [ ] Status, products, and research questions
+- [ ] Status, products, documentation index, and research questions
 - [ ] Posture, references, and next deliverable
 
 ### `docs/design-and-discourse-plan.md`
@@ -58,6 +60,22 @@
 - [ ] Status, source/design boundary, user need, and state separation
 - [ ] Intent choices, entry flow, later assessment, allocation, and reporting
 - [ ] Derived design requirements and open product questions
+
+### `docs/draft-implementation-architecture.md`
+
+- [ ] Status, architectural posture, product boundaries, and phase boundary
+- [ ] Canonical assessment path, taxonomy, extension seams, interfaces, and adapters
+- [ ] State lifecycles, syntactic builders, registration, and composition
+- [ ] Explanation, diagnostics, multilingual readiness, versioning, and replay
+- [ ] Persistence, privacy, rejected patterns, fitness tests, and open decisions
+
+### `docs/draft-domain-model.md`
+
+- [ ] Status, modeling posture, conceptual axes, value concepts, and domain vocabulary
+- [ ] Scenarios, participants, ownership, financial history, holdings, and classification
+- [ ] Assessments, obligations, remittances, intent, treatment, allocations, and lifecycle
+- [ ] Currency, rate evidence, time, derived projections, and non-fields
+- [ ] Phase boundary, privacy, deletion, language/text note, and open questions
 
 ### `docs/source-rule-matrix.md`
 
@@ -113,3 +131,4 @@ The log may record both completed human reviews and review-state maintenance. On
 | 2026-07-20 | Single-currency synthesis and approach history added | Codex (agent) | Source-matrix augmentation and voluntary-payment synthesis; design-plan primary-currency, voluntary-intent, and progressive-disclosure sections; new considered-approaches document; voluntary-payment reconciliation; indexed-credit candidate invariant; fictional acceptance suite | Added unchecked review coverage for the new approach-history document and gold-price synthesis row. Reopened the calculation-invariants whole-file review, threshold/whole-unit/voluntary-payment scope, assessment/settlement/allocation/payment-reconciliation scope, hypothesis/source-status scope, and fictional acceptance suite because the voluntary-intent examples, reconciliation, candidate invariant, and scenario changed reviewed content. No human review is asserted. | Branch `agent/document-single-currency-synthesis` |
 | 2026-07-20 | Focused invariant decision | LJ Jones (human) | Calculation invariant 21 — gold-price movement without economic augmentation | Confirmed promotion from candidate to derived design rule, requested an explicit rationale, and approved clean renumbering. Broader calculation-invariant review remains open. | User direction in project conversation |
 | 2026-07-20 | Ledger coverage and stale-state correction | Codex (agent) | New draft UX document; calculation-invariant whole-file, threshold/whole-unit/voluntary-payment, and fictional acceptance-suite scopes | Added unchecked whole-file and section coverage for `docs/draft-ux-and-feature-proposals.md`. Corrected stale checked states left after PR #7 added invariant 1a and changed the fictional acceptance suite. Design-plan and README scopes changed in PR #8 were already unchecked. No human review is asserted. | [PR #8](https://github.com/leifjones/huququllah-methodology-workbench/pull/8) |
+| 2026-07-20 | Ledger coverage expanded | Codex (agent) | README documentation index; new draft implementation architecture and draft domain model documents | Added unchecked whole-file and section coverage for both pre-specification planning documents and clarified README documentation-index coverage. Existing README whole-file and affected section scope were already unchecked. No human review is asserted. | Branch `agent/draft-implementation-architecture` |

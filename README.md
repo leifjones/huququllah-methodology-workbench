@@ -76,6 +76,8 @@ Two possible products are intentionally separated:
 ## Documentation
 
 - [Design and discourse plan](docs/design-and-discourse-plan.md) — posture, methodology taxonomy, conceptual model, event model, multi-currency strategy, ownership transitions, and phases
+- [Draft implementation architecture](docs/draft-implementation-architecture.md) — provisional module boundaries, dependency rules, persistence posture, architecture fitness tests, and deferred implementation choices
+- [Draft domain model](docs/draft-domain-model.md) — candidate semantic records and state separations for facts, judgments, assessments, obligations, remittances, allocations, provenance, and uncertainty; not a normalized storage schema
 - [Draft UX and feature proposals](docs/draft-ux-and-feature-proposals.md) — proposed interactive behavior for recording remittances before assessment and allocating them later
 - [Source-rule matrix](docs/source-rule-matrix.md) — what the sources explicitly establish, what each example illustrates, and what remains unresolved
 - [Open questions and counterexamples](docs/open-questions-and-counterexamples.md) — indexed-credit counterexamples, delayed-payment failure, the 1919 piastre example, and continuity across currencies and ownership changes

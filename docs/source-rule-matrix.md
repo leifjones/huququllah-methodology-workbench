@@ -76,7 +76,7 @@ A contemporary Egyptian 100-piastre gold coin is catalogued at 8.5 g and .875 fi
 | ---: | ---: | ---: |
 | 100 piastres | 7.4375 g | 0.107 |
 | 500 piastres | 37.1875 g | 0.537 |
-| 930.4 piastres | 69.2 g | 1.000 |
+| ≈930.3 piastres | 69.1916… g | 1.000 |
 | 1,000 piastres | 74.375 g | 1.075 |
 
 This is a **historical inference**, not a conversion stated in the authoritative passage. Wartime convertibility, multiple circulating currencies, and local exchange practice limit the precision of the comparison. It nevertheless shows why the simplified 100- and 500-piastre numbers deserve a scope note.

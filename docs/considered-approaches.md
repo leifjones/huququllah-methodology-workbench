@@ -75,7 +75,7 @@ The worked cases are retained in [Open Questions and Counterexamples](open-quest
 
 ### Current use
 
-The workbench may show the current-gold indexed result beside the provisional ordinary lens, with both calculations using the same immutable facts. It must label the indexed result experimental, show the gold-rise and gold-fall consequences, and never overwrite a historical assessment.
+The workbench may show the current-gold indexed result beside the provisional ordinary lens only when a user explicitly enables it as a research comparison, with both calculations using the same immutable facts. It must label the indexed result experimental, show the gold-rise and gold-fall consequences, and never overwrite a historical assessment, enter an obligation or allocation calculation, or appear as deductible assessed principal. The ordinary assessment view should not require this comparison.
 
 ## 3. Payment-derived gold units
 

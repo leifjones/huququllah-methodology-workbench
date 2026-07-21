@@ -99,20 +99,19 @@ The historical count alone does not determine that:
 
 Those are separate claims requiring explicit status and testing.
 
-### 5.3 Current-gold indexed-credit hypothesis
+### 5.3 Boundary on current-gold research comparisons
 
 The experimental transformation is:
 
 `current indexed view = historical completed units × current threshold value`
 
-It may be useful as a comparative display. Treating it as a substantive credit against current wealth is stronger: it can shelter genuinely new acquisitions when gold rises or manufacture apparent new wealth when gold falls. The worked examples are in [Open Questions and Counterexamples](open-questions-and-counterexamples.md#2-current-gold-indexed-credit).
+An earlier experiment proposed this transformation as a comparative lens. Treating it as a substantive credit against current wealth is stronger: it can shelter genuinely new acquisitions when gold rises or manufacture apparent new wealth when gold falls. The worked examples are in [Open Questions and Counterexamples](open-questions-and-counterexamples.md#2-current-gold-indexed-credit).
 
-The interface must therefore show two separately labeled outputs:
+If explicitly enabled as a research comparison, the interface may show a separately labeled output alongside the ordinary assessment:
 
-- **Historical units recorded**
 - **Current-gold translation under experimental hypothesis**
 
-No current-gold translation may overwrite the original assessment or silently enter an obligation calculation.
+It must remain clearly experimental and must not overwrite a historical assessment, enter an obligation or allocation calculation, or be presented as deductible assessed principal. The ordinary assessment view should not require this comparison.
 
 ## 6. Assessment, obligation, payment, and allocation
 
@@ -159,7 +158,7 @@ An allocation links settlement value to an obligation. It permits:
 - Later corrections or reversals without rewriting history
 - An outstanding balance independent of current gold prices
 
-A payment made after gold has moved does not change the assessment. Deriving units from `payment ÷ 19% ÷ payment-date threshold value` is invalid when the payment date differs from the assessment date.
+A payment made after the price of gold has changed does not alter the assessment. Deriving units from `payment ÷ 19% ÷ payment-date threshold value` is invalid when the payment date differs from the assessment date.
 
 Payment reporting should reconcile **total remitted** separately from **credit allocated toward obligations**. The explanation should identify obligatory allocations, voluntary amounts explicitly excluded from future credit, voluntary amounts preserved as candidates for possible later allocation, voluntary amounts whose intent is unresolved, unallocated settlement-intent amounts, corrections or reversals, and any documented currency conversion. No difference should appear as an unexplained residual.
 

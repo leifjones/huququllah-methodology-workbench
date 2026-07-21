@@ -122,8 +122,7 @@ Assessment and settlement are different event families.
 An assessment records:
 
 - Assessment date and effective financial period
-- Who the assessment covers—one participant or a joint arrangement
-- The ownership interests and shares attributed to each participant during that period
+- Participant or ownership scope
 - Native-currency assessable amount
 - Completed units and carried sub-unit remainder
 - Gold and FX rate evidence used

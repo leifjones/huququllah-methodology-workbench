@@ -68,7 +68,7 @@ The calculation specification begins with these constraints:
 6. Applicable annual expenses, losses, debts, exemptions, ownership, and financial ability must be incorporated rather than appended after calculation. The [codification](https://www.bahai.org/library/authoritative-texts/compilations/codification-law-huququllah/4) provides a concise synthesis.
 7. If the value of a believer’s assessable property is less than the value of 19 mithqáls of gold, that accumulation does not generate an initial obligatory amount. The believer may nevertheless contribute voluntarily. See paragraph 63 in the [application compilation](https://www.bahai.org/library/authoritative-texts/compilations/huququllah-right-god/3).
 
-   **Derived design consequence:** The workbench must preserve that the contribution was voluntary when made and must not report it as an amount then due.
+   **Derived design consequence:** When a remittance is identified as voluntary, the workbench must preserve that it was voluntary when made and must not report it as an amount then due. The absence of a recorded assessment does not by itself establish that a remittance was voluntary; see [Draft UX and Feature Proposals](draft-ux-and-feature-proposals.md#1-remittance-before-assessment).
 
 A statement that no initial or new obligatory amount arises from a threshold comparison does not reduce or extinguish an obligation already established.
 
@@ -138,11 +138,14 @@ A payment records:
 
 - Payment date
 - Amount and currency remitted
-- Purpose: settlement of an identified obligation, voluntary contribution, or unresolved
+- Intent at remittance: settlement of an identified obligation, settlement intent pending assessment, voluntary contribution, or unresolved
 - For a voluntary contribution, future-credit intent: explicitly excluded, preserved for possible future allocation, or unresolved
+- Later treatment decisions and allocations, without overwriting the original intent
 - Payment channel or receipt reference, if the user elects to keep it
 - Conversion evidence when paid in a currency different from the obligation
 - Notes and provenance
+
+A remittance may precede assessment. “Settlement intent pending assessment” preserves the person's intention without manufacturing an obligation or granting present obligation credit. A later assessment may support a deliberately confirmed allocation, but it must not trigger one automatically. Lack of a prior assessment must not default the remittance to voluntary. The proposed states, entry flow, later reconciliation, and reporting behavior are described in [Draft UX and Feature Proposals](draft-ux-and-feature-proposals.md#1-remittance-before-assessment).
 
 A user-facing option such as “Do not count this toward any future amount due” may record an explicit exclusion. A separate option such as “Preserve this for possible allocation to a future obligation” records the person's intent and retains the candidate amount, but it does not by itself establish eligibility or reduce a later amount due. Leaving both options unset records unresolved intent. An actual future allocation requires a reviewed source-grounded or explicitly labeled methodological treatment and a deliberate allocation record.
 
@@ -305,8 +308,11 @@ The workbench should not manufacture rulings for divorce or second marriages. It
 
 ### Public methodology explorer
 
-The recommended first product uses fictional data and supports:
+The recommended first public-facing product is an interactive methodology explorer using fictional data. Videos, explainers, and other materials may accompany it, but the current product path does not assume that a static presentation will precede a usable interactive tool.
 
+It supports:
+
+- Guided entry and playback of fictional scenarios
 - Side-by-side bookkeeping lenses
 - Source and epistemic-status overlays
 - Counterexample playback
@@ -365,6 +371,7 @@ The interface should:
 - Show why each asset or event was classified
 - Distinguish fact, source rule, derivation, judgment, and hypothesis visually and in exports
 - Permit “unresolved” rather than forcing a false binary decision
+- Permit a remittance to be recorded before assessment without classifying it automatically as voluntary or as obligation credit
 - Display each recorded amount in its recorded currency by default; preserve original values beside any converted reporting view
 - Explain divergences between methods
 - Explain differences among total remitted, obligation credit, voluntary excluded amounts, voluntary amounts preserved for possible allocation, unresolved amounts, unallocated amounts, reversals, and currency effects
@@ -387,7 +394,8 @@ The interface should:
 
 ### Phase 1 — Public methodology explorer
 
-- Fictional scenarios only
+- Interactive fictional scenarios only
+- Guided scenario entry and state-transition playback
 - Source overlays and comparison views
 - No personal financial storage
 - Plain-language testing with members of the intended general Bahá'í audience

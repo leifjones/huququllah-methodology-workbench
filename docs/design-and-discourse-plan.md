@@ -66,7 +66,9 @@ The calculation specification begins with these constraints:
 4. Assessable value not already counted toward a completed threshold unit—including any carried remainder—accumulates toward the next 19-mithqál unit. Each further complete unit generates a new obligatory amount. A remainder smaller than one unit carries forward but does not by itself generate an obligatory amount. [Q&A 90](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-aqdas/10)
 5. A given principal is subject once; realized profit or subsequent acquisitions become assessable when the prescribed amount is reached. [Q&A 8](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-aqdas/9)
 6. Applicable annual expenses, losses, debts, exemptions, ownership, and financial ability must be incorporated rather than appended after calculation. The [codification](https://www.bahai.org/library/authoritative-texts/compilations/codification-law-huququllah/4) provides a concise synthesis.
-7. If the value of a believer’s assessable property is less than the value of 19 mithqáls of gold, that accumulation does not generate an initial obligatory amount. The believer may nevertheless contribute voluntarily; the contribution must be represented as non-obligatory. See paragraph 63 in the [application compilation](https://www.bahai.org/library/authoritative-texts/compilations/huququllah-right-god/3).
+7. If the value of a believer’s assessable property is less than the value of 19 mithqáls of gold, that accumulation does not generate an initial obligatory amount. The believer may nevertheless contribute voluntarily. See paragraph 63 in the [application compilation](https://www.bahai.org/library/authoritative-texts/compilations/huququllah-right-god/3).
+
+   **Derived design consequence:** The workbench must preserve that the contribution was voluntary when made and must not report it as an amount then due.
 
 A statement that no initial or new obligatory amount arises from a threshold comparison does not reduce or extinguish an obligation already established.
 

@@ -32,6 +32,7 @@ Every public artifact should communicate that:
 - Huqúqu'lláh is a matter of individual conscience.
 - This project is not institutionally endorsed and cannot determine another person's obligation.
 - The authoritative texts take priority over software behavior.
+- Threshold comparisons must concern assessable property or accumulation, not classify a person or couple as above or below the threshold.
 - No one must disclose financial information to participate in the discourse.
 - Reporting must preserve the distinction between voluntary contributions and obligatory amounts, and must not represent voluntary giving as an amount due. Aggregate remittance totals are permitted only when the report provides a clear breakdown of the obligatory and voluntary components.
 - The project should direct questions requiring guidance to appointed representatives rather than inventing definitive rulings.
@@ -62,10 +63,12 @@ The calculation specification begins with these constraints:
 1. Obligatory payment begins when assessable possessions reach the value of 19 mithqáls of gold. [Q&A 8](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-aqdas/9)
 2. For metric calculations, the project follows the weight relationship stated in a letter written on behalf of Shoghi Effendi: “One mithqál consists of nineteen nakhuds. The weight of twenty-four nakhuds equals four and three-fifths grammes. Calculations may be made on this basis.” [Application compilation, paragraph 52](https://www.bahai.org/library/authoritative-texts/compilations/huququllah-right-god/3) This gives `19 × 19 ÷ 24 × 4.6 = 69.1916… grams` for the threshold, conventionally reported as approximately 69.2 grams. A generic or regional mithqál conversion must not replace this source-specified relationship.
 3. The rate is 19%. [Q&A 89](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-aqdas/10)
-4. Amounts above a completed unit remain exempt until a further complete unit is reached. [Q&A 90](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-aqdas/10)
+4. Assessable value not already counted toward a completed threshold unit—including any carried remainder—accumulates toward the next 19-mithqál unit. Each further complete unit generates a new obligatory amount. A remainder smaller than one unit carries forward but does not by itself generate an obligatory amount. [Q&A 90](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-aqdas/10)
 5. A given principal is subject once; realized profit or subsequent acquisitions become assessable when the prescribed amount is reached. [Q&A 8](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-aqdas/9)
 6. Applicable annual expenses, losses, debts, exemptions, ownership, and financial ability must be incorporated rather than appended after calculation. The [codification](https://www.bahai.org/library/authoritative-texts/compilations/codification-law-huququllah/4) provides a concise synthesis.
-7. Someone below the assessable threshold has no obligation, although a voluntary contribution is possible. See paragraph 63 in the [application compilation](https://www.bahai.org/library/authoritative-texts/compilations/huququllah-right-god/3).
+7. If the value of a believer’s assessable property is less than the value of 19 mithqáls of gold, that accumulation does not generate an initial obligatory amount. The believer may nevertheless contribute voluntarily; the contribution must be represented as non-obligatory. See paragraph 63 in the [application compilation](https://www.bahai.org/library/authoritative-texts/compilations/huququllah-right-god/3).
+
+A statement that no initial or new obligatory amount arises from a threshold comparison does not reduce or extinguish an obligation already established.
 
 These constraints do not answer every bookkeeping or continuity question, but they prevent a methodology explorer from treating “19% of any selected income” as equivalent to the obligatory calculation.
 

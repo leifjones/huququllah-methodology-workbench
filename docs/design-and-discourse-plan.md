@@ -33,7 +33,7 @@ Every public artifact should communicate that:
 - This project is not institutionally endorsed and cannot determine another person's obligation.
 - The authoritative texts take priority over software behavior.
 - No one must disclose financial information to participate in the discourse.
-- A voluntary contribution and an obligatory amount are different concepts and must never be merged in reporting.
+- Reporting must preserve the distinction between voluntary contributions and obligatory amounts, and must not represent voluntary giving as an amount due. Aggregate remittance totals are permitted only when the report provides a clear breakdown of the obligatory and voluntary components.
 - The project should direct questions requiring guidance to appointed representatives rather than inventing definitive rulings.
 
 This posture follows the emphasis on conscience and freedom from individual solicitation in the [26 November 2000 message of the Universal House of Justice](https://www.bahai.org/library/authoritative-texts/the-universal-house-of-justice/messages/20001126_001/1).

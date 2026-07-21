@@ -234,7 +234,7 @@ Examples of the intended handling, not answers for another person:
 
 - A material leisure boat is not a named exemption. The workbench can record it as a current owned asset and expose a person's `subject` or `unresolved` classification and any rationale they choose to record; it must not imply that its classification is an institutional determination.
 - Ordinary small possessions, such as pens, need not appear as individual rows. A person may use an `ordinary personal goods` aggregate with a plainly labeled estimate if they wish to include that value. The aggregation must not silently double-count or conceal a value that the selected method treats as relevant.
-- A vehicle should ordinarily be recorded as one current asset at its current value. If two cars are needed but one includes $5,000 of desired features, the source does not provide a component-splitting formula. The workbench should retain the whole-vehicle value and any optional rationale; a separate component treatment, if a person uses one, is an explicit individual bookkeeping choice rather than a derived rule.
+- A vehicle is not a named exemption. Whether a particular vehicle—including whether a household needs one or more vehicles, or whether a particular configuration is needful—is an individual judgment. When a person records a vehicle as a distinct holding, the workbench should ordinarily retain its whole current value and any optional rationale. The source does not provide a component-splitting formula for, for example, treating $5,000 of desired features separately; a separate component treatment, if a person uses one, is an explicit individual bookkeeping choice rather than a derived rule.
 
 ## 8. Partial units and ordinary rounding
 

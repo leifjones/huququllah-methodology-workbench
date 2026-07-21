@@ -36,6 +36,15 @@ This case must not be collapsed into either:
 | **Allocation** | A deliberate link applying payment value to an identified obligation | A rewrite of the original payment or intent |
 | **Later treatment decision** | A subsequent decision about an unmatched or excess amount | That the person held that later understanding on the payment date |
 
+For example:
+
+1. On January 10, a person remits $500. The remittance fact is “$500 sent in USD on January 10.”
+2. At that time, the person intends the $500 to go toward whatever obligation a later calculation shows. That is the **intent at remittance**; it does not establish that an obligation exists.
+3. On February 1, the person completes an assessment showing a $1,900 obligation.
+4. The person deliberately allocates the $500 payment to that obligation. Only then does it become $500 of obligation credit.
+
+If the person had already calculated the $1,900 obligation outside the workbench but entered the payment first, the recorded intent would instead be settlement of an already calculated obligation. The obligation record could be entered and linked later; this is not the unresolved state.
+
 Threshold state, obligation state, payment state, and allocation state remain separate.
 
 ### 1.3 Proposed intent choices
@@ -44,10 +53,10 @@ When recording a remittance, the interface should support at least these states:
 
 | Plain-language choice | Recorded intent | Immediate obligation credit |
 | --- | --- | ---: |
-| “I had already calculated an amount due.” | Settlement of an identified obligation; prompt to link or record it | Only the amount deliberately allocated |
+| “I had already calculated an amount due.” | Settlement of an already calculated obligation; its record may be linked or entered now or later | Only the amount deliberately allocated; $0 while the obligation record and allocation are pending |
 | “I intended this toward whatever amount I would calculate later.” | Settlement intent pending assessment | $0 until deliberate allocation |
 | “This was voluntary regardless of what was due.” | Voluntary contribution | $0 unless a later treatment is separately established |
-| “I’m not sure.” | Unresolved | $0 |
+| “I do not know.” | Unresolved | $0 |
 
 The product may require one recorded state for deterministic behavior, but it must permit **unresolved** rather than requiring false certainty. Lack of an assessment must never default the remittance to voluntary.
 
@@ -59,10 +68,18 @@ The interface may begin with:
 
 Possible responses:
 
-1. **Yes—link or record that obligation.**
+1. **Yes—I was paying an amount I had already calculated.**
 2. **No—I intended this toward whatever amount I would calculate later.**
 3. **No—this was voluntary regardless of what was due.**
-4. **I’m not sure.**
+4. **I do not know.**
+
+If the person selects the first response, the interface should then ask whether the calculation is already recorded in the workbench. The person may:
+
+- Link an existing obligation
+- Enter the previously calculated obligation now
+- Save the remittance and enter the obligation later
+
+Recording the payment before entering the obligation does not make the intent unresolved. Obligation credit remains zero only until the obligation record exists and a deliberate allocation is confirmed.
 
 The screen should explain that recording intent does not itself decide whether an obligation existed or whether the payment receives obligation credit.
 
@@ -70,7 +87,7 @@ A person who chooses settlement intent pending assessment may:
 
 - Save the remittance and assess later
 - Begin a draft assessment
-- Link an assessment that has not yet been entered
+- Record and link the assessment after completing it
 - Leave notes or evidence without completing a calculation
 
 ### 1.5 Later assessment and allocation
@@ -125,7 +142,7 @@ The obligation then has $1,400 remaining. If no obligation had arisen, the repor
 
 ### 1.8 Open product questions
 
-1. Should **unresolved** be the default, or should the interface require an explicit choice?
+1. Should **unresolved** (“I do not know”) be the default, or should the interface require an explicit choice?
 2. May one remittance carry split intent at entry, or only acquire split treatment through later allocations?
 3. What evidence is sufficient to suggest—but never automatically perform—a match between a payment and later assessment?
 4. How should a person correct inaccurately recorded intent while preserving the prior record?

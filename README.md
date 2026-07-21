@@ -76,7 +76,7 @@ Two possible products are intentionally separated:
 ## Documentation
 
 - [Design and discourse plan](docs/design-and-discourse-plan.md) — posture, methodology taxonomy, conceptual model, event model, multi-currency strategy, ownership transitions, and phases
-- [Draft UX and feature proposals](docs/draft-ux-and-feature-proposals.md) — proposed interactive behavior, beginning with remittance before assessment and later allocation
+- [Draft UX and feature proposals](docs/draft-ux-and-feature-proposals.md) — proposed interactive behavior for recording remittances before assessment and allocating them later
 - [Source-rule matrix](docs/source-rule-matrix.md) — what the sources explicitly establish, what each example illustrates, and what remains unresolved
 - [Open questions and counterexamples](docs/open-questions-and-counterexamples.md) — indexed-credit counterexamples, delayed-payment failure, the 1919 piastre example, and continuity across currencies and ownership changes
 - [Considered approaches and current posture](docs/considered-approaches.md) — provisional, experimental, legacy, and set-aside approaches with their rationale and conditions for reconsideration

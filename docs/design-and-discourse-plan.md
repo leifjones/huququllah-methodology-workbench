@@ -59,12 +59,13 @@ Approaches that shaped the project but are no longer proposed as the ordinary pa
 
 The calculation specification begins with these constraints:
 
-1. Obligatory payment begins when assessable possessions reach the value of 19 mithqáls of gold, approximately 69.2 grams. [Q&A 8](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-aqdas/9)
-2. The rate is 19%. [Q&A 89](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-aqdas/10)
-3. Amounts above a completed unit remain exempt until a further complete unit is reached. [Q&A 90](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-aqdas/10)
-4. A given principal is subject once; realized profit or subsequent acquisitions become assessable when the prescribed amount is reached. [Q&A 8](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-aqdas/9)
-5. Applicable annual expenses, losses, debts, exemptions, ownership, and financial ability must be incorporated rather than appended after calculation. The [codification](https://www.bahai.org/library/authoritative-texts/compilations/codification-law-huququllah/4) provides a concise synthesis.
-6. Someone below the assessable threshold has no obligation, although a voluntary contribution is possible. See paragraph 63 in the [application compilation](https://www.bahai.org/library/authoritative-texts/compilations/huququllah-right-god/3).
+1. Obligatory payment begins when assessable possessions reach the value of 19 mithqáls of gold. [Q&A 8](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-aqdas/9)
+2. For metric calculations, the project follows the weight relationship stated in a letter written on behalf of Shoghi Effendi: “One mithqál consists of nineteen nakhuds. The weight of twenty-four nakhuds equals four and three-fifths grammes. Calculations may be made on this basis.” [Application compilation, paragraph 52](https://www.bahai.org/library/authoritative-texts/compilations/huququllah-right-god/3) This gives `19 × 19 ÷ 24 × 4.6 = 69.1916… grams` for the threshold, conventionally reported as approximately 69.2 grams. A generic or regional mithqál conversion must not replace this source-specified relationship.
+3. The rate is 19%. [Q&A 89](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-aqdas/10)
+4. Amounts above a completed unit remain exempt until a further complete unit is reached. [Q&A 90](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-aqdas/10)
+5. A given principal is subject once; realized profit or subsequent acquisitions become assessable when the prescribed amount is reached. [Q&A 8](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-aqdas/9)
+6. Applicable annual expenses, losses, debts, exemptions, ownership, and financial ability must be incorporated rather than appended after calculation. The [codification](https://www.bahai.org/library/authoritative-texts/compilations/codification-law-huququllah/4) provides a concise synthesis.
+7. Someone below the assessable threshold has no obligation, although a voluntary contribution is possible. See paragraph 63 in the [application compilation](https://www.bahai.org/library/authoritative-texts/compilations/huququllah-right-god/3).
 
 These constraints do not answer every bookkeeping or continuity question, but they prevent a methodology explorer from treating “19% of any selected income” as equivalent to the obligatory calculation.
 
@@ -76,7 +77,7 @@ Gold can serve as the law-defined calibration for identifying a completed thresh
 
 For a particular assessment context `a`:
 
-- `threshold_weight` is 19 mithqáls, approximately 69.2 grams of gold.
+- `threshold_weight` is the source-defined weight of 19 Bahá’í mithqáls: `19 × 19 ÷ 24 × 4.6 = 69.1916… grams`, conventionally reported as approximately 69.2 grams of gold.
 - `threshold_value(a)` is the supported local-currency value of that weight at the assessment date under a documented rate convention.
 - `completed_units(a)` is the count of complete threshold units identified by the assessment after applicable deductions, losses, prior assessed principal, and carried sub-unit remainder have been handled under the selected specification.
 

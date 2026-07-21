@@ -23,7 +23,7 @@
 - [ ] `docs/source-rule-matrix.md`
 - [ ] `docs/open-questions-and-counterexamples.md`
 - [ ] `docs/considered-approaches.md`
-- [ ] `docs/calculation-invariants.md`
+- [x] `docs/calculation-invariants.md`
 - [ ] `docs/human-review-checklist.md`
 
 ## Section review
@@ -90,14 +90,14 @@
 ### `docs/calculation-invariants.md`
 
 - [x] Scope vocabulary and fictional-unit convention
-- [ ] Threshold, whole-unit, and voluntary-payment invariants
+- [x] Threshold, whole-unit, and voluntary-payment invariants
 - [x] Financial identity, classification, and record-lifecycle invariants
 - [x] Once-only principal and loss invariants
 - [x] Assessment, settlement, allocation, and payment-reconciliation invariants
 - [x] Multi-currency and rate-provenance invariants
 - [x] Ownership and household-transition invariants
 - [x] Hypothesis, source-status, and privacy invariants
-- [ ] Fictional acceptance suite
+- [x] Fictional acceptance suite
 
 ## Review log
 

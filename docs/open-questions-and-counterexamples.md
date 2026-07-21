@@ -8,7 +8,7 @@
 
 The existence of the threshold is **not** an open question in this project. The authoritative guidance establishes:
 
-- An initial threshold equal in value to 19 mithqáls of gold, approximately 69.2 g
+- An initial threshold equal in value to 19 mithqáls of gold; using the source-specified relationship of one mithqál to 19 nakhuds and 24 nakhuds to 4.6 grams, this is `19 × 19 ÷ 24 × 4.6 = 69.1916… grams` (approximately 69.2 g). See [application compilation, paragraph 52](https://www.bahai.org/library/authoritative-texts/compilations/huququllah-right-god/3).
 - A 19% rate
 - Whole-unit treatment for initial and further increments
 - Once-only treatment of a given principal
@@ -135,7 +135,7 @@ The “may” in the passage qualifies a hypothetical total that the person may 
 
 The source does not define its piastre. Under the most likely Egyptian-currency reading for Palestine in 1919, a contemporary 100-piastre gold coin provides a 7.4375 g fine-gold reference. Historical context is available from a [Harvard dissertation](https://dash.harvard.edu/entities/publication/73120378-c8c2-6bd4-e053-0100007fdf3b), a [United Nations note](https://www.un.org/unispal/document/auto-insert-211494/), and the [NGC/NumisMaster record for the 1916 coin](https://www.ngccoin.com/price-guide/world/egypt-100-piastres-km-324-1335-1916-cuid-35324-duid-101919).
 
-| Amount | Reference fine gold | Approximate 69.2 g units |
+| Amount | Reference fine gold | Approximate source-defined threshold units |
 | ---: | ---: | ---: |
 | 100 piastres | 7.4375 g | 0.107 |
 | 500 piastres | 37.1875 g | 0.537 |

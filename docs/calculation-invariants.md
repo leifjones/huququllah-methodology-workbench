@@ -29,6 +29,19 @@ Unless otherwise stated, examples use fictional data, exact decimal arithmetic, 
 
 **Failure:** Applying 19% to $9,999 and presenting $1,899.81 as due.
 
+### Invariant 1a — Metric threshold uses the source-defined Bahá’í mithqál
+
+**Scope:** Source constraint
+**Basis:** [Q&A 8](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-aqdas/9), [Q&A 23](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-aqdas/9), paragraph 52 of the [application compilation](https://www.bahai.org/library/authoritative-texts/compilations/huququllah-right-god/3), and the [codification](https://www.bahai.org/library/authoritative-texts/compilations/codification-law-huququllah/4)
+
+**Given** one mithqál equals 19 nakhuds and 24 nakhuds equal 4.6 grams
+**When** the nineteen-mithqál threshold is converted to metric weight
+**Then** the calculation basis is `19 × 19 ÷ 24 × 4.6 = 69.1916… grams`.
+
+The exact source relationship must be retained for calculation. Approximately 69.2 grams may be used as a display value.
+
+**Failure:** Substituting a generic or regional mithqál value—such as 4.25 grams—and calculating the threshold as 80.75 grams.
+
 ### Invariant 2 — Only completed units enter obligatory principal
 
 **Scope:** Source constraint
@@ -424,7 +437,7 @@ Every page and export states that this is an independent learning project. The s
 
 | Scenario | Primary invariants |
 | --- | --- |
-| $9,999, $10,000, $19,999, and $20,000 with `U = $10,000` | 1–2 |
+| Source-defined metric conversion, followed by $9,999, $10,000, $19,999, and $20,000 with `U = $10,000` | 1–2, including 1a |
 | $6,000 with a $100 voluntary contribution under explicitly excluded, preserved-for-possible-allocation, and unresolved future-credit intentions | 3, 10 |
 | Unchanged assessed property across two periods, followed by genuine additional accumulation | 12 |
 | Transfer between two accounts of one owner | 4 |

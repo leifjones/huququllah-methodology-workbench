@@ -35,7 +35,9 @@ The project is **not** intended to:
 
 ## Explicit threshold constraint
 
-The threshold is not an open question in this project. The authoritative guidance states that obligatory payment begins when assessable possessions reach the value of **19 mithqáls of gold**, approximately **69.2 grams**, and that subsequent liability arises on further complete units after applicable expenses and losses. Amounts below the first or a further complete unit do not create an obligation, although a person may contribute voluntarily.
+The threshold is not an open question in this project. [Q&A 8](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-aqdas/9) states that obligatory payment begins when assessable possessions reach the value of **19 mithqáls of gold**, and subsequent liability arises on further complete units after applicable expenses and losses. Amounts below the first or a further complete unit do not create an obligation, although a person may contribute voluntarily.
+
+For conversion to metric weight, this project uses the relationship stated in a letter written on behalf of Shoghi Effendi: **one mithqál consists of 19 nakhuds, and 24 nakhuds equal four and three-fifths grams**. See [paragraph 52 of the application compilation](https://www.bahai.org/library/authoritative-texts/compilations/huququllah-right-god/3). Thus the threshold is `19 × 19 ÷ 24 × 4.6 = 69.1916… grams`, conventionally reported as approximately **69.2 grams**.
 
 See [Q&A 8](https://www.bahai.org/r/491430606), [Q&A 89–90](https://www.bahai.org/r/580485375), the [codification (III.B.1, III.B.2)](https://www.bahai.org/r/490724139), and the [1987 clarification on voluntary contribution below the threshold](https://www.bahai.org/r/553865725).
 

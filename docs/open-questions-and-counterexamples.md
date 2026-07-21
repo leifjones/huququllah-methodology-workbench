@@ -18,71 +18,26 @@ See [Q&A 8](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-
 
 The open questions concern how a historical, multi-currency, changing-ownership ledger preserves and applies those constraints without adding unstated rules.
 
-## 2. Current-gold indexed credit
+## 2. Historical-state question and indexed-credit counterexamples
 
-### 2.1 Question
+### 2.1 What remains open
 
-After a historical assessment, what is preserved?
+After a historical assessment, the durable state might preserve native-currency principal, property provenance and transformations, completed nineteen-mithqál units, or a linked combination. That representation question remains open.
 
-- The original native-currency principal
-- The identified property and its transformations
-- A count of completed nineteen-mithqál assessment units
-- Some linked combination of all three
+The indexed-credit design question does not remain open: translating historical units at today's gold price and deducting the result from present assessable wealth is excluded from the ordinary calculation and retained only as an explicitly enabled counterfactual research view. See [Considered Approaches and Current Posture](considered-approaches.md#2-current-gold-indexed-credit).
 
-A separate question is whether historical units translated at today's gold price are merely a reporting view or a substantive deductible credit against current wealth.
+Recording historical units and using their current translation as deductible principal are different operations. The following cases show why they must remain separate.
 
-Recording completed units is compatible with using gold as the law-defined calibration at assessment. Treating the current translation as a credit introduces an additional rule. The following cases demonstrate why the two ideas must be separated.
+### 2.2 Worked counterexamples
 
-### 2.2 Gold rises: new acquisition is partly sheltered
+In both cases, one historical threshold unit is worth **$10,000**; the person has **$10,000** of assessable property, which is assessed and settled; and that property is retained.
 
-Assume a deliberately simplified fictional history:
+| Gold movement and later event | Historical-principal result | Current-gold indexed-credit result | Consequence |
+| --- | --- | --- | --- |
+| **Gold rises:** a current unit becomes **$20,000**; the person acquires **$20,000**; total property is **$30,000** | $10,000 previously assessed; $20,000 new—one complete current unit | $20,000 indexed credit; only $10,000 appears new | Shelters $10,000 of the new acquisition and delays the complete unit |
+| **Gold falls:** a current unit becomes **$5,000**; no acquisition, profit, or transfer occurs; property remains **$10,000** | $10,000 previously assessed; $0 new | $5,000 indexed credit; $5,000 appears new—one complete current unit | Manufactures an apparent increment without an economic event |
 
-1. On the original assessment date, one threshold unit is worth **$10,000**.
-2. The person has **$10,000** of assessable property: one complete unit.
-3. The resulting obligation is assessed and fully settled.
-4. The person retains that original $10,000 property.
-5. Gold later doubles, so one current threshold unit is worth **$20,000**.
-6. The person then acquires **$20,000** of genuinely new assessable property.
-7. Current property totals **$30,000**.
-
-Two carry-forward representations now diverge:
-
-| Representation | Previously assessed amount used now | Apparent new amount |
-| --- | ---: | ---: |
-| Historical native-currency principal | $10,000 | $20,000 |
-| One unit translated at current gold | $20,000 | $10,000 |
-
-Under the indexed-credit representation, $10,000 of the new acquisition is absorbed by appreciation in the historical credit. Since the current unit is $20,000, the method may also delay an assessment that the native-principal representation would identify as one complete new unit.
-
-**What this establishes:** A historical unit count does not automatically justify using its current gold value as deductible principal.
-
-**What it does not establish:** The example does not prove that gold-denominated historical records are invalid. It isolates the additional consequence created by current indexing.
-
-### 2.3 Gold falls: unchanged property becomes an apparent increment
-
-Reverse the movement:
-
-1. One historical threshold unit is worth **$10,000**.
-2. The person has $10,000 of assessable property, which is assessed and settled.
-3. The property remains unchanged at $10,000; there is no acquisition, profit, or transfer.
-4. Gold falls so that one current threshold unit is worth **$5,000**.
-5. The indexed credit now equals only $5,000.
-
-The current $10,000 balance less a $5,000 indexed credit produces a $5,000 apparent increase. Because $5,000 is now a complete current unit, an indexed-credit method can manufacture an apparent new unit without any economic event.
-
-This is not merely display volatility. If the current translation enters the assessment formula, it changes the substantive result.
-
-### 2.4 Design decision still required
-
-A future specification must state separately:
-
-- What historical state is immutable
-- What a current-gold translation is intended to communicate
-- Whether that translation can affect an obligation
-- Which source or explicit experimental hypothesis supports that effect
-- How results differ when historical principal, property provenance, and current indexing are compared
-
-Until reviewed, the current-gold indexed-credit hypothesis belongs in a comparative research view, not the default calculation path.
+These cases establish that using a current translation as deductible credit can change a substantive result. They do not challenge recording historical unit counts or displaying a clearly labeled current translation as a counterfactual research view.
 
 ## 3. Assessment and payment occur at different times
 

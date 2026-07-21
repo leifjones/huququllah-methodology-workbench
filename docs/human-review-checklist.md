@@ -23,7 +23,7 @@
 - [ ] `docs/source-rule-matrix.md`
 - [ ] `docs/open-questions-and-counterexamples.md`
 - [ ] `docs/considered-approaches.md`
-- [x] `docs/calculation-invariants.md`
+- [ ] `docs/calculation-invariants.md`
 - [ ] `docs/human-review-checklist.md`
 
 ## Section review
@@ -96,7 +96,7 @@
 - [x] Assessment, settlement, allocation, and payment-reconciliation invariants
 - [x] Multi-currency and rate-provenance invariants
 - [x] Ownership and household-transition invariants
-- [x] Hypothesis, source-status, and privacy invariants
+- [ ] Hypothesis, source-status, and privacy invariants
 - [x] Fictional acceptance suite
 
 ## Review log
@@ -113,3 +113,4 @@ The log may record both completed human reviews and review-state maintenance. On
 | 2026-07-20 | Single-currency synthesis and approach history added | Codex (agent) | Source-matrix augmentation and voluntary-payment synthesis; design-plan primary-currency, voluntary-intent, and progressive-disclosure sections; new considered-approaches document; voluntary-payment reconciliation; indexed-credit candidate invariant; fictional acceptance suite | Added unchecked review coverage for the new approach-history document and gold-price synthesis row. Reopened the calculation-invariants whole-file review, threshold/whole-unit/voluntary-payment scope, assessment/settlement/allocation/payment-reconciliation scope, hypothesis/source-status scope, and fictional acceptance suite because the voluntary-intent examples, reconciliation, candidate invariant, and scenario changed reviewed content. No human review is asserted. | Branch `agent/document-single-currency-synthesis` |
 | 2026-07-20 | Focused invariant decision | LJ Jones (human) | Calculation invariant 21 — gold-price movement without economic augmentation | Confirmed promotion from candidate to derived design rule, requested an explicit rationale, and approved clean renumbering. Broader calculation-invariant review remains open. | User direction in project conversation |
 | 2026-07-20 | Ledger coverage and stale-state correction | Codex (agent) | New draft UX document; calculation-invariant whole-file, threshold/whole-unit/voluntary-payment, and fictional acceptance-suite scopes | Added unchecked whole-file and section coverage for `docs/draft-ux-and-feature-proposals.md`. Corrected stale checked states left after PR #7 added invariant 1a and changed the fictional acceptance suite. Design-plan and README scopes changed in PR #8 were already unchecked. No human review is asserted. | [PR #8](https://github.com/leifjones/huququllah-methodology-workbench/pull/8) |
+| 2026-07-21 | Indexed-credit boundary and document structure clarified | Codex (agent) | Open Questions historical-state/indexed-credit section; Considered Approaches indexed-credit posture; design-plan indexed-credit boundary; README research questions; calculation invariants 19–20 | Reclassified the indexed-credit material as worked counterexamples while retaining the historical-state and source questions; aligned counterfactual research output with the prohibition on recording it as an obligation. Reopened the calculation-invariants whole-file review and hypothesis/source-status/privacy scope. No human review is asserted. | Branch `agent/succinct-gold-indexed-question` |

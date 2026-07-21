@@ -105,13 +105,13 @@ The experimental transformation is:
 
 `current indexed view = historical completed units × current threshold value`
 
-An earlier experiment proposed this transformation as a comparative lens. Treating it as a substantive credit against current wealth is stronger: it can shelter genuinely new acquisitions when gold rises or manufacture apparent new wealth when gold falls. The worked examples are in [Open Questions and Counterexamples](open-questions-and-counterexamples.md#2-current-gold-indexed-credit).
+An earlier experiment proposed this transformation as a comparative lens. Treating it as a substantive credit against current wealth is stronger: it can shelter genuinely new acquisitions when gold rises or manufacture apparent new wealth when gold falls. The [worked counterexamples](open-questions-and-counterexamples.md#2-historical-state-question-and-indexed-credit-counterexamples) demonstrate both failures.
 
 If explicitly enabled as a research comparison, the interface may show a separately labeled output alongside the ordinary assessment:
 
 - **Current-gold translation under experimental hypothesis**
 
-It must remain clearly experimental and must not overwrite a historical assessment, enter an obligation or allocation calculation, or be presented as deductible assessed principal. The ordinary assessment view should not require this comparison.
+It must remain clearly experimental and must not overwrite a historical assessment, become the ordinary or recorded obligation, enter allocation, or be presented as deductible assessed principal outside the counterfactual view. The ordinary assessment view should not require this comparison.
 
 ## 6. Assessment, obligation, payment, and allocation
 

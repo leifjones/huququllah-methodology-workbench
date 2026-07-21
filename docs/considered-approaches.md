@@ -21,7 +21,7 @@ This document does not declare a final personal methodology or an authoritative 
 | Approach | Current status | Present use |
 | --- | --- | --- |
 | Single primary currency with event-based augmentation | Provisional working synthesis | Candidate ordinary lens for simple, single-currency histories |
-| Current-gold indexed credit | Active experimental hypothesis | Comparative view and counterexample testing |
+| Current-gold indexed credit | Active experimental hypothesis | Counterfactual comparison and counterexample testing only |
 | Payment-derived gold units | Legacy reconstruction | Reproduce an earlier ledger without presenting a payment-date inference as an observed assessment |
 | Separate “purified wealth” spending account | Set aside as a default | May remain a personal budgeting discipline, not a source-derived calculation requirement |
 | Separate native-currency subledgers | Open alternative | Preserve native facts while feeding one consolidated personal history |
@@ -64,18 +64,11 @@ The original gold-denominated experiment sought one consistent unit across curre
 
 ### Why it is not the default
 
-A current translation of historical gold units is not the same operation as recording the gold-defined threshold at a historical assessment. When used as a substantive deductible credit, current indexing can:
-
-- Shelter genuinely new acquisitions when gold rises
-- Produce apparent new assessable wealth when gold falls despite no economic event
-- Make the payment date, rather than the assessment date, determine inferred historical units
-- Obscure whether a changed result came from acquisition, realization, or only movement in the measuring relationship
-
-The worked cases are retained in [Open Questions and Counterexamples](open-questions-and-counterexamples.md#2-current-gold-indexed-credit). The hypothesis remains useful precisely because it makes these consequences visible.
+A current translation of historical gold units is not the same operation as recording the gold-defined threshold at a historical assessment. As the [worked counterexamples](open-questions-and-counterexamples.md#2-historical-state-question-and-indexed-credit-counterexamples) show, using the translation as deductible principal can shelter a new acquisition when gold rises or manufacture an apparent increment when gold falls without an economic event. Inferring historical units from a later payment date is a separate legacy-reconstruction problem addressed below.
 
 ### Current use
 
-The workbench may show the current-gold indexed result beside the provisional ordinary lens only when a user explicitly enables it as a research comparison, with both calculations using the same immutable facts. It must label the indexed result experimental, show the gold-rise and gold-fall consequences, and never overwrite a historical assessment, enter an obligation or allocation calculation, or appear as deductible assessed principal. The ordinary assessment view should not require this comparison.
+The workbench may show the current-gold indexed result beside the provisional ordinary lens only when a user explicitly enables it as a counterfactual research comparison using the same immutable facts. It must label the result experimental, show the ordinary result and the gold-rise and gold-fall consequences, and never overwrite historical state, become the ordinary or recorded obligation, enter allocation, or appear as deductible assessed principal outside the counterfactual view.
 
 ## 3. Payment-derived gold units
 

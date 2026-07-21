@@ -282,28 +282,29 @@ The precise treatment of realized currency gain remains a specification question
 
 If one historical unit is shown at today's gold price, the output is labeled a current translation. The stored historical assessment remains unchanged.
 
-### Invariant 19 — Substantive indexed credit is opt-in and labeled experimental
+### Invariant 19 — Indexed-credit comparison is opt-in and cannot become the recorded obligation
 
 **Scope:** Research integrity
 
-The default source-grounded view may not silently deduct `historical units × current unit value` from present wealth. If a research profile enables that operation, the interface and export must:
+The default source-grounded view may not deduct `historical units × current unit value` from present wealth. A research profile may apply that operation only to produce a counterfactual comparison. The interface and export must:
 
 - Label it the current-gold indexed-credit hypothesis
 - Cite no authority that does not actually establish it
 - Show the non-indexed comparison
 - Display the gold-rise and gold-fall consequences
 - Preserve the same historical unit count in both views
+- Prevent the counterfactual result from becoming a recorded obligation or allocation basis
 
 ### Invariant 20 — Gold-rise and gold-fall consequences are reproducible
 
 **Scope:** Research integrity
 
-Using the fictional cases in [Open Questions and Counterexamples](open-questions-and-counterexamples.md#2-current-gold-indexed-credit):
+Using the [fictional counterexamples](open-questions-and-counterexamples.md#2-historical-state-question-and-indexed-credit-counterexamples):
 
 - A rise from a $10,000 historical unit to a $20,000 current unit produces a $20,000 experimental credit, not a changed historical count.
 - A fall to a $5,000 current unit produces a $5,000 experimental credit, not a new acquisition event.
 
-If the hypothesis changes an obligation result, the divergence must be displayed rather than normalized away.
+If the hypothesis produces a divergent counterfactual obligation amount, the divergence must be displayed rather than normalized away and must not be recorded as an obligation.
 
 ### Invariant 21 — Gold-price movement does not silently create augmentation in the single-primary-currency lens
 

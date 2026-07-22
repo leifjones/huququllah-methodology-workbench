@@ -78,7 +78,7 @@ Two possible products are intentionally separated:
 - [Design and discourse plan](docs/design-and-discourse-plan.md) — posture, methodology taxonomy, conceptual model, event model, multi-currency strategy, ownership transitions, and phases
 - [Draft UX and feature proposals](docs/draft-ux-and-feature-proposals.md) — proposed interactive behavior for recording remittances before assessment and allocating them later
 - [Source-rule matrix](docs/source-rule-matrix.md) — what the sources explicitly establish, what each example illustrates, and what remains unresolved
-- [Open questions and counterexamples](docs/open-questions-and-counterexamples.md) — indexed-credit counterexamples, delayed-payment failure, the 1919 piastre example, and continuity across currencies and ownership changes
+- [Open questions and counterexamples](docs/open-questions-and-counterexamples.md) — the historical-state question, indexed-credit counterexamples, delayed-payment failure, the 1919 piastre example, and continuity across currencies and ownership changes
 - [Considered approaches and current posture](docs/considered-approaches.md) — provisional, experimental, legacy, and set-aside approaches with their rationale and conditions for reconsideration
 - [Calculation invariants](docs/calculation-invariants.md) — correctness constraints and fictional acceptance tests for a future specification
 - [Human review checklist](docs/human-review-checklist.md) — an explicit record of which files and sections people have deliberately reviewed
@@ -86,7 +86,7 @@ Two possible products are intentionally separated:
 ## Central research questions
 
 1. What historical state should be preserved after assessment: native-currency principal, completed threshold units, identified property, or a linked combination?
-2. Is a current-gold translation of historical units merely a reporting view, or can it defensibly function as a substantive indexed credit?
+2. What evidence, if any, would justify revisiting the current boundary that confines current-gold indexed credit to a counterfactual research view?
 3. What date and evidence govern the local-currency value of a threshold unit at assessment?
 4. How should incomplete historical payment records be reconstructed without presenting estimates as facts?
 5. How should native-currency histories be consolidated without allowing current FX movements to create silent gains or losses?

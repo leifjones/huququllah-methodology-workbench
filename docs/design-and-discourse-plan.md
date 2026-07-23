@@ -301,7 +301,7 @@ Joint versus individual handling is therefore not merely a display toggle. The m
 - Pre-marital property and pre-existing assessment histories
 - Effective dates for marriage, separation, divorce, remarriage, inheritance, and death
 
-The workbench should not manufacture rulings for divorce or second marriages. It should preserve enough history for the person and a knowledgeable adviser to reason about the transition without double assessment or loss of provenance.
+The workbench should not manufacture rulings for divorce or subsequent marriages. It should preserve enough history for the person and a knowledgeable adviser to reason about the transition without double assessment or loss of provenance.
 
 ## 11. Public explorer and private ledger
 

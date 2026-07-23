@@ -149,7 +149,7 @@ The guidance distinguishes ownership from mere control and permits spouses to pr
 
 ### 6.1 Marriage
 
-Questions to preserve rather than answer silently:
+Questions to make explicit for study and consultation:
 
 - What assessment histories does each spouse bring into the marriage?
 - Which property remains individually owned, becomes jointly owned, or is gifted?
@@ -164,7 +164,7 @@ Questions to preserve rather than answer silently:
 - How can each resulting ledger avoid double assessment while retaining evidence?
 - Which civil-law ownership effects take precedence in the factual record?
 
-The software must record the transition and expose the question. It must not invent a doctrinal answer.
+The software must record the transition, expose the question, and let participants preserve tentative conclusions with their sources, reasoning, uncertainty, and differing views. It must not silently convert a tentative conclusion into a doctrinal rule.
 
 ### 6.3 Second marriages
 
@@ -198,7 +198,7 @@ The user should be able to revise an uncommitted estimate freely or amend a comm
 
 ## 8. Questions for focused consultation
 
-The most useful consultation questions are narrow and testable:
+The most useful consultation questions are narrow and testable. The workbench should help participants examine the relevant sources and examples, compare reasoning, record tentative conclusions and remaining disagreements, and identify questions that may also call for consultation with appointed representatives:
 
 1. What should remain invariant when previously assessed fiat principal crosses currencies or jurisdictions?
 2. Does any authoritative guidance support current-gold translation as a substantive credit rather than a display?
@@ -208,4 +208,4 @@ The most useful consultation questions are narrow and testable:
 6. Can a voluntary contribution ever be credited toward a later obligation, and if so, under what conditions and documentation?
 7. Is the proposed scope treatment of the 1919 piastre example sound?
 
-Answers should be added to the source-rule matrix with their provenance and date, not absorbed invisibly into a formula.
+Findings and tentative answers should be added to the source-rule matrix with their provenance, date, reasoning, uncertainty, and status, not absorbed invisibly into a formula. Guidance received through consultation should likewise retain its precise provenance and scope rather than being generalized beyond what it supports.

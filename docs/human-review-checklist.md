@@ -18,7 +18,7 @@
 
 - [ ] `README.md`
 - [x] `AGENTS.md`
-- [ ] `docs/design-and-discourse-plan.md`
+- [x] `docs/design-and-discourse-plan.md`
 - [ ] `docs/draft-ux-and-feature-proposals.md`
 - [ ] `docs/source-rule-matrix.md`
 - [ ] `docs/open-questions-and-counterexamples.md`
@@ -42,16 +42,16 @@
 
 ### `docs/design-and-discourse-plan.md`
 
-- [ ] Desired contribution and non-negotiable posture
-- [ ] Methodology taxonomy and source-grounded constraints
-- [ ] Historical units and indexed-credit hypothesis
-- [ ] Assessment, obligation, payment, allocation, voluntary-treatment, and record-lifecycle model
-- [ ] Event, provenance, asset classification, materiality, and partial-unit model
-- [ ] Multi-currency strategy
-- [ ] Ownership and household transitions
-- [ ] Public explorer, private ledger, privacy, and agent-access boundary
-- [ ] General-audience accessibility and experience principles
-- [ ] Phases and specification-readiness criteria
+- [x] Desired contribution and non-negotiable posture
+- [x] Methodology taxonomy and source-grounded constraints
+- [x] Historical units and indexed-credit hypothesis
+- [x] Assessment, obligation, payment, allocation, voluntary-treatment, and record-lifecycle model
+- [x] Event, provenance, asset classification, materiality, and partial-unit model
+- [x] Multi-currency strategy
+- [x] Ownership and household transitions
+- [x] Public explorer, private ledger, privacy, and agent-access boundary
+- [x] General-audience accessibility and experience principles
+- [x] Phases and specification-readiness criteria
 
 ### `docs/draft-ux-and-feature-proposals.md`
 

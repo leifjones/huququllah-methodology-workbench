@@ -95,7 +95,7 @@ Accordingly, the current specification posture is:
 1. Apply the explicit initial and further-unit threshold constraints.
 2. Use the 1919 example to inform annual reconciliation, expense deduction, the 19% rate, and once-only principal.
 3. Do not treat any one worked example as a complete executable algorithm when other directly applicable rules are stated elsewhere.
-4. Preserve the apparent mismatch as a source-scope note for consultation, not as a fabricated resolution or a blocker to acknowledging the threshold.
+4. Preserve the apparent mismatch as a source-scope question for study and consultation. Any tentative resolution should retain its reasoning, provenance, and uncertainty; it must not become a fabricated authoritative ruling or a blocker to acknowledging the threshold.
 
 ## Review questions
 
@@ -103,4 +103,4 @@ Accordingly, the current specification posture is:
 2. Are any source passages needed that materially change the current synthesis?
 3. Is the proposed treatment of historical assessment units consistent with the once-only principle without assuming indexed credit?
 4. What rate convention should determine a local-currency threshold at an assessment date?
-5. Which ownership and cross-currency questions should be brought to an appointed representative before calculation behavior is specified?
+5. Which ownership and cross-currency questions should be explored further through study, worked examples, and consultation, and which may also warrant focused consultation with an appointed representative before calculation behavior is specified?

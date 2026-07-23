@@ -21,9 +21,11 @@ The workbench should help people share *how they reasoned* without implying that
 
 The preferred discourse pattern is:
 
-> Here are the facts I recorded, the sources I relied on, the judgments I made, the calculation lens I used, and the unresolved questions I encountered.
+> Here are the facts I recorded, the sources I relied on, the judgments I made, the calculation lens I used, the unresolved questions I encountered, and any tentative conclusions I reached.
 
 The system should make disagreement inspectable. A difference in results should be attributable to a source interpretation, classification, valuation date, missing event, ownership assumption, or explicit voluntary practice—not hidden inside a formula.
+
+Unresolved questions should become invitations to inquiry rather than endpoints produced by caution. The workbench should support individual reflection and study, comparison of source-grounded reasoning, and consultation among people exploring the law. Participants should be able to record a tentative answer together with its sources, assumptions, reasoning, uncertainty, differing views, and conditions for reconsideration. The project may preserve and test such an answer, but its inclusion does not make the answer a project ruling or official guidance.
 
 ## 2. Non-negotiable posture
 
@@ -35,7 +37,8 @@ Every public artifact should communicate that:
 - Threshold comparisons must concern assessable property or accumulation, not classify a person or couple as above or below the threshold.
 - No one must disclose financial information to participate in the discourse.
 - Reporting must preserve the distinction between voluntary contributions and obligatory amounts, and must not represent voluntary giving as an amount due. Aggregate remittance totals are permitted only when the report provides a clear breakdown of the obligatory and voluntary components.
-- The project should direct questions requiring guidance to appointed representatives rather than inventing definitive rulings.
+- The project should support reflection, study, and consultation—including the articulation and testing of tentative, source-grounded answers—without presenting project conclusions as definitive rulings.
+- When a question may call for guidance from an appointed representative, the workbench should help people frame it for consultation and preserve what was learned. That consultation complements rather than shortcuts the participants' own reflection, study, and consultation.
 
 This posture follows the emphasis on conscience and freedom from individual solicitation in the [26 November 2000 message of the Universal House of Justice](https://www.bahai.org/library/authoritative-texts/the-universal-house-of-justice/messages/20001126_001/1).
 
@@ -385,11 +388,11 @@ The interface should:
 
 - Review the source-rule matrix
 - Track deliberate human review in the [human review checklist](human-review-checklist.md)
-- Resolve or explicitly defer open questions
+- Explore open questions through study, reflection, fictional cases, and consultation; record tentative conclusions, disagreements, or explicit deferrals
 - Normalize schemas and formulas
 - Write fictional cases with expected outputs
 - Review the historical-rate methodology
-- Seek focused consultation on questions requiring guidance
+- Seek focused consultation, including with appointed representatives when their guidance may be needed
 
 ### Phase 1 — Public methodology explorer
 

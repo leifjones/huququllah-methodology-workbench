@@ -101,7 +101,7 @@ The project begins with humility about what is established, inferred, judged, or
 
 > This is how I am currently understanding the law and organizing my records. Here are the sources, judgments, assumptions, and calculations involved. Here are the results under alternative approaches. I offer it as an experiment and an invitation to learn together.
 
-Readers are encouraged to study the linked texts, test the examples, share alternative approaches, and consult appointed representatives when a question calls for guidance. No page should demand payment, shame uncertainty, rank people, or imply institutional endorsement.
+Readers are encouraged to study the linked texts, test the examples, share alternative approaches, consult with one another, and document tentative source-grounded answers together with remaining uncertainty. When a question may call for guidance from an appointed representative, the workbench should also help people frame it for consultation. The project may preserve and test what participants learn, but recording a conclusion does not make it official guidance. No page should demand payment, shame uncertainty, rank people, or imply institutional endorsement.
 
 ## Primary references
 

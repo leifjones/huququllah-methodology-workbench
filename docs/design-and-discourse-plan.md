@@ -1,6 +1,6 @@
 # Design and Discourse Plan
 
-**Status:** Pre-specification RFC
+**Status:** Design plan for a public methodology explorer and possible later private ledger
 
 **Audience:** A general Bahá'í audience learning about the law in practice, reviewers familiar with the authoritative guidance, and future designers or implementers
 
@@ -342,7 +342,7 @@ This possibility does not authorize agent access by default. It belongs after th
 
 ## 12. General-audience accessibility
 
-The repository may preserve technical depth, but the videos, tools, examples, and explainers ultimately shared with others must be understandable to a general Bahá'í audience. They must not assume prior familiarity with accounting, software design, historical currencies, gold pricing, or the conversations that produced this RFC.
+The repository may preserve technical depth, but the videos, tools, examples, and explainers ultimately shared with others must be understandable to a general Bahá'í audience. They must not assume prior familiarity with accounting, software design, historical currencies, gold pricing, or the conversations that produced this plan.
 
 Public-facing materials should use progressive disclosure:
 
@@ -432,4 +432,4 @@ Implementation is ready to begin only when:
 - Reviewers can reproduce every fictional output from immutable inputs
 - General-audience reviewers can identify the threshold, the reason gold appears, and the difference between guidance and experiment without relying on prior project context
 
-Until then, this repository remains an RFC and study aid rather than a calculator specification.
+Until then, this repository remains a design and study workspace rather than a calculator specification.

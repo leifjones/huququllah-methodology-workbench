@@ -46,8 +46,6 @@ For metric calculation, the project uses the source-specified relationship that 
 
 Gold enters the ordinary calculation as the law-defined measure used to value a threshold unit at an assessment. It does not follow that a person must own or pay in gold, or that previously assessed wealth should continually change with today's gold price. The current working synthesis for simple cases uses a primary currency and event-based augmentation: a gold-price movement alone does not create new income, acquisition, realized profit, recovery, or another economic event.
 
-The earlier approach of translating historical units at today's gold price and using the result as deductible “purified” principal is **not the ordinary product path**. It remains documented only as design history and an optional counterfactual for understanding why it was set aside. See [Considered Approaches and Current Posture](docs/considered-approaches.md) and the [worked counterexamples](docs/open-questions-and-counterexamples.md#2-historical-state-question-and-indexed-credit-counterexamples).
-
 ## Documentation
 
 - [Design and discourse plan](docs/design-and-discourse-plan.md) — the primary product plan: posture, audience, conceptual and event models, experience principles, public/private boundary, and development phases

@@ -349,7 +349,7 @@ Public-facing materials should use progressive disclosure:
 1. Begin with what Huqúqu'lláh is, its spiritual and social context, who may have an obligation, and the threshold.
 2. Introduce gold as the law-defined threshold measure before discussing historical units or indexed-credit experiments.
 3. Demonstrate one initial obligatory assessment in a familiar local currency.
-4. Show a below-threshold voluntary contribution next, keeping required payment at zero and allowing its future-credit intent to be explicitly excluded, preserved for possible later allocation, or left unresolved without silently deciding eligibility.
+4. Show a below-threshold branch next and begin with the complete outcome: required payment is zero, and the person may stop. An optional comparison may then show no contribution and illustrative voluntary contributions of 1%, 19%, and 50%; every path must leave the obligation at zero, make clear that no voluntary percentage is prescribed, and keep any contribution separate from obligation and present obligation credit. The learning path should not require fluency with the full bookkeeping model before this distinction can be understood.
 5. Demonstrate the once-only principle across a later period, including genuine additional accumulation toward a further complete unit.
 6. Add expenses, losses, delayed settlement, or carried remainders only after those basic examples are clear.
 7. Place gold-price counterexamples, alternative carry-forward approaches, multi-currency histories, ownership transitions, provenance, and other experimental hypotheses in optional deeper layers.
@@ -370,6 +370,9 @@ A public artifact is not ready merely because its calculation is correct. A pers
 The interface should:
 
 - Lead with study and scope, not an amount due
+- Present no payment as a complete, non-deficient outcome whenever no obligation has been established; voluntary giving must not appear as a remaining step
+- Offer a low-complexity path in which exact assessment is available but does not become a moral or conversational prerequisite for study or for exploring a contribution explicitly treated as voluntary regardless of what may be due
+- Never infer that a person is below the threshold merely because no assessment has been completed
 - Show why each asset or event was classified
 - Distinguish fact, source rule, derivation, judgment, and hypothesis visually and in exports
 - Permit “unresolved” rather than forcing a false binary decision

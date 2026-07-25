@@ -16,7 +16,7 @@
 
 ## Whole-file review
 
-- [ ] `README.md`
+- [x] `README.md`
 - [x] `AGENTS.md`
 - [ ] `docs/design-and-discourse-plan.md`
 - [ ] `docs/draft-ux-and-feature-proposals.md`
@@ -34,10 +34,10 @@
 
 ### `README.md`
 
-- [ ] Huqúqu'lláh in brief, product direction, and project boundaries
-- [ ] Threshold and current calculation posture
-- [ ] Documentation map and development path
-- [ ] Discourse posture, invitation, and references
+- [x] Huqúqu'lláh in brief, product direction, and project boundaries
+- [x] Threshold and current calculation posture
+- [x] Documentation map and development path
+- [x] Discourse posture, invitation, and references
 
 ### `docs/design-and-discourse-plan.md`
 

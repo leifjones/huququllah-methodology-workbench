@@ -18,7 +18,7 @@
 
 - [ ] `README.md`
 - [x] `AGENTS.md`
-- [x] `docs/design-and-discourse-plan.md`
+- [ ] `docs/design-and-discourse-plan.md`
 - [ ] `docs/draft-ux-and-feature-proposals.md`
 - [ ] `docs/source-rule-matrix.md`
 - [ ] `docs/open-questions-and-counterexamples.md`
@@ -34,11 +34,10 @@
 
 ### `README.md`
 
-- [x] Huqúqu'lláh in brief, purpose, and project boundaries
-- [ ] Explicit threshold constraint
-- [ ] Why gold appears, historical units, and indexed-credit distinction
-- [ ] Status, products, and research questions
-- [ ] Posture, references, and next deliverable
+- [ ] Huqúqu'lláh in brief, product direction, and project boundaries
+- [ ] Threshold and current calculation posture
+- [ ] Documentation map and development path
+- [ ] Discourse posture, invitation, and references
 
 ### `docs/design-and-discourse-plan.md`
 
@@ -50,8 +49,8 @@
 - [x] Multi-currency strategy
 - [x] Ownership and household transitions
 - [x] Public explorer, private ledger, privacy, and agent-access boundary
-- [x] General-audience accessibility and experience principles
-- [x] Phases and specification-readiness criteria
+- [ ] General-audience accessibility and experience principles
+- [ ] Phases and specification-readiness criteria
 
 ### `docs/draft-ux-and-feature-proposals.md`
 
@@ -114,3 +113,4 @@ The log may record both completed human reviews and review-state maintenance. On
 | 2026-07-20 | Focused invariant decision | LJ Jones (human) | Calculation invariant 21 — gold-price movement without economic augmentation | Confirmed promotion from candidate to derived design rule, requested an explicit rationale, and approved clean renumbering. Broader calculation-invariant review remains open. | User direction in project conversation |
 | 2026-07-20 | Ledger coverage and stale-state correction | Codex (agent) | New draft UX document; calculation-invariant whole-file, threshold/whole-unit/voluntary-payment, and fictional acceptance-suite scopes | Added unchecked whole-file and section coverage for `docs/draft-ux-and-feature-proposals.md`. Corrected stale checked states left after PR #7 added invariant 1a and changed the fictional acceptance suite. Design-plan and README scopes changed in PR #8 were already unchecked. No human review is asserted. | [PR #8](https://github.com/leifjones/huququllah-methodology-workbench/pull/8) |
 | 2026-07-21 | Indexed-credit boundary and document structure clarified | Codex (agent) | Open Questions historical-state/indexed-credit section; Considered Approaches indexed-credit posture; design-plan indexed-credit boundary; README research questions; calculation invariants 19–20 | Reclassified the indexed-credit material as worked counterexamples while retaining the historical-state and source questions; aligned counterfactual research output with the prohibition on recording it as an obligation. Reopened the calculation-invariants whole-file review and hypothesis/source-status/privacy scope. No human review is asserted. | Branch `agent/succinct-gold-indexed-question` |
+| 2026-07-24 | Landing page reframed around product direction | Codex (agent) | `README.md`; design-plan status, general-audience framing, and specification-readiness conclusion | Replaced the RFC/research-question landing page with the current public-explorer direction, compressed the gold-indexed history into the settled ordinary-product boundary, and removed the remaining RFC framing from the design plan. Reopened the design-plan whole-file, general-audience, and phase/readiness scopes; all revised README scopes remain unchecked. No human review is asserted. | Branch `agent/reframe-readme-around-explorer` |

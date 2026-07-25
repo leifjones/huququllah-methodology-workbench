@@ -18,7 +18,7 @@
 
 - [x] `README.md`
 - [x] `AGENTS.md`
-- [ ] `docs/design-and-discourse-plan.md`
+- [x] `docs/design-and-discourse-plan.md`
 - [ ] `docs/draft-ux-and-feature-proposals.md`
 - [ ] `docs/source-rule-matrix.md`
 - [ ] `docs/open-questions-and-counterexamples.md`
@@ -49,7 +49,7 @@
 - [x] Multi-currency strategy
 - [x] Ownership and household transitions
 - [x] Public explorer, private ledger, privacy, and agent-access boundary
-- [ ] General-audience accessibility and experience principles
+- [x] General-audience accessibility and experience principles
 - [x] Phases and specification-readiness criteria
 
 ### `docs/draft-ux-and-feature-proposals.md`

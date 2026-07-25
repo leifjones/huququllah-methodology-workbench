@@ -1,107 +1,78 @@
 # Huqúqu'lláh Methodology Workbench
 
-**Pre-specification RFC — independent, non-institutional research project**
+**Independent, non-institutional design and learning project**
 
-**Date:** July 18, 2026
-
-**Status:** Conceptual investigation; source synthesis and calculation specification required before implementation
+**Status:** Designing a public, interactive methodology explorer using fictional scenarios; personal financial data is out of scope for the first product
 
 ## Huqúqu'lláh in brief
 
-Huqúqu'lláh (the “Right of God”) is a spiritual law revealed by Bahá'u'lláh that connects material life, individual conscience, and service to humanity. The authoritative codification describes it as a means of purifying wealth and says that its implications include the elimination of extremes of wealth and poverty and a more equitable distribution of resources. Its calculation and payment remain a matter of conscience between the individual and God; this workbench is concerned with learning and recordkeeping, not enforcement.
+Huqúqu'lláh (the “Right of God”) is a spiritual law revealed by Bahá'u'lláh that connects material life, individual conscience, and service to humanity. The authoritative codification describes it as a means of purifying wealth and says that its implications include the elimination of extremes of wealth and poverty and a more equitable distribution of resources. Its calculation and payment remain a matter of conscience between the individual and God.
 
-The law applies to individual Bahá'ís worldwide, but an **obligatory amount arises only when a person's assessable possessions—after applicable exemptions, expenses, and losses—reach the prescribed threshold**; debts and ability to pay are also relevant to settlement. It is therefore not a charge on every paycheck or on every person regardless of circumstances. See the [preamble and determining provisions of the authoritative codification](https://www.bahai.org/r/769134373).
+An obligatory amount arises only when a person's assessable possessions—after applicable exemptions, expenses, and losses—reach the prescribed threshold; debts and ability to pay are also relevant to settlement. Huqúqu'lláh is therefore not a charge on every paycheck or on every person regardless of circumstances. See the [preamble and determining provisions of the authoritative codification](https://www.bahai.org/r/769134373).
 
-## Purpose
+## What this project is building
 
-This project is a learning-oriented workspace for exploring how people may understand, describe, and keep records related to the law of Huqúqu'lláh. It aims to help individuals and couples:
+This repository is designing a tool for visualizing, explaining, and discussing how the guidance may apply in concrete situations. The first public product is intended to be an **interactive methodology explorer** that uses fictional scenarios rather than personal financial data.
 
-1. Study the authoritative guidance before selecting a bookkeeping method.
-2. Describe their methodology so another person can understand its sources, judgments, and assumptions.
-3. Distinguish authoritative constraints, bookkeeping lenses, personal judgments, market-rate assumptions, and experimental hypotheses.
-4. Preserve reproducible historical records without reconstructing years of values and payments from memory.
-5. Compare approaches and identify why their results differ.
-6. Develop shared language for exchanging learning without creating pressure or financial surveillance.
+The explorer should help people:
+
+1. Move through simple cases—an initial assessment, a voluntary contribution below the threshold, and later accumulation under the once-only principle—before adding more complex circumstances.
+2. See which parts of a result come from authoritative guidance, recorded facts, individual judgments, bookkeeping choices, market-rate evidence, or experimental hypotheses.
+3. Inspect a reproducible calculation trace rather than receive an unexplained amount.
+4. Compare approaches and identify exactly why their results differ.
+5. Use concrete scenarios to initiate individual study, shared exploration, and consultation, including the development of tentative source-grounded answers whose uncertainty remains visible.
+
+The design may later support a **private financial ledger** for individuals or couples who choose to use their own data. That possibility is deferred until privacy, security, permissions, recovery, export, correction, and deletion have been designed and reviewed. It is a possible later use of the work, not the premise of the public explorer.
+
+## Project boundaries
 
 The project is **not** intended to:
 
-- Adjudicate what methodology another person must use
-- Replace study of the authoritative texts or consultation with those familiar with the law
+- Determine what methodology another person must use or what amount another person owes
+- Replace study of the authoritative texts, personal reflection, shared consultation, or consultation with those familiar with the law
 - Demand, solicit, transmit, or monitor payment
 - Turn conscience into compliance
 - Require disclosure of personal wealth
 - Provide tax or legal advice
-- Present the creator's current experiment as official or institutionally endorsed guidance
+- Present a project conclusion as official or institutionally endorsed guidance
 
-## Explicit threshold constraint
+## Threshold and current calculation posture
 
 The threshold is not an open question in this project. [Q&A 8](https://www.bahai.org/library/authoritative-texts/bahaullah/kitab-i-aqdas/9) states that obligatory payment begins when assessable possessions reach the value of **19 mithqáls of gold**, and subsequent liability arises on further complete units after applicable expenses and losses. Amounts below the first or a further complete unit do not create an obligation, although a person may contribute voluntarily.
 
-For conversion to metric weight, this project uses the relationship stated in a letter written on behalf of Shoghi Effendi: **one mithqál consists of 19 nakhuds, and 24 nakhuds equal four and three-fifths grams**. See [paragraph 52 of the application compilation](https://www.bahai.org/library/authoritative-texts/compilations/huququllah-right-god/3). Thus the threshold is `19 × 19 ÷ 24 × 4.6 = 69.1916… grams`, conventionally reported as approximately **69.2 grams**.
+For metric calculation, the project uses the source-specified relationship that **one mithqál consists of 19 nakhuds, and 24 nakhuds equal four and three-fifths grams**. The threshold is therefore `19 × 19 ÷ 24 × 4.6 = 69.1916… grams`, conventionally reported as approximately **69.2 grams**. See [paragraph 52 of the application compilation](https://www.bahai.org/library/authoritative-texts/compilations/huququllah-right-god/3).
 
-See [Q&A 8](https://www.bahai.org/r/491430606), [Q&A 89–90](https://www.bahai.org/r/580485375), the [codification (III.B.1, III.B.2)](https://www.bahai.org/r/490724139), and the [1987 clarification on voluntary contribution below the threshold](https://www.bahai.org/r/553865725).
+Gold enters the ordinary calculation as the law-defined measure used to value a threshold unit at an assessment. It does not follow that a person must own or pay in gold, or that previously assessed wealth should continually change with today's gold price. The current working synthesis for simple cases uses a primary currency and event-based augmentation: a gold-price movement alone does not create new income, acquisition, realized profit, recovery, or another economic event.
 
-## Why gold appears: historical assessment units and indexed credit
-
-The law defines its threshold using the value of **19 mithqáls of gold**. Gold therefore enters this project first as the measuring standard named in the law—not because a person must own gold, pay in gold, or continually revalue all wealth in gold. Expressing the threshold in a local currency involves a gold-valuation source and a valuation-date choice. This workbench currently proposes recording those choices so that a displayed calculation can be reproduced and discussed; the authoritative texts cited here do not settle the convention.
-
-The creator's gold-denominated experiment uses that law-defined threshold as a meter stick: it records how many **completed nineteen-mithqál assessment units** became assessable at a historical assessment. The purpose of that record is to stay close to the law's base unit, not primarily to preserve purchasing power.
-
-Three facts must remain separate:
-
-1. **Assessment:** the completed units and assessable principal identified on a particular date.
-2. **Obligation:** the monetary amount arising from that assessment.
-3. **Settlement:** one or more payments allocated to that obligation.
-
-The completed historical unit count does not change merely because gold, foreign-exchange rates, residence, display currency, or the payment date later changes. Nor should the count be reconstructed from the price of gold on a delayed payment date.
-
-A different operation is to translate historical units at today's gold price and treat the resulting amount as a deductible or “purified” base against current wealth. This repository labels that operation the **current-gold indexed-credit hypothesis**. It may be displayed and tested, but it is not assumed to follow automatically from recording historical units and must not be presented as an authoritative rule.
-
-## Status and scope
-
-This is conceptual work, not yet an implementation specification. Before a calculation engine is built, the project needs:
-
-- A reviewed source-rule matrix
-- A normalized event and calculation specification
-- A defined relationship among assessment, obligation, payment, and allocation
-- Worked examples that combine all applicable constraints rather than treating one source example as a complete algorithm
-- Explicit treatment of multiple currencies, ownership changes, losses, and incomplete historical records
-- Reproducible fictional test cases
-
-Two possible products are intentionally separated:
-
-- A **public methodology explorer** using fictional examples and exposing source, judgment, and assumption layers
-- A **private financial ledger**, deferred until a threat model, encryption approach, recovery model, export/deletion controls, and couple permissions have been reviewed
+The earlier approach of translating historical units at today's gold price and using the result as deductible “purified” principal is **not the ordinary product path**. It remains documented only as design history and an optional counterfactual for understanding why it was set aside. See [Considered Approaches and Current Posture](docs/considered-approaches.md) and the [worked counterexamples](docs/open-questions-and-counterexamples.md#2-historical-state-question-and-indexed-credit-counterexamples).
 
 ## Documentation
 
-- [Design and discourse plan](docs/design-and-discourse-plan.md) — posture, methodology taxonomy, conceptual model, event model, multi-currency strategy, ownership transitions, and phases
-- [Draft UX and feature proposals](docs/draft-ux-and-feature-proposals.md) — proposed interactive behavior for recording remittances before assessment and allocating them later
-- [Source-rule matrix](docs/source-rule-matrix.md) — what the sources explicitly establish, what each example illustrates, and what remains unresolved
-- [Open questions and counterexamples](docs/open-questions-and-counterexamples.md) — the historical-state question, indexed-credit counterexamples, delayed-payment failure, the 1919 piastre example, and continuity across currencies and ownership changes
-- [Considered approaches and current posture](docs/considered-approaches.md) — provisional, experimental, legacy, and set-aside approaches with their rationale and conditions for reconsideration
-- [Calculation invariants](docs/calculation-invariants.md) — correctness constraints and fictional acceptance tests for a future specification
-- [Human review checklist](docs/human-review-checklist.md) — an explicit record of which files and sections people have deliberately reviewed
+- [Design and discourse plan](docs/design-and-discourse-plan.md) — the primary product plan: posture, audience, conceptual and event models, experience principles, public/private boundary, and development phases
+- [Source-rule matrix](docs/source-rule-matrix.md) — what the sources explicitly establish, what each example illustrates, and where synthesis or judgment begins
+- [Calculation invariants](docs/calculation-invariants.md) — correctness constraints and fictional acceptance cases for future implementation
+- [Draft UX and feature proposals](docs/draft-ux-and-feature-proposals.md) — proposed interactions whose details are still being designed
+- [Open questions and counterexamples](docs/open-questions-and-counterexamples.md) — remaining representation, reconstruction, currency, ownership, and consultation questions, together with cases that rule out unsafe transformations
+- [Considered approaches and current posture](docs/considered-approaches.md) — the decision record for provisional, experimental, legacy, and set-aside approaches
+- [Human review checklist](docs/human-review-checklist.md) — the record of which files and sections people have deliberately reviewed
 
-## Central research questions
+## Development path
 
-1. What historical state should be preserved after assessment: native-currency principal, completed threshold units, identified property, or a linked combination?
-2. What evidence, if any, would justify revisiting the current boundary that confines current-gold indexed credit to a counterfactual research view?
-3. What date and evidence govern the local-currency value of a threshold unit at assessment?
-4. How should incomplete historical payment records be reconstructed without presenting estimates as facts?
-5. How should native-currency histories be consolidated without allowing current FX movements to create silent gains or losses?
-6. How should ownership histories survive marriage, divorce, remarriage, gifts, inheritance, migration, and changes between joint and individual accounting?
-7. Under what conditions should different bookkeeping lenses reconcile, and how should any divergence be explained?
+Current work is refining the source synthesis, design plan, invariants, and fictional scenarios that the explorer will communicate. The first tangible implementation target is the public methodology explorer:
 
-The 1919 piastre example is treated as a **source-scope case**, not as evidence that the explicit threshold can be bypassed. It illustrates the 19% rate, deduction of expenses, annual reconciliation, and once-only treatment, while its simplified numbers do not visibly apply the whole-unit gate established elsewhere. See the [source-rule matrix](docs/source-rule-matrix.md#the-1919-piastre-example) for the evidence and synthesis.
+- Interactive fictional scenarios
+- Guided state-transition playback
+- Visible source, judgment, assumption, and calculation layers
+- Comparison views and explanations of divergence
+- No collection or storage of personal financial data
+
+A calculation engine suitable for personal records and an optional private ledger are later stages, not prerequisites for making the questions and current design visible.
 
 ## Posture and invitation
 
-The project begins with humility about what is established, inferred, judged, or still unknown:
+The project does not have authority to issue rulings, but it can still support meaningful inquiry. Readers are encouraged to study the linked texts, test the fictional cases, share alternative reasoning, consult with one another, and preserve tentative source-grounded conclusions together with remaining uncertainty and conditions for reconsideration.
 
-> This is how I am currently understanding the law and organizing my records. Here are the sources, judgments, assumptions, and calculations involved. Here are the results under alternative approaches. I offer it as an experiment and an invitation to learn together.
-
-Readers are encouraged to study the linked texts, test the examples, share alternative approaches, consult with one another, and document tentative source-grounded answers together with remaining uncertainty. When a question may call for guidance from an appointed representative, the workbench should also help people frame it for consultation. The project may preserve and test what participants learn, but recording a conclusion does not make it official guidance. No page should demand payment, shame uncertainty, rank people, or imply institutional endorsement.
+When a question may call for guidance from an appointed representative, the workbench should help people frame it for consultation and preserve what was learned. Such consultation complements rather than shortcuts individual reflection, study, and shared exploration. Recording a conclusion in the project does not make it official guidance.
 
 ## Primary references
 
@@ -112,10 +83,6 @@ Readers are encouraged to study the linked texts, test the examples, share alter
 5. [Huqúqu'lláh—The Right of God, application of the law](https://www.bahai.org/library/authoritative-texts/compilations/huququllah-right-god/3)
 6. [Universal House of Justice, 26 November 2000](https://www.bahai.org/library/authoritative-texts/the-universal-house-of-justice/messages/20001126_001/1)
 
-## Next deliverable
-
-The recommended next artifact is a calculation-specification workbook containing normalized schemas, formulas, rate provenance, source justifications, and expected results for the fictional cases in this repository. Implementation remains downstream of that specification and its review.
-
 ---
 
-*This repository is a research project and invitation to study, not an official calculator or endorsed guidance.*
+*This repository is an invitation to study, visualize, and discuss—not an official calculator or endorsed guidance.*

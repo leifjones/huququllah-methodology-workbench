@@ -6,7 +6,7 @@
 
 This matrix is not a substitute for the texts. It is a traceability layer for a future calculation specification and should be reviewed by people familiar with the law of Huqúqu'lláh.
 
-This is subject to the biases, opinions, and perspectives of the individual(s) involved in curating it.
+This is subject to the biases, opinions, and perspectives of the individual(s) involved in curating it. While thought and effort have gone into it, there is no claim to correctness. [Insert here reference to passage(s) individual responsibility in this area.]
 
 ## Status vocabulary
 

@@ -20,7 +20,7 @@
 - [x] `AGENTS.md`
 - [x] `docs/design-and-discourse-plan.md`
 - [ ] `docs/draft-ux-and-feature-proposals.md`
-- [ ] `docs/source-rule-matrix.md`
+- [x] `docs/source-rule-matrix.md`
 - [ ] `docs/open-questions-and-counterexamples.md`
 - [ ] `docs/considered-approaches.md`
 - [x] `docs/calculation-invariants.md`
@@ -60,13 +60,13 @@
 
 ### `docs/source-rule-matrix.md`
 
-- [ ] Status vocabulary and spiritual/social context
-- [ ] Threshold, rate, whole-unit, and once-only rows
-- [ ] Acquisition, expenses, loss, gift, appreciation, and gold-price synthesis rows
-- [ ] Debt, exemptions, ownership, and spouse rows
-- [ ] Freedom of method, voluntary contribution, and conscience rows
-- [ ] 1919 piastre example: documentary form and historical context
-- [ ] 1919 piastre example: synthesis and review questions
+- [x] Status vocabulary and spiritual/social context
+- [x] Threshold, rate, whole-unit, and once-only rows
+- [x] Acquisition, expenses, loss, gift, appreciation, and gold-price synthesis rows
+- [x] Debt, exemptions, ownership, and spouse rows
+- [x] Freedom of method, voluntary contribution, and conscience rows
+- [x] 1919 piastre example: documentary form and historical context
+- [x] 1919 piastre example: synthesis and review questions
 
 ### `docs/open-questions-and-counterexamples.md`
 

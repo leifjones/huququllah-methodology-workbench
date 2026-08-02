@@ -21,7 +21,7 @@
 - [x] `docs/design-and-discourse-plan.md`
 - [ ] `docs/draft-ux-and-feature-proposals.md`
 - [x] `docs/source-rule-matrix.md`
-- [ ] `docs/open-questions-and-counterexamples.md`
+- [x] `docs/open-questions-and-counterexamples.md`
 - [ ] `docs/considered-approaches.md`
 - [x] `docs/calculation-invariants.md`
 - [ ] `docs/human-review-checklist.md`
@@ -70,13 +70,13 @@
 
 ### `docs/open-questions-and-counterexamples.md`
 
-- [ ] Historical-state question
-- [ ] Gold-rise and gold-fall counterexamples
-- [ ] Delayed-payment counterexample
-- [ ] Multi-currency, migration, and ownership questions
-- [ ] Baseline reconstruction and alternative-lens reconciliation
-- [ ] Piastre source-scope case
-- [ ] Focused consultation questions
+- [x] Historical-state question
+- [x] Gold-rise and gold-fall counterexamples
+- [x] Delayed-payment counterexample
+- [x] Multi-currency, migration, and ownership questions
+- [x] Baseline reconstruction and alternative-lens reconciliation
+- [x] Piastre source-scope case
+- [x] Focused consultation questions
 
 ### `docs/considered-approaches.md`
 

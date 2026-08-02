@@ -145,6 +145,9 @@ Migration should not overwrite the earlier ledger. It should create effective-da
 
 ## 6. Ownership, marriage, divorce, and remarriage
 
+A note for anyone reading this
+who may be unfamiliar with Bahá’í teachings on marriage (and divorce): Marriage is a beautiful and powerful facet of life and of civilization-building. Divorce is not to be taken lightly. Herein, we only address practical implications with respect to Huqúqu’lláh. For more on these see [this page](https://www.bahai.org/beliefs/life-spirit/character-conduct/articles-resources/compilation-family-life-marriage) and/or [this compilation](https://www.bahai.org/library/authoritative-texts/compilations/set-world-order/1).
+
 The guidance distinguishes ownership from mere control and permits spouses to proceed jointly or individually. See paragraphs 59, 71, and 74 of the [application compilation](https://www.bahai.org/library/authoritative-texts/compilations/huququllah-right-god/3).
 
 ### 6.1 Marriage

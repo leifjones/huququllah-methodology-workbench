@@ -51,6 +51,8 @@ Gold enters the ordinary calculation as the law-defined measure used to value a 
 - [Design and discourse plan](docs/design-and-discourse-plan.md) — the primary product plan: posture, audience, conceptual and event models, experience principles, public/private boundary, and development phases
 - [Source-rule matrix](docs/source-rule-matrix.md) — what the sources explicitly establish, what each example illustrates, and where synthesis or judgment begins
 - [Calculation invariants](docs/calculation-invariants.md) — correctness constraints and fictional acceptance cases for future implementation
+- [Draft explorer architecture](docs/draft-explorer-architecture.md) — the smallest implementation seam and staged fictional vertical slices for the public explorer
+- [Deferred private-ledger concepts](docs/deferred-private-ledger-concepts.md) — future concerns preserved without making them part of the explorer's object model
 - [Draft UX and feature proposals](docs/draft-ux-and-feature-proposals.md) — proposed interactions whose details are still being designed
 - [Open questions and counterexamples](docs/open-questions-and-counterexamples.md) — remaining representation, reconstruction, currency, ownership, and consultation questions, together with cases that rule out unsafe transformations
 - [Considered approaches and current posture](docs/considered-approaches.md) — the decision record for provisional, experimental, legacy, and set-aside approaches

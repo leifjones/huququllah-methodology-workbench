@@ -387,52 +387,75 @@ The interface should:
 
 ## 14. Phases
 
-### Phase 0 — Source synthesis and specification
+### Phase 0 — Source synthesis and selected-scenario specification
 
-- Review the source-rule matrix
-- Track deliberate human review in the [human review checklist](human-review-checklist.md)
+- Review the source-rule matrix and track deliberate human review in the [human review checklist](human-review-checklist.md)
 - Explore open questions through study, reflection, fictional cases, and consultation; record tentative conclusions, disagreements, or explicit deferrals
-- Normalize schemas and formulas
-- Write fictional cases with expected outputs
-- Review the historical-rate methodology
-- Seek focused consultation, including with appointed representatives when their guidance may be needed
+- Select a small fictional vertical slice
+- Specify the exact inputs, expected outputs, source-status labels, and explanation requirements for that slice
+- Resolve the formulas, precision, and terminology required by the selected slice without treating unrelated future questions as implementation blockers
 
-### Phase 1 — Public methodology explorer
+Source synthesis can continue after implementation begins. A question blocks a slice when that slice depends on it, not merely because a future private ledger may encounter it.
 
-- Interactive fictional scenarios only
-- Guided scenario entry and state-transition playback
-- Source overlays and comparison views
-- No personal financial storage
-- Plain-language testing with members of the intended general Bahá'í audience
+### Phase 1 — Public methodology-explorer slices
 
-### Phase 2 — Calculation-specification prototype
+- Implement only reviewed fictional cases, beginning with the threshold ladder described in the [Draft Explorer Architecture](draft-explorer-architecture.md)
+- Add guided state-transition playback, structured calculation traces, progressive source disclosure, and accessible plain-language explanations
+- Add later fictional slices only when their additional inputs and expected outputs meet the same readiness gate
+- Keep interactive state session-scoped unless a separate persistence proposal passes privacy review
+- Accept no personal financial history, receipt uploads, private notes, or durable household workspace
+- Test explanations with members of the intended general Bahá'í audience
 
-- Implement only reviewed constraints and labeled hypotheses
-- Validate all invariants
-- Maintain immutable calculation traces
+### Phase 2 — Expanded methodology exploration
 
-### Phase 3 — Privacy and security design
+- Add selected once-only, loss, currency, ownership, migration, and comparison cases as their rules and expected outputs are reviewed
+- Validate the calculation invariants exercised by each added slice
+- Keep experimental hypotheses opt-in and outside the ordinary result
+- Add a real-currency threshold scenario only after its valuation date, gold instrument, market convention, rate source, precision, and expected result are reviewed
 
-- Complete threat model and access model
-- Conduct security review before accepting real data
+### Phase 3 — Private-ledger specification, privacy, and security
+
+- Select concrete use cases involving real data rather than generalizing from the explorer
+- Specify assessment, obligation, remittance, allocation, correction, ownership, export, recovery, and deletion behavior required by those use cases
+- Complete a threat model, access model, data-retention policy, and security review
+- Resolve shared-record authority and permission-scoped diagnostic boundaries
+
+The [Deferred Private-Ledger Concepts](deferred-private-ledger-concepts.md) note is an inventory for this phase, not a Phase 1 domain model.
 
 ### Phase 4 — Optional private ledger
 
-- Proceed only after Phase 3 acceptance criteria are met
+- Proceed only after the Phase 3 source, product, privacy, security, recovery, and deletion acceptance criteria are met
 
-## 15. Definition of specification readiness
+These phases are capability gates. They do not require every private-ledger question to be settled before a reviewed fictional explorer slice can be implemented.
 
-Implementation is ready to begin only when:
+## 15. Definition of readiness
 
-- Every calculation rule points to a source, derivation, judgment, or hypothesis label
-- Assessment and settlement schemas are separate
+### Readiness for a public explorer slice
+
+An explorer slice is ready to implement when:
+
+- Its exact immutable fictional inputs and expected outputs are recorded
+- Every calculation and displayed proposition points to a source, derivation, judgment, assumption, or hypothesis label
+- No unresolved question can change the selected case's expected result without being surfaced as an explicit branch or diagnostic
+- Reviewers can reproduce the fictional output and its arithmetic trace
+- The ordinary presentation can progressively disclose provenance without requiring a person to navigate the full project taxonomy
+- The public composition cannot accept or durably store real household data
+- General-audience reviewers can understand the result and distinguish guidance, individual judgment, project derivation, and experiment without relying on prior project context
+- The human-review ledger accurately shows which affected scopes remain open
+
+A slice using a fictional threshold-unit value may proceed while clearly labeling that abstraction. A slice translating the gold threshold into a real currency additionally requires a reviewed valuation date, gold instrument, market convention, rate source, purpose, precision, and expected result.
+
+### Readiness for a private ledger
+
+Real-data implementation is not ready until, for the selected use cases:
+
+- Assessment and settlement records and lifecycles are distinct
 - Whole-unit and carry-forward behavior have expected tests
-- Multi-currency rate purposes are explicit
+- Multi-currency rate purposes and historical-rate behavior are explicit
 - Ownership transitions are effective-dated
 - Historical reconstructions retain uncertainty
 - Alternative lenses reconcile or explain divergence
-- The public prototype cannot accept real household data
-- Reviewers can reproduce every fictional output from immutable inputs
-- General-audience reviewers can identify the threshold, the reason gold appears, and the difference between guidance and experiment without relying on prior project context
+- Correction, amendment, export, recovery, and full-deletion behavior are specified
+- Threat modeling, authorization, encryption, operational logging, backup retention, and security review are complete
 
-Until then, this repository remains a design and study workspace rather than a calculator specification.
+Until those private-ledger criteria are met, the repository remains a design and study workspace for real-data use. That does not prevent implementation of a reviewed, structurally fictional explorer slice.
